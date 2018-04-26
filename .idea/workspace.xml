@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9cc383f-da9e-47d6-a2d6-f753c5ef7052" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="b9cc383f-da9e-47d6-a2d6-f753c5ef7052" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,8 +17,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="378">
               <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+=======
+            <state relative-caret-position="483">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -117,6 +119,10 @@
       <workItem from="1524620094326" duration="23000" />
       <workItem from="1524620302489" duration="622000" />
       <workItem from="1524635554509" duration="287000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1524713007350" duration="1354000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Notice:grin:">
       <created>1524037711663</created>
@@ -202,11 +208,40 @@
       <option name="project" value="LOCAL" />
       <updated>1524553090047</updated>
     </task>
+<<<<<<< Updated upstream
     <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="9731000" />
+=======
+    <task id="LOCAL-00013" summary="更新readme">
+      <created>1524713045769</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1524713045769</updated>
+    </task>
+    <task id="LOCAL-00014" summary="测试merga branch">
+      <created>1524713856446</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1524713856446</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修改test分支">
+      <created>1524714036506</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1524714036506</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11085000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -247,7 +282,9 @@
     <MESSAGE value="Update" />
     <MESSAGE value="更新博客计划" />
     <MESSAGE value="更新readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新readme" />
+    <MESSAGE value="测试merga branch" />
+    <MESSAGE value="修改test分支" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改test分支" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -336,8 +373,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="378">
           <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+=======
+        <state relative-caret-position="483">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
