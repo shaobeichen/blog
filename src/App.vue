@@ -14,7 +14,8 @@
       }
     },
     mounted() {
-      this.$axios.get("https://api.github.com/repos/LeachZhou/blog/issues?access_token=" + this.token, {
+      this.$axios.get("https://api.github.com/repos/LeachZhou/blog/issues", {
+        "access_token": this.token,
         "page": 1,
         "per_page": 10,
         "filter": 'created'
