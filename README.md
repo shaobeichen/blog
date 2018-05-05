@@ -1,23 +1,9 @@
-## :rocket: 博客记录
+## :rocket: 生活不止眼前的苟且，还有诗和远方。
 
-> 记录技术历程
+> 记录技术的新博客，采用Vue全家桶开发
+ 
+#### - 2018/5/5 » [Git 操作命令记录](https://github.com/LeachZhou/blog/issues/5)
+#### - 2018/5/3 » [在Blog里面调用GitHub API](https://github.com/LeachZhou/blog/issues/4)
+#### - 2018/5/1 » [如何更新自己写的npm包（模块）?](https://github.com/LeachZhou/blog/issues/3)
+#### - 2018/5/1 » [如何发布一个NPM包呢？](https://github.com/LeachZhou/blog/issues/2)
 
-> This is a revised website that uses new technologies and new designs.
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

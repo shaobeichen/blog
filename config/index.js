@@ -9,8 +9,17 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
-    proxyTable: {},
+    assetsPublicPath: '/',
+    proxyTable: {
+      '/api': {
+        target: 'https://api.github.com/',
+        changeOrigin: true,
+        // 如果不用pathRewrite，目标地址后面不能跟接口名字
+        pathRewrite: {
+          '^/api': '/'
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
