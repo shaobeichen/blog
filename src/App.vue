@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <theme-change :headtitle="one"></theme-change>
     <router-view/>
   </div>
 
@@ -7,6 +8,7 @@
 
 <script>
   import dayjs from 'dayjs';
+  import themeChange from './components/themeChange';
 
   export default {
     name: 'App',
@@ -36,7 +38,9 @@
         document.body.className = `theme${val}`;
       }
     },
-    components: {}
+    components: {
+      themeChange
+    }
 
   }
 </script>
