@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-
     <router-view/>
   </div>
+
 </template>
 
 <script>
+  import dayjs from 'dayjs';
+
   export default {
     name: 'App',
     data() {
       return {
-        token: ['0f6560744b42121c3180d5','0684ff2aad37cc36fd']
+        token: ['0f6560744b42121c3180d5', '0684ff2aad37cc36fd']
       }
+    },
+    created() {
+      console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
+      console.log(dayjs().format('HH'));
+      this.$options.methods.changeTheme();
     },
     mounted() {
       this.$axios.get(`api/repos/LeachZhou/blog/issues?access_token=${this.token[0]}${this.token[1]}`, {
@@ -24,21 +31,17 @@
         console.log(err);
       });
     },
-    methods: {},
+    methods: {
+      changeTheme(val = 'One') {
+        document.body.className = `theme${val}`;
+      }
+    },
     components: {}
 
   }
 </script>
 
-<style>
-  @import "common/less/global.less";
-
-  #app {
-    max-width: 2560px;
-    margin: 0 auto;
-    width: 100%;
-    min-height: 1440px;
-    background: #154f6e url('assets/images/wallpaper_mikael_gustafsson.png') no-repeat bottom;
-    /*linear-gradient(to right, red,orange)*/
-  }
+<style lang="less">
+  @import "common/less/reset.less";
+  @import "common/less/theme/night.less";
 </style>
