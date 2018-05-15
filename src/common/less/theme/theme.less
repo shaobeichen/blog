@@ -1,0 +1,21 @@
+.themeOne {
+  .themeCh(#154f6e, url('../../../../static/images/wallpaper_mikael_gustafsson.png'))
+}
+
+.themeTwo {
+  .themeCh(#066e10, url('../../../../static/images/wallpaper_mikael_gustafsson2.png'))
+}
+
+.themeThree {
+  .themeCh(#00646e, url('../../../../static/images/wallpaper_mikael_gustafsson3.png'))
+}
+
+.themeCh(@color,@bg) {
+  #app {
+    max-width: 2560px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 1440px;
+    background: @color @bg no-repeat bottom;
+  }
+}

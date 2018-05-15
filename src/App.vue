@@ -47,5 +47,5 @@
 
 <style lang="less">
   @import "common/less/reset.less";
-  @import "common/less/theme/night.less";
+  @import "common/less/theme/theme.less";
 </style>
