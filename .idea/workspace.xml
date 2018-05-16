@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1475179b-8b16-492c-b12d-1f3342e83a3a" name="Default" comment=":memo: 打包，更新README">
-      <change afterPath="$PROJECT_DIR$/docs/static/css/app.8bccab2d187ae608bcf1d73e4d364814.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/css/app.8bccab2d187ae608bcf1d73e4d364814.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/images/kv-cur-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/images/wallpaper_mikael_gustafsson.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/images/wallpaper_mikael_gustafsson2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/images/wallpaper_mikael_gustafsson3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/img/wallpaper_mikael_gustafsson2.b6f2c18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/img/wallpaper_mikael_gustafsson3.a923d9c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/js/app.1758065ed736c3374bac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/js/app.1758065ed736c3374bac.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/js/vendor.000352b14ea13d0b3d66.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/static/js/vendor.000352b14ea13d0b3d66.js.map" afterDir="false" />
+    <list default="true" id="1475179b-8b16-492c-b12d-1f3342e83a3a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/css/app.bb9af81c8893312d39c456e97da2ac0b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/css/app.bb9af81c8893312d39c456e97da2ac0b.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/app.7db166d54956a731fce6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/app.7db166d54956a731fce6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/app.1758065ed736c3374bac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/static/js/app.1758065ed736c3374bac.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/vendor.c397231b51d1afea579a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/vendor.c397231b51d1afea579a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,14 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="168">
-                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -80,10 +69,10 @@
         <option value="$PROJECT_DIR$/src/common/less/theme/night.less" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/common/less/theme/theme.less" />
-        <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/components/themeChange.vue" />
-        <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/config/index.js" />
       </list>
     </option>
   </component>
@@ -184,7 +173,7 @@
       <workItem from="1526032959726" duration="404000" />
       <workItem from="1526266319237" duration="17569000" />
       <workItem from="1526346353440" duration="1829000" />
-      <workItem from="1526437757037" duration="6347000" />
+      <workItem from="1526437757037" duration="7129000" />
     </task>
     <task id="LOCAL-00001" summary="update token">
       <created>1526031397184</created>
@@ -221,17 +210,24 @@
       <option name="project" value="LOCAL" />
       <updated>1526442875201</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=":memo: 打包，更新README">
+      <created>1526447004419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526447004419</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28591000" />
+    <option name="totallyTimeSpent" value="29373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -239,7 +235,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.20065431" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.20065431" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -291,16 +287,14 @@
     <MESSAGE value="更新图片及主题组件" />
     <MESSAGE value=":sparkles:完成主题组件" />
     <MESSAGE value=":sparkles: 完成主题组件" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 完成主题组件" />
+    <MESSAGE value=":memo: 打包，更新README" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: 打包，更新README" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="903">
           <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
-          <folding>
-            <element signature="e#132#158#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -315,9 +309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding>
-            <element signature="e#132#158#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -332,9 +323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding>
-            <element signature="e#132#158#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -416,27 +404,10 @@
     <entry file="file://$PROJECT_DIR$/src/common/less/reset.less">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/themeChange.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="e#132#158#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,6 +423,20 @@
             <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
