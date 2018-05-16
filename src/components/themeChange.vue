@@ -1,14 +1,14 @@
 <template>
   <div id="themeChange">
     <ul>
-      <li>
-        <a href="javascript:;"></a>
+      <li :class="{ 'timeActive': time == `One` }">
+        <a href="javascript:;" @click="changeTheme(`One`)"></a>
       </li>
-      <li>
-        <a href="javascript:;"></a>
+      <li :class="{ 'timeActive': time == `Two` }">
+        <a href="javascript:;" @click="changeTheme(`Two`)"></a>
       </li>
-      <li>
-        <a href="javascript:;"></a>
+      <li :class="{ 'timeActive': time == `Three` }">
+        <a href="javascript:;" @click="changeTheme(`Three`)"></a>
       </li>
     </ul>
   </div>
@@ -18,20 +18,26 @@
   export default {
     name: "themeChange",
     data() {
-      return {
-        themeVal: 'one'
-      }
+      return {}
     },
     methods: {
-      themeChange() {
-        // this.themeVal
+      changeTheme(val) {
+        document.body.className = `theme${val}`;
+        this.time = val;
       }
     },
-    props: ['themeNum']
+    props: ['time']
   }
 </script>
 
 <style lang="less" scoped>
+  ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
   li:nth-of-type(1) {
     display: inline-block;
     width: 80px;
@@ -84,7 +90,25 @@
         background-position: -210px -160px;
       }
     }
+
   }
 
+  li:nth-of-type(1).timeActive {
+    a {
+      background-position: -10px -160px;
+    }
+  }
+
+  li:nth-of-type(2).timeActive {
+    a {
+      background-position: -110px -160px;
+    }
+  }
+
+  li:nth-of-type(3).timeActive {
+    a {
+      background-position: -210px -160px;
+    }
+  }
 
 </style>

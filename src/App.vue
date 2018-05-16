@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <theme-change :headtitle="one"></theme-change>
+    <theme-change :time="time"></theme-change>
     <router-view/>
   </div>
 
@@ -14,13 +14,23 @@
     name: 'App',
     data() {
       return {
-        token: ['0f6560744b42121c3180d5', '0684ff2aad37cc36fd']
+        token: ['0f6560744b42121c3180d5', '0684ff2aad37cc36fd'],
+        time: ''
       }
     },
     created() {
       console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
-      console.log(dayjs().format('HH'));
-      this.$options.methods.changeTheme();
+      let hours = dayjs().format('HH');
+      if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
+        this.$options.methods.changeTheme(`Three`);
+        this.time = `Three`;
+      } else if (hours >= 6 && hours < 12) {
+        this.$options.methods.changeTheme(`One`);
+        this.time = `One`;
+      } else if (hours >= 12 && hours < 18) {
+        this.$options.methods.changeTheme(`Two`);
+        this.time = `Two`;
+      }
     },
     mounted() {
       this.$axios.get(`api/repos/LeachZhou/blog/issues?access_token=${this.token[0]}${this.token[1]}`, {
@@ -41,7 +51,6 @@
     components: {
       themeChange
     }
-
   }
 </script>
 
