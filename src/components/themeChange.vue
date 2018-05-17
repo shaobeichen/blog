@@ -23,7 +23,7 @@
     methods: {
       changeTheme(val) {
         document.body.className = `theme${val}`;
-        this.time = val;
+        this.$emit('timeEmit', val);
       }
     },
     props: ['time']
