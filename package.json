@@ -12,9 +12,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "dayjs": "^1.5.24",
+    "highlight.js": "^9.12.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "vue": "^2.5.2",
+    "vue-markdown": "^2.2.4",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

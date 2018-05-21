@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <div class="article-title">这里是主文章</div>
+  <div id="app" v-cloak>
     <article-list></article-list>
     <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
     <router-view/>
@@ -17,21 +16,27 @@
     name: 'App',
     data() {
       return {
-        time: ''
+        time: '',
+        test: true
       }
     },
     created() {
       // console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
       let hours = dayjs().format('HH');
-      if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
+      if (this.test) {
         this._changeTheme(`Three`);
         this.time = `Three`;
-      } else if (hours >= 6 && hours < 12) {
-        this._changeTheme(`One`);
-        this.time = `One`;
-      } else if (hours >= 12 && hours < 18) {
-        this._changeTheme(`Two`);
-        this.time = `Two`;
+      } else {
+        if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
+          this._changeTheme(`Three`);
+          this.time = `Three`;
+        } else if (hours >= 6 && hours < 12) {
+          this._changeTheme(`One`);
+          this.time = `One`;
+        } else if (hours >= 12 && hours < 18) {
+          this._changeTheme(`Two`);
+          this.time = `Two`;
+        }
       }
     },
     mounted() {
@@ -58,9 +63,7 @@
 <style lang="less">
   @import "common/less/reset.less";
   @import "common/less/theme/theme.less";
+  @import "common/less/global.less";
 
-  .article-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
+
 </style>
