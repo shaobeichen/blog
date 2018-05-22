@@ -9,7 +9,7 @@
           <div class="article-content"
                :style="{borderLeft:item.labels[0] ? `10px solid #${item.labels[0].color}`: ''}">
             <h1>{{item.title}}</h1>
-            <vue-markdown v-highlight class="article-des" :source="item.body"></vue-markdown>
+            <p class="article-des" v-html="getMainDes[index]"></p>
             <div class="article-label">
               <div class="article-time">{{item.updated_at}}</div>
               <label v-for="items in item.labels"
@@ -33,7 +33,6 @@
 </template>
 
 <script>
-  import VueMarkdown from 'vue-markdown'
   import marked from 'marked'
 
   export default {
@@ -69,11 +68,16 @@
           }
         }
         return arr;
+      },
+      getMainDes() {
+        let arr = [];
+        for (let item of this.list) {
+          arr.push(marked(item.body, {sanitize: true}).replace(/<[^>]+>/g, "").substring(0, 200));
+        }
+        return arr;
       }
     },
-    components: {
-      VueMarkdown
-    },
+    components: {},
     props: []
   }
 </script>
