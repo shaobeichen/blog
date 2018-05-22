@@ -4,10 +4,10 @@
       <ul>
         <li v-for="(item,index) in list">
           <div class="article-img-inner">
-            <img src="http://via.placeholder.com/200x200" alt="">
+            <img :src="getMainImage[index]" alt="">
           </div>
           <div class="article-content"
-               :style="{borderLeft:`10px solid #${item.labels[0].color}`}">
+               :style="{borderLeft:item.labels[0] ? `10px solid #${item.labels[0].color}`: ''}">
             <h1>{{item.title}}</h1>
             <vue-markdown v-highlight class="article-des" :source="item.body"></vue-markdown>
             <div class="article-label">
@@ -32,6 +32,7 @@
 
 <script>
   import VueMarkdown from 'vue-markdown'
+  import marked from 'marked'
 
   export default {
     name: "articleList",
@@ -55,7 +56,15 @@
       });
     },
     methods: {},
-    computed: {},
+    computed: {
+      getMainImage() {
+        let arr = [];
+        for (item of this.list) {
+          arr.push(marked(item.body, {sanitize: true}).getElementsByTagName("img")[0]);
+        }
+        return arr;
+      }
+    },
     components: {
       VueMarkdown
     },
@@ -110,6 +119,7 @@
         width: 200px;
         height: 200px;
         overflow: hidden;
+        object-fit: cover;
         img {
           position: absolute;
           left: 50%;
