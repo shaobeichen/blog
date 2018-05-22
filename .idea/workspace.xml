@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475179b-8b16-492c-b12d-1f3342e83a3a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/articleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/articleList.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,29 +34,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articleList.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="articleList.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-294">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prod.env.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/prod.env.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev.env.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/dev.env.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <state relative-caret-position="420">
+              <caret line="67" column="59" lean-forward="true" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+              <folding>
+                <element signature="e#1087#1125#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,9 +82,9 @@
         <option value="$PROJECT_DIR$/src/common/less/global.less" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/components/articleList.vue" />
         <option value="$PROJECT_DIR$/config/prod.env.js" />
         <option value="$PROJECT_DIR$/config/dev.env.js" />
+        <option value="$PROJECT_DIR$/src/components/articleList.vue" />
       </list>
     </option>
   </component>
@@ -137,6 +121,11 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -237,7 +226,7 @@
       <workItem from="1526551391773" duration="91000" />
       <workItem from="1526606170058" duration="33000" />
       <workItem from="1526883991254" duration="13342000" />
-      <workItem from="1526957279490" duration="271000" />
+      <workItem from="1526957279490" duration="3875000" />
     </task>
     <task id="LOCAL-00001" summary="update token">
       <created>1526031397184</created>
@@ -309,17 +298,24 @@
       <option name="project" value="LOCAL" />
       <updated>1526957428644</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=":bug: 解决proxytable跨域线上失效">
+      <created>1526957637390</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526957637390</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51393000" />
+    <option name="totallyTimeSpent" value="54997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -327,7 +323,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1995638" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1995638" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -384,7 +380,8 @@
     <MESSAGE value=":art: 优化文章组件" />
     <MESSAGE value=":art: 文章组件完成" />
     <MESSAGE value=":sparkles: TODO 获取文章中第一张图作为封面" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: TODO 获取文章中第一张图作为封面" />
+    <MESSAGE value=":bug: 解决proxytable跨域线上失效" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bug: 解决proxytable跨域线上失效" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -392,24 +389,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/less/theme/theme.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="e#1087#1125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,24 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -683,10 +655,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
+    <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="294">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1044">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2487" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -697,17 +706,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="420">
+          <caret line="67" column="59" lean-forward="true" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+          <folding>
+            <element signature="e#1087#1125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,7 +20,9 @@
       </ul>
       <aside>
         <div class="img-inner">
-          <img src="http://via.placeholder.com/240x240" alt="">
+          <img
+            src="https://user-gold-cdn.xitu.io/152681974911209dda5809b6931f7edf46818ea0884e0.jpg?imageView2/1/q/85/format/webp/interlace/1"
+            alt="">
         </div>
         <div class="img-inner">
           <img src="http://via.placeholder.com/240x240" alt="">
@@ -59,8 +61,12 @@
     computed: {
       getMainImage() {
         let arr = [];
-        for (item of this.list) {
-          arr.push(marked(item.body, {sanitize: true}).getElementsByTagName("img")[0]);
+        for (let item of this.list) {
+          if (marked(item.body, {sanitize: true}).match(/\bsrc\b\s*=\s*[\'\"]?([^\'\"]*)[\'\"]?/)) {
+            arr.push(marked(item.body, {sanitize: true}).match(/\bsrc\b\s*=\s*[\'\"]?([^\'\"]*)[\'\"]?/)[1]);
+          } else {
+            arr.push('http://via.placeholder.com/200x200');
+          }
         }
         return arr;
       }
@@ -91,11 +97,10 @@
       height: 240px;
       margin-bottom: 20px;
       img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate3d(-50%, -50%, 0);
+        width: 240px;
+        height: 240px;
         border-radius: 5px;
+        object-fit: cover;
       }
     }
   }
@@ -121,10 +126,9 @@
         overflow: hidden;
         object-fit: cover;
         img {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate3d(-50%, -50%, 0);
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
         }
       }
       .article-content {
