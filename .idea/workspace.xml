@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475179b-8b16-492c-b12d-1f3342e83a3a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/css/app.8bccab2d187ae608bcf1d73e4d364814.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/css/app.8bccab2d187ae608bcf1d73e4d364814.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/app.957f7052cf254fac305d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/app.957f7052cf254fac305d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/static/js/manifest.3ad1d5771e9b13dbdad2.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/vendor.000352b14ea13d0b3d66.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/static/js/vendor.000352b14ea13d0b3d66.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,17 +21,26 @@
       <file leaf-file-name="articleList.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+            <state relative-caret-position="966">
+              <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="112" column="93" lean-forward="true" selection-start-line="112" selection-start-column="93" selection-end-line="112" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -67,7 +71,6 @@
         <option value="$PROJECT_DIR$/src/styles.less" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/common/less/theme/night.less" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/article.vue" />
         <option value="$PROJECT_DIR$/src/components/themeChange.vue" />
@@ -80,6 +83,7 @@
         <option value="$PROJECT_DIR$/config/dev.env.js" />
         <option value="$PROJECT_DIR$/src/components/articleList.vue" />
         <option value="$PROJECT_DIR$/config/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -136,7 +140,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/排班" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -191,7 +195,11 @@
       <workItem from="1526883991254" duration="13342000" />
       <workItem from="1526957279490" duration="4680000" />
       <workItem from="1526969718383" duration="56000" />
-      <workItem from="1526976790047" duration="2064000" />
+      <workItem from="1526976790047" duration="3576000" />
+      <workItem from="1527038212291" duration="874000" />
+      <workItem from="1527126722018" duration="1200000" />
+      <workItem from="1527133422228" duration="81000" />
+      <workItem from="1527492078083" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="update token">
       <created>1526031397184</created>
@@ -284,11 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526978722009</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=":art: 更新打包">
+      <created>1526979005795</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1526979005795</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57922000" />
+    <option name="totallyTimeSpent" value="61887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -362,7 +377,8 @@
     <MESSAGE value=":bug: 解决proxytable跨域线上失效" />
     <MESSAGE value=":sparkles: 解决取文章中第一张图片作为封面" />
     <MESSAGE value=":art: 优化文章描述" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: 优化文章描述" />
+    <MESSAGE value=":art: 更新打包" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 更新打包" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -605,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1044">
-          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -675,15 +684,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="966">
+          <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="112" column="93" lean-forward="true" selection-start-line="112" selection-start-column="93" selection-end-line="112" selection-end-column="93" />
         </state>
       </provider>
     </entry>
