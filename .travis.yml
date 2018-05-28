@@ -12,7 +12,7 @@ script:
   - npm run build
 
 after_success:
-  - cd ./docs
+  - cd ./dist
   - git init
   - git config --global user.name "${U_NAME}"
   - git config --global user.email "${U_EMAIL}"
