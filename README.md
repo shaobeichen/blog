@@ -1,4 +1,6 @@
-## :kiwi_fruit: 生活不止眼前的苟且，还有诗和远方。
+# :beers: 小桥酒馆
+
+[![Build Status](https://travis-ci.org/LeachZhou/blog.svg?branch=master)](https://travis-ci.org/LeachZhou/blog)
 
 > 记录技术的新博客，采用Vue全家桶开发
 

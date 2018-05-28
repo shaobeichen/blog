@@ -2,6 +2,7 @@
   <div id="app" v-cloak>
     <article-list></article-list>
     <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
+    <music></music>
     <router-view/>
   </div>
 
@@ -11,6 +12,7 @@
   import dayjs from 'dayjs';
   import themeChange from './components/themeChange';
   import articleList from './components/articleList';
+  import music from './components/music';
 
   export default {
     name: 'App',
@@ -55,7 +57,8 @@
     },
     components: {
       themeChange,
-      articleList
+      articleList,
+      music
     }
   }
 </script>
