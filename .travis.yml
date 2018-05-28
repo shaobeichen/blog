@@ -1,3 +1,42 @@
+branches:
+  only:
+    - master
+
 language: node_js
 node_js:
-  - "5.6"
+  - "8"
+cache:
+  directories:
+    - node_modules
+
+install:
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+  - npm install
+
+before_script:
+  - git config --global user.name "LeachZhou"
+  - git config --global user.email "LeachZhou@163.com"
+  - git clone --branch master https://${GH_REF} docs
+
+after_success:
+  - npm run build
+  - cd docs
+  - echo "i66.me" > CNAME
+  - cp index.html
+  - git add --all .
+  - git commit --message "Automatically update from travis-ci"
+  - git push --quiet --force  "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages
+
+# Note: you should set Environment Variables here or 'Settings' on travis-ci.org
+env:
+  global:
+    - GH_REF: github.com/LeachZhou/blog.git
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
