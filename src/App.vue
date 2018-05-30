@@ -3,6 +3,7 @@
     <article-list></article-list>
     <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
     <music></music>
+    <vfooter></vfooter>
     <router-view/>
   </div>
 
@@ -13,6 +14,7 @@
   import themeChange from './components/themeChange';
   import articleList from './components/articleList';
   import music from './components/music';
+  import vfooter from './components/vfooter';
 
   export default {
     name: 'App',
@@ -58,7 +60,8 @@
     components: {
       themeChange,
       articleList,
-      music
+      music,
+      vfooter
     }
   }
 </script>

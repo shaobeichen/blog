@@ -16,7 +16,7 @@
 
 <style scoped>
   .music {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
   }
