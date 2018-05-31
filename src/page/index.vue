@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import iconfont from '//at.alicdn.com/t/font_689469_m3x6295wjfh41jor.js';
+  import {refUrl} from '../common/api/script'
   import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
   import articleList from '../components/articleList';
@@ -27,6 +27,7 @@
       }
     },
     created() {
+      refUrl('//at.alicdn.com/t/font_689469_m3x6295wjfh41jor.js');
       // console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
       let hours = dayjs().format('HH');
       if (this.test) {
@@ -56,6 +57,10 @@
       _changeTheme(val = 'One') {
         document.body.className = `theme${val}`;
         this.time = val;
+      },
+      loadRongJs() {
+        // 当使用远程js里的内容时请添加"//eslint-disable-line"防止eslint检测报错
+        console.log(RongIMLib) //eslint-disable-line
       }
 
     },

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475179b-8b16-492c-b12d-1f3342e83a3a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/common/api/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/index.vue" afterDir="false" />
     </list>
@@ -20,17 +21,11 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/page/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/less/global.less">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" selection-start-line="4" selection-end-line="11" />
+              <caret line="4" column="14" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+              <folding>
+                <element signature="e#318#355#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +37,8 @@
       <list>
         <option value="HTML File" />
         <option value="Less File" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -89,6 +84,8 @@
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/assets/iconfont.js" />
         <option value="$PROJECT_DIR$/src/common/less/global.less" />
+        <option value="$PROJECT_DIR$/src/components/RemoteJs.vue" />
+        <option value="$PROJECT_DIR$/src/common/api/script.js" />
         <option value="$PROJECT_DIR$/src/page/index.vue" />
       </list>
     </option>
@@ -136,6 +133,19 @@
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,7 +233,8 @@
       <workItem from="1527743377186" duration="2148000" />
       <workItem from="1527750180813" duration="1908000" />
       <workItem from="1527756509990" duration="1201000" />
-      <workItem from="1527757799776" duration="12000" />
+      <workItem from="1527757799776" duration="646000" />
+      <workItem from="1527759095971" duration="1952000" />
     </task>
     <task id="LOCAL-00001" summary="update token">
       <created>1526031397184</created>
@@ -449,11 +460,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527757661633</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fix:修改成线上iconfont">
+      <created>1527757844083</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1527757844083</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89163000" />
+    <option name="totallyTimeSpent" value="91749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -513,7 +531,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":bug: 修复API线上不能使用" />
     <MESSAGE value=":art: 优化文章组件" />
     <MESSAGE value=":art: 文章组件完成" />
     <MESSAGE value=":sparkles: TODO 获取文章中第一张图作为封面" />
@@ -538,7 +555,8 @@
     <MESSAGE value="fix:时间格式化" />
     <MESSAGE value="style:优化首页代码格式" />
     <MESSAGE value="feat:添加iconfont" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:添加iconfont" />
+    <MESSAGE value="fix:修改成线上iconfont" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:修改成线上iconfont" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -546,20 +564,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/themeChange.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -831,10 +835,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/iconfont.js">
+    <entry file="file://$PROJECT_DIR$/src/assets/iconfont.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/RemoteJs.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret column="6503" selection-start-column="6492" selection-end-column="6503" />
+        <state relative-caret-position="231">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/api/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -847,8 +859,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="84">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+          <folding>
+            <element signature="e#318#355#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
