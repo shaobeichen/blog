@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import iconfont from '../assets/iconfont.js';
+  import iconfont from '//at.alicdn.com/t/font_689469_m3x6295wjfh41jor.js';
   import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
   import articleList from '../components/articleList';

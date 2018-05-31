@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475179b-8b16-492c-b12d-1f3342e83a3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/iconfont.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/less/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/less/global.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,11 +20,8 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/page/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
-              <folding>
-                <element signature="e#318#363#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -227,7 +222,8 @@
       <workItem from="1527731182777" duration="1625000" />
       <workItem from="1527743377186" duration="2148000" />
       <workItem from="1527750180813" duration="1908000" />
-      <workItem from="1527756509990" duration="1051000" />
+      <workItem from="1527756509990" duration="1201000" />
+      <workItem from="1527757799776" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="update token">
       <created>1526031397184</created>
@@ -446,11 +442,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527752074433</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="feat:添加iconfont">
+      <created>1527757661633</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1527757661633</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89001000" />
+    <option name="totallyTimeSpent" value="89163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -461,8 +464,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.653217" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24427481" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -510,7 +513,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":memo: 打包，更新README" />
     <MESSAGE value=":bug: 修复API线上不能使用" />
     <MESSAGE value=":art: 优化文章组件" />
     <MESSAGE value=":art: 文章组件完成" />
@@ -535,7 +537,8 @@
     <MESSAGE value="fix:修改请求接口" />
     <MESSAGE value="fix:时间格式化" />
     <MESSAGE value="style:优化首页代码格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="style:优化首页代码格式" />
+    <MESSAGE value="feat:添加iconfont" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:添加iconfont" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -772,9 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,11 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="e#318#363#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
         </state>
       </provider>
     </entry>
