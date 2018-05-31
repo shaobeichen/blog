@@ -1,5 +1,8 @@
 <template>
   <div id="index" v-cloak>
+    <!--<svg class="icon" aria-hidden="true">-->
+      <!--<use xlink:href="#icon-nailao"></use>-->
+    <!--</svg>-->
     <article-list></article-list>
     <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
     <music></music>
@@ -8,6 +11,7 @@
 </template>
 
 <script>
+  import iconfont from '../assets/iconfont.js';
   import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
   import articleList from '../components/articleList';
