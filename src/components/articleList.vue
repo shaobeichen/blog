@@ -44,7 +44,7 @@
       }
     },
     mounted() {
-      this.$axios.get(`https://api.github.com/repos/LeachZhou/blog/issues?access_token=${this.token[0]}${this.token[1]}`, {
+      this.$axios.get(`https://api.github.com/repos/LeachZhou/blog/issues?q=is%3Aissue+is%3Aopen+label%3A已审核?access_token=${this.token[0]}${this.token[1]}`, {
         "page": 1,
         "per_page": 10,
         "filter": 'created'
