@@ -11,7 +11,7 @@
             <h1>{{item.title}}</h1>
             <p class="article-des" v-html="getMainDes[index]"></p>
             <div class="article-label">
-              <div class="article-time">{{item.updated_at}}</div>
+              <div class="article-time">{{getTime[index]}}</div>
               <label v-for="items in item.labels"
                      :style="{background:`#${items.color}`}">{{items.name}}</label>
             </div>
@@ -34,6 +34,8 @@
 
 <script>
   import marked from 'marked'
+  import friendlytimejs from 'friendlytimejs'
+  import dayjs from 'dayjs'
 
   export default {
     name: "articleList",
@@ -73,6 +75,13 @@
         let arr = [];
         for (let item of this.list) {
           arr.push(marked(item.body, {sanitize: true}).replace(/<[^>]+>/g, "").substring(0, 200));
+        }
+        return arr;
+      },
+      getTime() {
+        let arr = [];
+        for (let item of this.list) {
+          arr.push(friendlytimejs.FriendlyTime(dayjs(item.created_at).add(8, "hour").format('YYYY-MM-DD HH:mm:ss'), dayjs()));
         }
         return arr;
       }

@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "dayjs": "^1.5.24",
+    "dayjs": "^1.6.4",
+    "friendlytimejs": "^1.0.0",
     "highlight.js": "^9.12.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
