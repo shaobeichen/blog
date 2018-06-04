@@ -4,7 +4,7 @@
 
 > 记录技术的新博客，采用Vue全家桶开发
 
-## Features
+## 特点
 - Vue 2 / Vue-cli / axios / Less
 - GitHub API 进行数据交互，无需后端服务器
 - 无需本地生成 (使用TravisCI)
