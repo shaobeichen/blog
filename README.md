@@ -12,10 +12,12 @@
 ## Demo
 - [http://i66.me](http://i66.me)
 
+## Todolist
+- 请在GitHub看板上查看 [Todolist](https://github.com/LeachZhou/blog/projects/1)
+
 ## 更新记录
-- 考虑到更新记录较多，不适合写在README当中，请查看 [更新记录](https://github.com/LeachZhou/blog/issues/7)
-## TODOLIST
-- 请在GitHub看板上查看 [TODOLIST](https://github.com/LeachZhou/blog/projects/1)
+- 更新记录请查看Releases [更新记录](https://github.com/LeachZhou/blog/releases)
+
 ## 2018学习计划(持续更新)
 - ~~总结普通项目中webpack的使用~~
 - ~~编写一个插件,发布插件到npm上~~
@@ -28,5 +30,6 @@
 - 学习微信小程序 编写一个小程序并发布到个人公众号上
 - 发布一个vue插件
 - 学习vuejs ssr服务器渲染 并采用到个人网站上
+- 学习桌面应用开发，可以采用Electron-vue进行开发 https://molunerfinn.com/tags/Electron-vue/
 - 个人网站性能优化
 - 学习react
