@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475179b-8b16-492c-b12d-1f3342e83a3a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="42">
-                <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+              <first_editor relative-caret-position="105">
+                <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -217,7 +218,7 @@
       <workItem from="1527759095971" duration="1996000" />
       <workItem from="1528075432395" duration="2722000" />
       <workItem from="1528168530043" duration="1537000" />
-      <workItem from="1528175876804" duration="2354000" />
+      <workItem from="1528175876804" duration="4190000" />
     </task>
     <task id="LOCAL-00001" summary="update token">
       <created>1526031397184</created>
@@ -492,11 +493,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528176151566</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="docs: 添加badge">
+      <created>1528179870905</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1528179870905</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98406000" />
+    <option name="totallyTimeSpent" value="100242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -556,7 +564,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":art: 更新打包" />
     <MESSAGE value=":sparkles: 添加统计" />
     <MESSAGE value=":sparkles: 添加音乐组件修改README" />
     <MESSAGE value=":sparkles: 添加音乐组件、持续集成，修改README" />
@@ -581,7 +588,8 @@
     <MESSAGE value="docs:更新README中的版本更新" />
     <MESSAGE value="fix: 解决HTTPS网页中引入HTTP资源" />
     <MESSAGE value="fix: 修复引入js不加载" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 修复引入js不加载" />
+    <MESSAGE value="docs: 添加badge" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: 添加badge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -589,13 +597,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -865,11 +866,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.github/ISSUE_TEMPLATE/----.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="42">
-            <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+          <first_editor relative-caret-position="105">
+            <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>

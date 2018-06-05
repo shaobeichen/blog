@@ -1,15 +1,26 @@
 # :beers: 小桥酒馆
 
-[![Build Status](https://travis-ci.org/LeachZhou/blog.svg?branch=master)](https://travis-ci.org/LeachZhou/blog) [![GitHub releases](https://img.shields.io/github/release/LeachZhou/blog.svg)](https://github.com/LeachZhou/blog/release) 
-[![GitHub license](https://img.shields.io/github/license/LeachZhou/blog.svg)](https://github.com/LeachZhou/blog/blob/master/LICENSE)
-
-
 > 记录技术的新博客，采用Vue全家桶开发
+<p align="center">
+  <img src="" alt="">
+</p>
+<p align="center">
+  <a href="https://travis-ci.org/LeachZhou/blog">
+    <img src="https://travis-ci.org/LeachZhou/blog.svg?branch=master" alt="">
+  </a>
+  <a href="https://github.com/LeachZhou/blog/release">
+    <img src="https://img.shields.io/github/release/LeachZhou/blog.svg" alt="">
+  </a>
+  <a href="https://github.com/LeachZhou/blog/blob/master/LICENSE">
+     <img src="https://img.shields.io/github/license/LeachZhou/blog.svg" alt="">
+  </a>
+</p>
+
 
 ## 特点
 - Vue 2 / Vue-cli / axios / Less
 - GitHub API 进行数据交互，无需后端服务器
-- 无需本地生成 (使用TravisCI)
+- 无需本地打包，`git push`直接部署 (使用TravisCI)
 - 在GitHub页面上托管
 ## Demo
 - [http://i66.me](http://i66.me)
