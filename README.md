@@ -1,6 +1,8 @@
 # :beers: 小桥酒馆
 
-[![Build Status](https://travis-ci.org/LeachZhou/blog.svg?branch=master)](https://travis-ci.org/LeachZhou/blog)
+[![Build Status](https://travis-ci.org/LeachZhou/blog.svg?branch=master)](https://travis-ci.org/LeachZhou/blog) [![GitHub releases](https://img.shields.io/github/release/LeachZhou/blog.svg)](https://github.com/LeachZhou/blog/release) 
+[![GitHub license](https://img.shields.io/github/license/LeachZhou/blog.svg)](https://github.com/LeachZhou/blog/blob/master/LICENSE)
+
 
 > 记录技术的新博客，采用Vue全家桶开发
 
