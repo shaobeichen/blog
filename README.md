@@ -8,7 +8,7 @@
   <a href="https://travis-ci.org/LeachZhou/blog">
     <img src="https://travis-ci.org/LeachZhou/blog.svg?branch=master" alt="">
   </a>
-  <a href="https://github.com/LeachZhou/blog/release">
+  <a href="https://github.com/LeachZhou/blog/releases">
     <img src="https://img.shields.io/github/release/LeachZhou/blog.svg" alt="">
   </a>
   <a href="https://github.com/LeachZhou/blog/blob/master/LICENSE">
