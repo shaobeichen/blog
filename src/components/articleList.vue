@@ -46,11 +46,11 @@
       }
     },
     mounted() {
-      this.$axios.get(`https://api.github.com/repos/LeachZhou/blog/issues?labels=已审核?access_token=${this.token[0]}${this.token[1]}`, {
-        "page": 1,
-        "per_page": 10,
-        "filter": 'created'
-      }).then((res) => {
+      let url = 'https://api.github.com/repos/LeachZhou/blog/issues';
+      let page = 1;
+      let per_page = 10;
+      let filter = 'created';
+      this.$axios.get(`${url}?access_token=${this.token[0]}${this.token[1]}&&labels=已审核&&page=${page}&&per_page=${per_page}&&filter=${filter}`).then((res) => {
         if (res.status == 200) {
           this.list = res.data;
         }
