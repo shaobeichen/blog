@@ -1,7 +1,9 @@
 <template>
   <div id="index" v-cloak>
+    <h1 class="css127d190621611d">小桥酒馆</h1>
+    <p class="css127d190621611d">小桥酒馆，既然来了，就小酌一杯吧~ </p>
     <!--<svg class="icon" aria-hidden="true">-->
-      <!--<use xlink:href="#icon-nailao"></use>-->
+    <!--<use xlink:href="#icon-nailao"></use>-->
     <!--</svg>-->
     <article-list></article-list>
     <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
@@ -11,7 +13,6 @@
 </template>
 
 <script>
-  import {refUrl} from '../common/api/script'
   import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
   import articleList from '../components/articleList';
@@ -27,7 +28,6 @@
       }
     },
     created() {
-      refUrl('//at.alicdn.com/t/font_689469_m3x6295wjfh41jor.js');
       // console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
       let hours = dayjs().format('HH');
       if (this.test) {
@@ -77,6 +77,5 @@
   @import "../common/less/reset.less";
   @import "../common/less/theme/theme.less";
   @import "../common/less/global.less";
-
 
 </style>
