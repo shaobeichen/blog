@@ -3,7 +3,7 @@
     <h1 class="css127d190621611d">小桥酒馆</h1>
     <p class="css127d190621611d">小桥酒馆，既然来了，就小酌一杯吧~ </p>
     <!--<svg class="icon" aria-hidden="true">-->
-    <!--<use xlink:href="#icon-nailao"></use>-->
+    <!--<use xlink:href="#icon-shijian"></use>-->
     <!--</svg>-->
     <article-list></article-list>
     <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
@@ -24,13 +24,13 @@
     data() {
       return {
         time: '',
-        test: true
+        themeThree: true
       }
     },
     created() {
       // console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
       let hours = dayjs().format('HH');
-      if (this.test) {
+      if (this.themeThree) {
         this._changeTheme(`Three`);
         this.time = `Three`;
       } else {
@@ -58,11 +58,6 @@
         document.body.className = `theme${val}`;
         this.time = val;
       },
-      loadRongJs() {
-        // 当使用远程js里的内容时请添加"//eslint-disable-line"防止eslint检测报错
-        console.log(RongIMLib) //eslint-disable-line
-      }
-
     },
     components: {
       themeChange,
