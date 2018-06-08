@@ -39,7 +39,7 @@
 - 做个一个前端脚手架
 - 仔仔细细的看完Vue文档并单元测试部分单元测试部分(对于测试了解的真不多)
 - 仔细看完vue文档及vue全家桶等文档，细心了解全过程及细节（之前都是做业务，用熟的大概用熟了，可能还有些东西没用过，看看）
-- Vue.js 源码解析 https://github.com/answershuto/learnVue（原理还是要了解的）
+- Vue.js 源码解析 https://github.com/answershuto/learnVue
 - 使用nodejs写些有意思的东西 https://github.com/alsotang/node-lessons
 - 编写一个小程序并发布到个人公众号上（做个小程序，万一火了呢）
 - 发布一个vue插件(vue插件还没写过，写个给自己用用，万一用的人多了呢)
