@@ -1,6 +1,3 @@
-# :beers: 小桥酒馆
-
-> 记录技术的新博客，采用Vue全家桶开发
 <p align="center">
   <img src="" alt="">
 </p>
@@ -16,6 +13,9 @@
   </a>
 </p>
 
+# :beers: 小桥酒馆
+
+> 记录技术的新博客，采用Vue全家桶开发
 
 ## 特点
 - Vue 2 / Vue-cli / axios / Less
@@ -36,6 +36,7 @@
 - ~~编写一个插件,发布插件到npm上~~
 - ~~新建个人网站~~
 - ~~学习持续集成~~
+- 做个一个前端脚手架
 - 仔仔细细的看完Vue文档并单元测试部分单元测试部分
 - 仔细看完vue文档及vue全家桶等文档，细心了解全过程及细节
 - Vue.js 源码解析 https://github.com/answershuto/learnVue
