@@ -16,20 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="291">
-                <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -241,7 +228,7 @@
       <workItem from="1528275264502" duration="1490000" />
       <workItem from="1528278452370" duration="35000" />
       <workItem from="1528335195338" duration="12339000" />
-      <workItem from="1528437234721" duration="60000" />
+      <workItem from="1528437234721" duration="866000" />
     </task>
     <task id="LOCAL-00001" summary="update token">
       <created>1526031397184</created>
@@ -572,15 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528357459684</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="chore: 更新学习计划">
+      <created>1528437348634</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1528437348634</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115131000" />
+    <option name="totallyTimeSpent" value="115937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -636,7 +629,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":sparkles: 修改.travis.yml" />
     <MESSAGE value=":art: 删除打包" />
     <MESSAGE value=":art: 修改开发生产打包路径" />
     <MESSAGE value=":art: 修改音乐组件fixed、添加底部组件" />
@@ -661,7 +653,8 @@
     <MESSAGE value="fix: 修复文章接口" />
     <MESSAGE value="feat: 添加ico" />
     <MESSAGE value="fix: 修复ico不显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 修复ico不显示" />
+    <MESSAGE value="chore: 更新学习计划" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: 更新学习计划" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,8 +943,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="291">
-            <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+          <first_editor relative-caret-position="473">
+            <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
