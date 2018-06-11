@@ -24,7 +24,7 @@
     data() {
       return {
         time: '',
-        themeThree: true
+        themeThree: false
       }
     },
     created() {
