@@ -62,6 +62,10 @@
   @import "../common/less/theme/theme.less";
   @import "../common/less/global.less";
 
+  #vheader {
+    padding-bottom: 60px;
+  }
+
   a {
     color: white;
   }
