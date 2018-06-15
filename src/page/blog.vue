@@ -1,13 +1,11 @@
 <template>
-  <div id="index" v-cloak>
-    <h1 class="css127d190621611d">小桥酒馆</h1>
-    <p class="css127d190621611d">小桥酒馆，既然来了，就小酌一杯吧~ </p>
+  <div id="blog" v-cloak>
+    <vheader></vheader>
     <!--<svg class="icon" aria-hidden="true">-->
     <!--<use xlink:href="#icon-shijian"></use>-->
     <!--</svg>-->
     <article-list></article-list>
-    <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
-    <music></music>
+    <theme-change :time="this.$store.state.themeType" @timeEmit="_changeTheme"></theme-change>
     <vfooter></vfooter>
   </div>
 </template>
@@ -16,33 +14,34 @@
   import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
   import articleList from '../components/articleList';
-  import music from '../components/music';
   import vfooter from '../components/vfooter';
+  import vheader from '../components/vheader';
+  import {mapActions} from 'vuex';
 
   export default {
-    name: 'index',
+    name: 'blog',
     data() {
-      return {
-        time: '',
-        themeThree: false
-      }
+      return {}
     },
     created() {
       // console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
-      let hours = dayjs().format('HH');
-      if (this.themeThree) {
-        this._changeTheme(`Three`);
-        this.time = `Three`;
-      } else {
-        if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
+      if (!this.$store.state.themeType) {
+        let hours = dayjs().format('HH');
+        if (this.themeThree) {
           this._changeTheme(`Three`);
-          this.time = `Three`;
-        } else if (hours >= 6 && hours < 12) {
-          this._changeTheme(`One`);
-          this.time = `One`;
-        } else if (hours >= 12 && hours < 18) {
-          this._changeTheme(`Two`);
-          this.time = `Two`;
+          this.changeThemeType(`Three`);
+        } else {
+          if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
+            this._changeTheme(`Three`);
+            this.changeThemeType(`Three`);
+          } else if (hours >= 6 && hours < 12) {
+            this._changeTheme(`One`);
+            this.changeThemeType(`One`);
+          } else if (hours >= 12 && hours < 18) {
+            this._changeTheme(`Two`);
+            this.changeThemeType(`Two`);
+
+          }
         }
       }
     },
@@ -50,19 +49,21 @@
 
     },
     methods: {
+      //使用 mapActions 辅助函数将组件的 methods 映射为 store.dispatch 调用
+      ...mapActions(['changeThemeType']),
       /**
        * 切换主题
        * @param val One代表早上 Two代表下午 Three代表晚上
        */
       _changeTheme(val = 'One') {
         document.body.className = `theme${val}`;
-        this.time = val;
-      },
+        this.changeThemeType(val);
+      }
     },
     components: {
       themeChange,
       articleList,
-      music,
+      vheader,
       vfooter
     }
   }

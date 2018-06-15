@@ -1,27 +1,27 @@
 <template>
-  <div id="index" v-cloak>
+  <div id="about" v-cloak>
     <vheader></vheader>
-    <h1 class="css127d190621611d">小桥酒馆</h1>
-    <p class="css127d190621611d">小桥酒馆，既然来了，就小酌一杯吧~ </p>
+    <!--<svg class="icon" aria-hidden="true">-->
+    <!--<use xlink:href="#icon-shijian"></use>-->
+    <!--</svg>-->
+    <article-list></article-list>
     <theme-change :time="this.$store.state.themeType" @timeEmit="_changeTheme"></theme-change>
     <vfooter></vfooter>
   </div>
 </template>
 
 <script>
+  import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
+  import articleList from '../components/articleList';
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
   import {mapActions} from 'vuex';
-  import dayjs from 'dayjs';
-
 
   export default {
-    name: 'index',
+    name: 'about',
     data() {
-      return {
-        themeThree: false
-      }
+      return {}
     },
     created() {
       // console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
@@ -40,6 +40,7 @@
           } else if (hours >= 12 && hours < 18) {
             this._changeTheme(`Two`);
             this.changeThemeType(`Two`);
+
           }
         }
       }
@@ -61,8 +62,9 @@
     },
     components: {
       themeChange,
-      vfooter,
-      vheader
+      articleList,
+      vheader,
+      vfooter
     }
   }
 </script>

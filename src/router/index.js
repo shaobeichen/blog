@@ -14,12 +14,26 @@ export default new Router({
       }
     },
     {
-      path: '/',
-      name: 'articleDetails',
+      path: '/blog',
+      name: 'blog',
       component: (resolve) => {
-        require(['../page/index.vue'], resolve);
+        require(['../page/blog.vue'], resolve);
       }
     },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: (resolve) => {
+        require(["../page/detail.vue"], resolve);
+      }
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: (resolve) => {
+        require(['../page/about.vue'], resolve);
+      }
+    }
 
   ]
 })

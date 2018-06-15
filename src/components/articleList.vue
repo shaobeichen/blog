@@ -3,19 +3,21 @@
     <div class="layer">
       <ul>
         <li v-for="(item,index) in list">
-          <div class="article-img-inner">
-            <img :src="getMainImage[index]" alt="">
-          </div>
-          <div class="article-content"
-               :style="{borderLeft:item.labels[0] ? `10px solid #${item.labels[0].color}`: ''}">
-            <h1>{{item.title}}</h1>
-            <p class="article-des" v-html="getMainDes[index]"></p>
-            <div class="article-label">
-              <div class="article-time">{{getTime[index]}}</div>
-              <label v-for="items in item.labels"
-                     :style="{background:`#${items.color}`}">{{items.name}}</label>
+          <router-link :to="{ name:'detail',params:{ id:item.number } }">
+            <div class="article-img-inner">
+              <img :src="getMainImage[index]" alt="">
             </div>
-          </div>
+            <div class="article-content"
+                 :style="{borderLeft:item.labels[0] ? `10px solid #${item.labels[0].color}`: ''}">
+              <h1>{{item.title}}</h1>
+              <p class="article-des" v-html="getMainDes[index]"></p>
+              <div class="article-label">
+                <div class="article-time">{{getTime[index]}}</div>
+                <label v-for="items in item.labels"
+                       :style="{background:`#${items.color}`}">{{items.name}}</label>
+              </div>
+            </div>
+          </router-link>
         </li>
       </ul>
       <aside>
@@ -42,7 +44,6 @@
     data() {
       return {
         list: [],
-        token: ['0f6560744b42121c3180d5', '0684ff2aad37cc36fd'],
       }
     },
     mounted() {
@@ -50,7 +51,7 @@
       let page = 1;
       let per_page = 10;
       let filter = 'created';
-      this.$axios.get(`${url}?access_token=${this.token[0]}${this.token[1]}&&labels=已审核&&page=${page}&&per_page=${per_page}&&filter=${filter}`).then((res) => {
+      this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}&&labels=已审核&&page=${page}&&per_page=${per_page}&&filter=${filter}`).then((res) => {
         if (res.status == 200) {
           this.list = res.data;
         }

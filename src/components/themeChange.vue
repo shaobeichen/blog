@@ -11,10 +11,13 @@
         <a href="javascript:;" @click="changeTheme(`Three`)"></a>
       </li>
     </ul>
+    <p style="color: #ffffff;" @click="changeTheme(``)">恢复默认时间主题</p>
   </div>
 </template>
 
 <script>
+  import dayjs from 'dayjs';
+
   export default {
     name: "themeChange",
     data() {
@@ -22,6 +25,17 @@
     },
     methods: {
       changeTheme(val) {
+        if (!val) {
+          let hours = dayjs().format('HH');
+          if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
+            val = `Three`;
+          } else if (hours >= 6 && hours < 12) {
+            val = `One`;
+          } else if (hours >= 12 && hours < 18) {
+            val = `Two`;
+          }
+        }
+
         document.body.className = `theme${val}`;
         this.$emit('timeEmit', val);
       }
@@ -31,9 +45,18 @@
 </script>
 
 <style lang="less" scoped>
+  p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 12px;
+    cursor: pointer;
+  }
+
   ul {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     left: 50%;
     transform: translate(-50%, 0);
   }

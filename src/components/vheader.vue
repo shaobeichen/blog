@@ -10,10 +10,15 @@
             </router-link>
           </div>
           <ul>
-            <li>首页</li>
-            <li>博客</li>
-            <li>分类</li>
-            <li>关于</li>
+            <router-link to="/">
+              <li>首页</li>
+            </router-link>
+            <router-link to="/blog">
+              <li>博客</li>
+            </router-link>
+            <router-link to="/">
+              <li>关于</li>
+            </router-link>
           </ul>
         </div>
 

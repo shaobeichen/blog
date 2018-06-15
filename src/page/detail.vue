@@ -1,26 +1,32 @@
 <template>
-  <div id="index" v-cloak>
+  <div id="detail" v-cloak>
     <vheader></vheader>
-    <h1 class="css127d190621611d">小桥酒馆</h1>
-    <p class="css127d190621611d">小桥酒馆，既然来了，就小酌一杯吧~ </p>
+    <!--<svg class="icon" aria-hidden="true">-->
+    <!--<use xlink:href="#icon-shijian"></use>-->
+    <!--</svg>-->
+    <div class="layer">
+      <div class="detailContent">
+        <h1>{{content.title}}</h1>
+      </div>
+    </div>
     <theme-change :time="this.$store.state.themeType" @timeEmit="_changeTheme"></theme-change>
     <vfooter></vfooter>
   </div>
 </template>
 
 <script>
+  import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
   import {mapActions} from 'vuex';
-  import dayjs from 'dayjs';
-
 
   export default {
-    name: 'index',
+    name: 'detail',
     data() {
       return {
-        themeThree: false
+        content: [],
+        id: this.$route.params.id,
       }
     },
     created() {
@@ -40,9 +46,18 @@
           } else if (hours >= 12 && hours < 18) {
             this._changeTheme(`Two`);
             this.changeThemeType(`Two`);
+
           }
         }
       }
+      let url = `https://api.github.com/repos/LeachZhou/blog/issues/${this.id}`;
+      this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}`).then((res) => {
+        if (res.status == 200) {
+          this.content = res.data;
+        }
+      }).catch((err) => {
+        console.log(err);
+      });
     },
     mounted() {
 
@@ -61,8 +76,8 @@
     },
     components: {
       themeChange,
-      vfooter,
-      vheader
+      vheader,
+      vfooter
     }
   }
 </script>
@@ -72,4 +87,19 @@
   @import "../common/less/theme/theme.less";
   @import "../common/less/global.less";
 
+  .layer {
+    width: 960px;
+    margin: 50px auto;
+  }
+
+  .detailContent {
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
 </style>
