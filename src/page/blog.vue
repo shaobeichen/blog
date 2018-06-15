@@ -1,9 +1,13 @@
 <template>
   <div id="index" v-cloak>
-    <vheader></vheader>
     <h1 class="css127d190621611d">小桥酒馆</h1>
     <p class="css127d190621611d">小桥酒馆，既然来了，就小酌一杯吧~ </p>
+    <!--<svg class="icon" aria-hidden="true">-->
+    <!--<use xlink:href="#icon-shijian"></use>-->
+    <!--</svg>-->
+    <article-list></article-list>
     <theme-change :time="time" @timeEmit="_changeTheme"></theme-change>
+    <music></music>
     <vfooter></vfooter>
   </div>
 </template>
@@ -11,8 +15,9 @@
 <script>
   import dayjs from 'dayjs';
   import themeChange from '../components/themeChange';
+  import articleList from '../components/articleList';
+  import music from '../components/music';
   import vfooter from '../components/vfooter';
-  import vheader from '../components/vheader';
 
   export default {
     name: 'index',
@@ -56,8 +61,9 @@
     },
     components: {
       themeChange,
-      vfooter,
-      vheader
+      articleList,
+      music,
+      vfooter
     }
   }
 </script>
