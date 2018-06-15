@@ -4,8 +4,10 @@
       <div class="content" :class="searchBarHide == true ? 'isHide' :searchBarFixed == true ? 'isFixed' : '' ">
         <div class="layer">
           <div class="logo">
-            <img src="../assets/logo.png" alt="" width="40" height="40">
-            <span class="css127d190621611d">小桥酒馆</span>
+            <router-link to="/">
+              <img src="../assets/logo.png" alt="" width="40" height="40">
+              <span class="css127d190621611d">小桥酒馆</span>
+            </router-link>
           </div>
           <ul>
             <li>首页</li>
@@ -59,6 +61,10 @@
   @import "../common/less/reset.less";
   @import "../common/less/theme/theme.less";
   @import "../common/less/global.less";
+
+  a {
+    color: white;
+  }
 
   .searchBar {
     transition: all 1s ease;
