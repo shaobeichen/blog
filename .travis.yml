@@ -25,6 +25,11 @@ branches:
   only:
     - master
 
+notifications:
+  email:
+    - leachzhou@163.com
+  on_failure: always
+
 # Note: you should set Environment Variables here or 'Settings' on travis-ci.org
 env:
   global:
