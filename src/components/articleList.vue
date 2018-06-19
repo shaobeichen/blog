@@ -83,7 +83,7 @@
       getTime() {
         let arr = [];
         for (let item of this.list) {
-          arr.push(friendlytimejs.FriendlyTime(dayjs(item.created_at).add(8, "hour").format('YYYY-MM-DD HH:mm:ss'), dayjs()));
+          arr.push(friendlytimejs.FriendlyTime(dayjs(item.updated_at).add(8, "hour").format('YYYY-MM-DD HH:mm:ss'), dayjs()));
         }
         return arr;
       }
