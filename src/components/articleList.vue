@@ -51,7 +51,8 @@
       let page = 1;
       let per_page = 10;
       let filter = 'created';
-      this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}&&labels=已审核&&page=${page}&&per_page=${per_page}&&filter=${filter}`).then((res) => {
+      let sort = 'updated';
+      this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}&&labels=已审核&&page=${page}&&per_page=${per_page}&&filter=${filter}&&sort=${sort}`).then((res) => {
         if (res.status == 200) {
           this.list = res.data;
         }
