@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/18715564/41582703-e8f62c6c-73d4-11e8-8354-c7a230311f9a.png" alt="" style="width:200px;">
+  <img src="https://user-images.githubusercontent.com/18715564/41582703-e8f62c6c-73d4-11e8-8354-c7a230311f9a.png" alt="" width=200>
 </p>
 <p align="center">
   <a href="https://travis-ci.org/LeachZhou/blog">

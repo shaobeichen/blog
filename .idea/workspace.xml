@@ -21,8 +21,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="21">
-                <caret line="1" column="140" selection-start-line="1" selection-start-column="140" selection-end-line="1" selection-end-column="140" />
+              <first_editor relative-caret-position="63">
+                <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -132,7 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,6 +191,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,14 +302,8 @@
       <workItem from="1529384983420" duration="4000" />
       <workItem from="1529391127627" duration="254000" />
       <workItem from="1529392311525" duration="862000" />
-      <workItem from="1529393418154" duration="17000" />
-    </task>
-    <task id="LOCAL-00012" summary=":sparkles: 解决取文章中第一张图片作为封面">
-      <created>1526968549848</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1526968549848</updated>
+      <workItem from="1529393418154" duration="51000" />
+      <workItem from="1529393633610" duration="18000" />
     </task>
     <task id="LOCAL-00013" summary=":art: 优化文章描述">
       <created>1526978722008</created>
@@ -647,11 +641,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529393162503</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="docs: 修改logo大小">
+      <created>1529393454395</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1529393454395</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144306000" />
+    <option name="totallyTimeSpent" value="144358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,8 +672,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50052685" side_tool="true" weight="0.24427481" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.653217" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947312" weight="0.3293348" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -720,7 +721,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style:优化首页代码格式" />
     <MESSAGE value="feat:添加iconfont" />
     <MESSAGE value="fix:修改成线上iconfont" />
     <MESSAGE value="fix:修复线上iconfont" />
@@ -745,7 +745,8 @@
     <MESSAGE value="feat: 添加了文章详情" />
     <MESSAGE value="fix: 修改文章排序为更新时间" />
     <MESSAGE value="docs: 添加logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: 添加logo" />
+    <MESSAGE value="docs: 修改logo大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: 修改logo大小" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1013,17 +1014,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="63">
+            <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="21">
-            <caret line="1" column="140" selection-start-line="1" selection-start-column="140" selection-end-line="1" selection-end-column="140" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
