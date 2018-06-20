@@ -45,6 +45,7 @@
 </script>
 
 <style lang="less" scoped>
+  @bg:'../../static/images/kv-cur-bg.png';
   p {
     position: absolute;
     bottom: 10px;
@@ -70,7 +71,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: url(http://game.gtimg.cn/images/jx3/web201704/images/guide/kv-cur-bg.png) no-repeat;
+      background: url(@bg) no-repeat;
       background-position: -10px -80px;
       transition: all 0.6s ease;
       &:hover {
@@ -88,7 +89,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: url(http://game.gtimg.cn/images/jx3/web201704/images/guide/kv-cur-bg.png) no-repeat;
+      background: url(@bg) no-repeat;
       background-position: -110px -80px;
       transition: all 0.6s ease;
       &:hover {
@@ -106,7 +107,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: url(http://game.gtimg.cn/images/jx3/web201704/images/guide/kv-cur-bg.png) no-repeat;
+      background: url(@bg) no-repeat;
       background-position: -210px -80px;
       transition: all 0.6s ease;
       &:hover {
