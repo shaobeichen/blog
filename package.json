@@ -18,6 +18,8 @@
     "less-loader": "^4.1.0",
     "marked": "^0.3.19",
     "vue": "^2.5.2",
+    "vue-image-lightbox": "^6.0.0",
+    "vue-lazyload": "^1.2.6",
     "vue-markdown": "^2.2.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

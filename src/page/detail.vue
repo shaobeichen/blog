@@ -7,19 +7,25 @@
     <div class="layer">
       <div class="detailContent">
         <h1>{{content.title}}</h1>
+        <div>{{getTime}}</div>
+        <div v-html="getMainDes" v-highlight></div>
+        <div></div>
       </div>
     </div>
-    <theme-change :time="this.$store.state.themeType" @timeEmit="_changeTheme"></theme-change>
+    <theme></theme>
     <vfooter></vfooter>
   </div>
 </template>
 
 <script>
+  import marked from 'marked';
   import dayjs from 'dayjs';
-  import themeChange from '../components/themeChange';
+  import friendlytimejs from 'friendlytimejs';
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
+  import theme from '../components/theme';
   import {mapActions} from 'vuex';
+  import LightBox from 'vue-image-lightbox'
 
   export default {
     name: 'detail',
@@ -30,26 +36,6 @@
       }
     },
     created() {
-      // console.log(dayjs().format('YYYY-MM-DD HH:mm:ss'));
-      if (!this.$store.state.themeType) {
-        let hours = dayjs().format('HH');
-        if (this.themeThree) {
-          this._changeTheme(`Three`);
-          this.changeThemeType(`Three`);
-        } else {
-          if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
-            this._changeTheme(`Three`);
-            this.changeThemeType(`Three`);
-          } else if (hours >= 6 && hours < 12) {
-            this._changeTheme(`One`);
-            this.changeThemeType(`One`);
-          } else if (hours >= 12 && hours < 18) {
-            this._changeTheme(`Two`);
-            this.changeThemeType(`Two`);
-
-          }
-        }
-      }
       let url = `https://api.github.com/repos/LeachZhou/blog/issues/${this.id}`;
       this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}`).then((res) => {
         if (res.status == 200) {
@@ -62,29 +48,33 @@
     mounted() {
 
     },
+    computed: {
+      getMainDes() {
+        let a = this.content.body;
+        if (typeof a !== 'undefined' && a !== 'null') {//解决marked出现参数为空的问题，实际a有值，但不加这判断就报错
+          return marked(a);
+        }
+      },
+      getTime() {
+        return friendlytimejs.FriendlyTime(dayjs(this.content.updated_at).add(8, "hour").format('YYYY-MM-DD HH:mm:ss'), dayjs());
+      }
+    },
     methods: {
-      //使用 mapActions 辅助函数将组件的 methods 映射为 store.dispatch 调用
-      ...mapActions(['changeThemeType']),
-      /**
-       * 切换主题
-       * @param val One代表早上 Two代表下午 Three代表晚上
-       */
-      _changeTheme(val = 'One') {
-        document.body.className = `theme${val}`;
-        this.changeThemeType(val);
+      openGallery(index) {
+        this.$refs.lightbox.showImage(index)
       }
     },
     components: {
-      themeChange,
+      theme,
       vheader,
-      vfooter
+      vfooter,
+      LightBox
     }
   }
 </script>
 
 <style lang="less">
   @import "../common/less/reset.less";
-  @import "../common/less/theme/theme.less";
   @import "../common/less/global.less";
 
   .layer {
@@ -97,9 +87,26 @@
     padding: 20px;
     background: #ffffff;
     border-radius: 5px;
+    line-height: 1.5;
+    blockquote {
+      border-left: 5px solid #363159;
+      padding: 0 0 0 10px;
+    }
     h1 {
       font-size: 20px;
       font-weight: bold;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+    p {
+      margin: 5px 0;
     }
   }
 </style>
