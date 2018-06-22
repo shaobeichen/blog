@@ -146,7 +146,6 @@
           transition: all .3s ease-in-out;
         }
         &:hover {
-          cursor: pointer;
           color: #ff0000;
           &::after {
             width: 100%;

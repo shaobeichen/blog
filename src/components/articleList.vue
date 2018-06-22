@@ -112,19 +112,6 @@
 
 <style lang="less" scoped>
 
-  .slide-fade-enter-active {
-    transition: all .5s ease;
-  }
-
-  .slide-fade-leave-active {
-    transition: all 1.2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  }
-
-  .slide-fade-enter, .slide-fade-leave-to {
-    transform: translateX(10px);
-    opacity: 0;
-  }
-
   .layer {
     position: relative;
     width: 960px;
@@ -186,10 +173,16 @@
       position: relative;
       display: block;
       border-radius: 5px;
-      box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 19px 35px -22px rgb(255, 255, 255);
       background-color: #ffffff;
       overflow: hidden;
       margin-bottom: 20px;
+      transition: all .6s ease;
+      &:hover {
+        transition: all .6s ease;
+        box-shadow: 0 8px 11px -6px rgba(0,0,0,.5);
+        transform: translateX(-10px);
+      }
       .article-img-inner {
         position: relative;
         float: left;

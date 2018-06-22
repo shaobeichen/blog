@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746fd9d9-c0f1-411e-aa18-b6b5a0c425b3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/Ripple-1s-200px.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/less/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/less/global.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/articleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/articleList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/vheader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/vheader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Wedges-3s-200px.svg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,21 +50,21 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/components/vheader.vue" />
         <option value="$PROJECT_DIR$/src/components/vfooter.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/page/blog.vue" />
         <option value="$PROJECT_DIR$/src/page/index.vue" />
         <option value="$PROJECT_DIR$/src/page/about.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/page/detail.vue" />
         <option value="$PROJECT_DIR$/src/common/less/reset.less" />
-        <option value="$PROJECT_DIR$/src/components/loading.vue" />
-        <option value="$PROJECT_DIR$/src/components/articleList.vue" />
         <option value="$PROJECT_DIR$/src/components/theme.vue" />
         <option value="$PROJECT_DIR$/src/components/themeChange.vue" />
-        <option value="$PROJECT_DIR$/src/common/less/global.less" />
         <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/components/loading.vue" />
+        <option value="$PROJECT_DIR$/src/components/articleList.vue" />
+        <option value="$PROJECT_DIR$/src/page/detail.vue" />
+        <option value="$PROJECT_DIR$/src/components/vheader.vue" />
+        <option value="$PROJECT_DIR$/src/common/less/global.less" />
       </list>
     </option>
   </component>
@@ -92,16 +97,6 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -202,7 +197,7 @@
       <workItem from="1529629418708" duration="464000" />
       <workItem from="1529629999498" duration="4911000" />
       <workItem from="1529644880683" duration="5319000" />
-      <workItem from="1529657942458" duration="1787000" />
+      <workItem from="1529657942458" duration="3910000" />
     </task>
     <task id="LOCAL-00001" summary="fix:查找CI错误问题">
       <created>1529400007311</created>
@@ -260,16 +255,23 @@
       <option name="project" value="LOCAL" />
       <updated>1529652323754</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix:添加自定义光标">
+      <created>1529659757734</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529659757734</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25663000" />
+    <option name="totallyTimeSpent" value="27786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -277,7 +279,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17884405" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17884405" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -303,13 +305,17 @@
     <MESSAGE value="fix:修复图片及hm错误" />
     <MESSAGE value="feat:文章详情及图标" />
     <MESSAGE value="fix:添加loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:添加loading" />
+    <MESSAGE value="fix:添加自定义光标" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:添加自定义光标" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/page/detail.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1029">
           <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -381,13 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/vheader.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/less/theme/theme.less">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -433,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/detail.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/Magnify-1s-200px.svg" />
     <entry file="file://$PROJECT_DIR$/static/images/Wedges-3s-200px.svg">
       <provider selected="true" editor-type-id="images" />
@@ -448,20 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="123" column="32" lean-forward="true" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/loading.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -483,13 +461,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/less/global.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#166#192#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -518,6 +492,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/Ripple-1s-200px.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/loading.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="43" selection-end-column="17" />
+          <folding>
+            <element signature="n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#script#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/detail.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/less/global.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/vheader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="146" column="9" lean-forward="true" selection-start-line="146" selection-start-column="9" selection-end-line="146" selection-end-column="9" />
         </state>
       </provider>
     </entry>

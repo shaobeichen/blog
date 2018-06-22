@@ -1,6 +1,6 @@
 <template>
   <div id="loading">
-    <object data="../../static/images/Wedges-3s-200px.svg" type="image/svg+xml"></object>
+    <object data="../../static/images/Ripple-1s-200px.svg" type="image/svg+xml"></object>
   </div>
 </template>
 

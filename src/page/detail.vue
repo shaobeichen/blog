@@ -1,27 +1,28 @@
 <template>
   <div id="detail" v-cloak>
     <vheader></vheader>
-    <!--<svg class="icon" aria-hidden="true">-->
-    <!--<use xlink:href="#icon-shijian"></use>-->
-    <!--</svg>-->
-    <div class="layer">
-      <div class="detailContent">
-        <h1>{{content.title}}</h1>
-        <div class="article-label">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-1"></use>
-          </svg>
-          <div class="article-time">更新时间：{{getTime}}</div>
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-2"></use>
-          </svg>
-          <label v-for="items in content.labels"
-                 :style="{background:`#${items.color}`}">{{items.name}}</label>
-        </div>
-        <div v-html="getMainDes" v-highlight></div>
+    <transition name="slide-fade">
+      <loading v-if="loading"></loading>
+      <div v-else class="layer">
+        <div class="detailContent">
+          <h1>{{content.title}}</h1>
+          <div class="article-label">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-1"></use>
+            </svg>
+            <div class="article-time">更新时间：{{getTime}}</div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-2"></use>
+            </svg>
+            <label v-for="items in content.labels"
+                   :style="{background:`#${items.color}`}">{{items.name}}</label>
+          </div>
+          <div v-html="getMainDes" v-highlight></div>
 
+        </div>
       </div>
-    </div>
+    </transition>
+
     <vfooter></vfooter>
   </div>
 </template>
@@ -40,6 +41,7 @@
       return {
         content: [],
         id: this.$route.params.id,
+        loading: true
       }
     },
     created() {
@@ -47,9 +49,11 @@
       this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}`).then((res) => {
         if (res.status == 200) {
           this.content = res.data;
+          this.loading = false;
         }
       }).catch((err) => {
         console.log(err);
+        this.loading = false;
       });
     },
     mounted() {
