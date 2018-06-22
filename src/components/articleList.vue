@@ -12,7 +12,13 @@
               <h1>{{item.title}}</h1>
               <p class="article-des" v-html="getMainDes[index]"></p>
               <div class="article-label">
-                <div class="article-time">{{getTime[index]}}</div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-1"></use>
+                </svg>
+                <div class="article-time">更新时间：{{getTime[index]}}</div>
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-2"></use>
+                </svg>
                 <label v-for="items in item.labels"
                        :style="{background:`#${items.color}`}">{{items.name}}</label>
               </div>
@@ -21,14 +27,16 @@
         </li>
       </ul>
       <aside>
-        <div class="img-inner">
-          <img
-            src="https://user-gold-cdn.xitu.io/152681974911209dda5809b6931f7edf46818ea0884e0.jpg?imageView2/1/q/85/format/webp/interlace/1"
-            alt="">
+        <div class="author-inner">
+          <img src="../../static/images/author.jpg" alt="">
+          <h3>LeachZhou</h3>
+          <p>前端工程师/健身/阅读/心理学/设计/目前居住在上海杨浦</p>
+          <br>
+          <p>剩下内容未完待续...</p>
         </div>
-        <div class="img-inner">
-          <img src="http://via.placeholder.com/240x240" alt="">
-        </div>
+        <!--<div class="img-inner">-->
+          <!--<img src="http://via.placeholder.com/240x240" alt="">-->
+        <!--</div>-->
       </aside>
     </div>
   </div>
@@ -94,6 +102,7 @@
 </script>
 
 <style lang="less" scoped>
+
   .layer {
     position: relative;
     width: 960px;
@@ -106,14 +115,41 @@
     top: 50px;
     width: 240px;
     overflow: hidden;
+    .author-inner {
+      position: relative;
+      background: #ffffff;
+      width: 240px;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      img {
+        width: 150px;
+        height: 150px;
+        display: block;
+        border-radius: 50%;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+      h3 {
+        margin: 20px 0;
+      }
+      p {
+        color: #7e8c8d;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
     .img-inner {
       position: relative;
+      background: #ffffff;
       width: 240px;
-      height: 240px;
       margin-bottom: 20px;
+      border-radius: 5px;
       img {
         width: 240px;
         height: 240px;
+        display: block;
         border-radius: 5px;
         object-fit: cover;
       }
@@ -194,6 +230,7 @@
             margin-right: 10px;
             font-size: 12px;
           }
+
         }
 
       }

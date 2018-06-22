@@ -15,9 +15,9 @@
     },
     created() {
       // 电商网站
-      addScript('//at.alicdn.com/t/font_698270_p30hfyf78z4obt9.js');
+      addScript('//at.alicdn.com/t/font_698270_1z69irdaxen.js');
       // 超级英雄
-      // addScript('//at.alicdn.com/t/font_698241_0fph3ueklyu5l8fr.js');
+      // addScript('//at.alicdn.com/t/font_698241_zhmyjejv48c.js');
       // 中国新年
       // addScript('//at.alicdn.com/t/font_698219_attu958yklwvobt9.js');
       // 圣诞节

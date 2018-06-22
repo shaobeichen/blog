@@ -15,6 +15,7 @@
       return {
         content: [],
         id: this.$route.params.id,
+        themeThree: false
       }
     },
     created() {

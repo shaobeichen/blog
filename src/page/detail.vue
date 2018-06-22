@@ -7,12 +7,21 @@
     <div class="layer">
       <div class="detailContent">
         <h1>{{content.title}}</h1>
-        <div>{{getTime}}</div>
+        <div class="article-label">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-1"></use>
+          </svg>
+          <div class="article-time">更新时间：{{getTime}}</div>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-2"></use>
+          </svg>
+          <label v-for="items in content.labels"
+                 :style="{background:`#${items.color}`}">{{items.name}}</label>
+        </div>
         <div v-html="getMainDes" v-highlight></div>
-        <div></div>
+
       </div>
     </div>
-    <theme></theme>
     <vfooter></vfooter>
   </div>
 </template>
@@ -23,9 +32,7 @@
   import friendlytimejs from 'friendlytimejs';
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
-  import theme from '../components/theme';
   import {mapActions} from 'vuex';
-  import LightBox from 'vue-image-lightbox'
 
   export default {
     name: 'detail',
@@ -59,23 +66,15 @@
         return friendlytimejs.FriendlyTime(dayjs(this.content.updated_at).add(8, "hour").format('YYYY-MM-DD HH:mm:ss'), dayjs());
       }
     },
-    methods: {
-      openGallery(index) {
-        this.$refs.lightbox.showImage(index)
-      }
-    },
+    methods: {},
     components: {
-      theme,
       vheader,
       vfooter,
-      LightBox
     }
   }
 </script>
 
 <style lang="less">
-  @import "../common/less/reset.less";
-  @import "../common/less/global.less";
 
   .layer {
     width: 960px;
@@ -107,6 +106,26 @@
     }
     p {
       margin: 5px 0;
+    }
+    .article-label {
+      margin: 10px 0;
+      .article-time {
+        float: left;
+        margin-right: 10px;
+        line-height: 22px;
+        color: #999999;
+        font-size: 12px;
+      }
+      label {
+        float: left;
+        background: #00b1ff;
+        color: #FFFFFF;
+        padding: 3px 10px;
+        border-radius: 4px;
+        margin-right: 10px;
+        font-size: 12px;
+      }
+
     }
   }
 </style>
