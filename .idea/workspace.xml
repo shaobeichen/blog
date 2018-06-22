@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746fd9d9-c0f1-411e-aa18-b6b5a0c425b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/loading.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/Wedges-3s-200px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/default.cur" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pointer.cur" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/less/global.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/less/global.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/less/reset.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/less/reset.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/articleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/articleList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/theme.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/theme.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/themeChange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/themeChange.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,29 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="themeChange.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/themeChange.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/theme.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#166#192#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -83,11 +54,12 @@
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/page/detail.vue" />
         <option value="$PROJECT_DIR$/src/common/less/reset.less" />
-        <option value="$PROJECT_DIR$/src/common/less/global.less" />
         <option value="$PROJECT_DIR$/src/components/loading.vue" />
         <option value="$PROJECT_DIR$/src/components/articleList.vue" />
         <option value="$PROJECT_DIR$/src/components/theme.vue" />
         <option value="$PROJECT_DIR$/src/components/themeChange.vue" />
+        <option value="$PROJECT_DIR$/src/common/less/global.less" />
+        <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
       </list>
     </option>
   </component>
@@ -124,7 +96,37 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -158,7 +160,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/m.ibfedu.com" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\ibf\WebstormProjects\blog\node_modules\prettier" />
@@ -199,7 +201,8 @@
       <workItem from="1529566274594" duration="7502000" />
       <workItem from="1529629418708" duration="464000" />
       <workItem from="1529629999498" duration="4911000" />
-      <workItem from="1529644880683" duration="5257000" />
+      <workItem from="1529644880683" duration="5319000" />
+      <workItem from="1529657942458" duration="1787000" />
     </task>
     <task id="LOCAL-00001" summary="fix:查找CI错误问题">
       <created>1529400007311</created>
@@ -250,27 +253,33 @@
       <option name="project" value="LOCAL" />
       <updated>1529634947890</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix:添加loading">
+      <created>1529652323754</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529652323754</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23814000" />
+    <option name="totallyTimeSpent" value="25663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17884405" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17884405" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -293,17 +302,14 @@
     <MESSAGE value="fix:修改路由模式" />
     <MESSAGE value="fix:修复图片及hm错误" />
     <MESSAGE value="feat:文章详情及图标" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:文章详情及图标" />
+    <MESSAGE value="fix:添加loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:添加loading" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/page/detail.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1029">
           <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-          <folding>
-            <element signature="n#script#0;n#!!top" />
-            <element signature="e#457#485#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -431,16 +437,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="26" />
-          <folding>
-            <element signature="n#script#0;n#!!top" />
-            <element signature="e#457#485#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/Magnify-1s-200px.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/Magnify-1s-200px.svg" />
     <entry file="file://$PROJECT_DIR$/static/images/Wedges-3s-200px.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -451,22 +451,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/less/global.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/articleList.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="123" column="32" lean-forward="true" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-          <folding>
-            <element signature="n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#script#0;n#!!top" />
-            <element signature="e#1585#1612#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -484,20 +472,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/theme.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#166#192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/themeChange.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/theme.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/less/global.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1254" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
         </state>
       </provider>
     </entry>
