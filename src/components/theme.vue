@@ -15,15 +15,15 @@
       return {
         content: [],
         id: this.$route.params.id,
-        themeThree: false
+        theme: localStorage.getItem('theme')
       }
     },
     created() {
       if (!this.$store.state.themeType) {
         let hours = dayjs().format('HH');
-        if (this.themeThree) {
-          this._changeTheme(`Three`);
-          this.changeThemeType(`Three`);
+        if (this.theme) {
+          this._changeTheme(this.theme);
+          this.changeThemeType(this.theme);
         } else {
           if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
             this._changeTheme(`Three`);
@@ -34,7 +34,6 @@
           } else if (hours >= 12 && hours < 18) {
             this._changeTheme(`Two`);
             this.changeThemeType(`Two`);
-
           }
         }
       }

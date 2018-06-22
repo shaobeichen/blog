@@ -1,44 +1,47 @@
 <template>
   <div id="articleList">
-    <div class="layer">
-      <ul>
-        <li v-for="(item,index) in list">
-          <router-link :to="{ name:'detail',params:{ id:item.number } }">
-            <div class="article-img-inner">
-              <img :src="getMainImage[index]" alt="">
-            </div>
-            <div class="article-content"
-                 :style="{borderLeft:item.labels[0] ? `10px solid #${item.labels[0].color}`: ''}">
-              <h1>{{item.title}}</h1>
-              <p class="article-des" v-html="getMainDes[index]"></p>
-              <div class="article-label">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-1"></use>
-                </svg>
-                <div class="article-time">更新时间：{{getTime[index]}}</div>
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="#icon-2"></use>
-                </svg>
-                <label v-for="items in item.labels"
-                       :style="{background:`#${items.color}`}">{{items.name}}</label>
+    <transition name="slide-fade">
+      <loading v-if="loading"></loading>
+      <div v-else class="layer">
+        <ul>
+          <li v-for="(item,index) in list">
+            <router-link :to="{ name:'detail',params:{ id:item.number } }">
+              <div class="article-img-inner">
+                <img :src="getMainImage[index]" alt="">
               </div>
-            </div>
-          </router-link>
-        </li>
-      </ul>
-      <aside>
-        <div class="author-inner">
-          <img src="../../static/images/author.jpg" alt="">
-          <h3>LeachZhou</h3>
-          <p>前端工程师/健身/阅读/心理学/设计/目前居住在上海杨浦</p>
-          <br>
-          <p>剩下内容未完待续...</p>
-        </div>
-        <!--<div class="img-inner">-->
+              <div class="article-content"
+                   :style="{borderLeft:item.labels[0] ? `10px solid #${item.labels[0].color}`: ''}">
+                <h1>{{item.title}}</h1>
+                <p class="article-des" v-html="getMainDes[index]"></p>
+                <div class="article-label">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-1"></use>
+                  </svg>
+                  <div class="article-time">更新时间：{{getTime[index]}}</div>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-2"></use>
+                  </svg>
+                  <label v-for="items in item.labels"
+                         :style="{background:`#${items.color}`}">{{items.name}}</label>
+                </div>
+              </div>
+            </router-link>
+          </li>
+        </ul>
+        <aside>
+          <div class="author-inner">
+            <img src="../../static/images/author.jpg" alt="">
+            <h3>LeachZhou</h3>
+            <p>前端工程师/健身/阅读/心理学/设计/目前居住在上海杨浦</p>
+            <br>
+            <p>剩下内容未完待续...</p>
+          </div>
+          <!--<div class="img-inner">-->
           <!--<img src="http://via.placeholder.com/240x240" alt="">-->
-        <!--</div>-->
-      </aside>
-    </div>
+          <!--</div>-->
+        </aside>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -46,12 +49,14 @@
   import marked from 'marked'
   import friendlytimejs from 'friendlytimejs'
   import dayjs from 'dayjs'
+  import loading from '../components/loading'
 
   export default {
     name: "articleList",
     data() {
       return {
         list: [],
+        loading: true
       }
     },
     mounted() {
@@ -63,9 +68,11 @@
       this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}&&labels=已审核&&page=${page}&&per_page=${per_page}&&filter=${filter}&&sort=${sort}`).then((res) => {
         if (res.status == 200) {
           this.list = res.data;
+          this.loading = false;
         }
       }).catch((err) => {
         console.log(err);
+        this.loading = false;
       });
     },
     methods: {},
@@ -96,12 +103,27 @@
         return arr;
       }
     },
-    components: {},
+    components: {
+      loading
+    },
     props: []
   }
 </script>
 
 <style lang="less" scoped>
+
+  .slide-fade-enter-active {
+    transition: all .5s ease;
+  }
+
+  .slide-fade-leave-active {
+    transition: all 1.2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+  }
 
   .layer {
     position: relative;

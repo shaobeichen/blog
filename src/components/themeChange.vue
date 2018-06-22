@@ -26,6 +26,7 @@
     methods: {
       changeTheme(val) {
         if (!val) {
+          localStorage.setItem('theme', '');
           let hours = dayjs().format('HH');
           if ((hours >= 18 && hours <= 23) || (hours >= 0 && hours < 6)) {
             val = `Three`;
@@ -34,10 +35,13 @@
           } else if (hours >= 12 && hours < 18) {
             val = `Two`;
           }
+        } else {
+          localStorage.setItem('theme', val);
         }
 
         document.body.className = `theme${val}`;
         this.$emit('timeEmit', val);
+
       }
     },
     props: ['time']
@@ -45,7 +49,7 @@
 </script>
 
 <style lang="less" scoped>
-  @bg:'../../static/images/kv-cur-bg.png';
+  @bg: '../../static/images/kv-cur-bg.png';
   p {
     position: absolute;
     bottom: 10px;
