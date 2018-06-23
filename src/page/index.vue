@@ -8,7 +8,6 @@
 </template>
 
 <script>
-  import theme from '../components/theme';
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
 
@@ -24,7 +23,7 @@
     methods: {},
     components: {
       vfooter,
-      vheader
+      vheader,
     }
   }
 </script>

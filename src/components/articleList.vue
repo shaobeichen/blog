@@ -28,6 +28,7 @@
             </router-link>
           </li>
         </ul>
+        <pagination :page-no="pageNo" :current.sync="currentPage"></pagination>
         <aside>
           <div class="author-inner">
             <img src="../../static/images/author.jpg" alt="">
@@ -50,32 +51,50 @@
   import friendlytimejs from 'friendlytimejs'
   import dayjs from 'dayjs'
   import loading from '../components/loading'
+  import pagination from '../components/pagination'
 
   export default {
     name: "articleList",
     data() {
       return {
         list: [],
-        loading: true
+        loading: true,
+        pageNo: 1,//总页数
+        currentPage: 1//当前页
       }
     },
     mounted() {
-      let url = 'https://api.github.com/repos/LeachZhou/blog/issues';
-      let page = 1;
-      let per_page = 10;
-      let filter = 'created';
-      let sort = 'updated';
-      this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}&&labels=已审核&&page=${page}&&per_page=${per_page}&&filter=${filter}&&sort=${sort}`).then((res) => {
-        if (res.status == 200) {
-          this.list = res.data;
-          this.loading = false;
-        }
-      }).catch((err) => {
-        console.log(err);
-        this.loading = false;
-      });
+      this.requestData();
     },
-    methods: {},
+    watch: {
+      //currentPage改变执行requestData
+      currentPage: this.requestData
+    },
+    methods: {
+      requestData() {
+        // 在这里使用ajax或者fetch将对应页传过去获取数据即可
+        let url = 'https://api.github.com/repos/LeachZhou/blog/issues';
+        let per_page = 4;
+        let filter = 'created';
+        let sort = 'updated';
+        this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}&&labels=已审核&&page=${this.currentPage}&&filter=${filter}&&sort=${sort}`).then((res) => {
+          if (res.status === 200) {
+            this.pageNo = Math.ceil(res.data.length / 4);
+          }
+        }).catch((err) => {
+          console.log(err);
+        });
+        this.$axios.get(`${url}?access_token=${this.$store.state.githubToken[0]}${this.$store.state.githubToken[1]}&&labels=已审核&&page=${this.currentPage}&&per_page=${per_page}&&filter=${filter}&&sort=${sort}`).then((res) => {
+          if (res.status === 200) {
+            this.list = res.data;
+            this.loading = false;
+          }
+        }).catch((err) => {
+          console.log(err);
+          this.loading = false;
+        });
+      }
+    },
     computed: {
       getMainImage() {
         let arr = [];
@@ -104,7 +123,8 @@
       }
     },
     components: {
-      loading
+      loading,
+      pagination
     },
     props: []
   }
@@ -132,6 +152,7 @@
       padding: 20px;
       border-radius: 5px;
       text-align: center;
+      box-shadow: 0 19px 35px -22px rgb(255, 255, 255);
       img {
         width: 150px;
         height: 150px;
@@ -169,7 +190,6 @@
     padding-top: 50px;
     width: 700px;
     li {
-      cursor: pointer;
       position: relative;
       display: block;
       border-radius: 5px;
@@ -180,8 +200,8 @@
       transition: all .6s ease;
       &:hover {
         transition: all .6s ease;
-        box-shadow: 0 8px 11px -6px rgba(0,0,0,.5);
-        transform: translateX(-10px);
+        box-shadow: 0 8px 11px -6px rgba(0, 0, 0, .5);
+        transform: translateX(10px);
       }
       .article-img-inner {
         position: relative;
