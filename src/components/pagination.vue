@@ -39,17 +39,33 @@
     methods: {
       prePage() {
         // 上一页
-        this.current--
+        this.current--;
+        this.$emit('update:current', this.current);
+        this.scroll()
       },
       nextPage() {
         // 下一页
-        this.current++
+        this.current++;
+        this.$emit('update:current', this.current);
+        this.scroll()
       },
       goPage(index) {
         // 跳转到相应页面
         if (index !== this.current) {
-          this.current = index
+          this.current = index;
+          this.$emit('update:current', this.current);
+          this.scroll()
         }
+      },
+      scroll() {
+        let timmer = requestAnimationFrame(function fn() {
+          let s = document.documentElement.scrollTop || document.body.scrollTop;
+          if (s > 0) {
+            s -= 30;
+            window.scrollTo(0, s);
+            timmer = requestAnimationFrame(fn);
+          }
+        })
       }
     },
     computed: {
@@ -109,10 +125,17 @@
     color: #000000;
     border: 1px solid #e3e3e3;
     border-radius: 3px;
+    cursor: url(../../static/images/pointer.cur), pointer;
   }
 
   .btn-pager:hover {
     background-color: #f2f2f2;
+  }
+  .btn-pager[disabled] {
+    @color: #dedede;
+    background-color: @color;
+    border: 1px solid @color;
+    cursor: not-allowed;
   }
 
   .page-index {
@@ -122,9 +145,9 @@
     height: 30px;
     line-height: 30px;
     background-color: #ffffff;
-    cursor: pointer;
     color: #000000;
     border-radius: 3px;
+    cursor: url(../../static/images/pointer.cur), pointer;
   }
 
   .active {

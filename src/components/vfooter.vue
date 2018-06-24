@@ -15,7 +15,7 @@
   export default {
     name: "vfooter",
     components: {
-      theme
+      theme,
     }
   }
 </script>

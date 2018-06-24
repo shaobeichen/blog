@@ -1,11 +1,13 @@
 <template>
   <div id="app" v-cloak>
+    <!--<music></music>-->
     <router-view/>
   </div>
 
 </template>
 
 <script>
+  // import music from './components/music';
   import {addScript} from './common/api/script';
 
   export default {
@@ -24,6 +26,9 @@
       // addScript('//at.alicdn.com/t/font_689514_maz2kwyo0zh69a4i.js');
       // 超市
       // addScript('//at.alicdn.com/t/font_689469_m3x6295wjfh41jor.js');
+    },
+    components: {
+      // music
     }
   }
 </script>
