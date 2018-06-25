@@ -76,6 +76,7 @@
     watch: {
       //currentPage改变执行requestData
       currentPage: function (val) {
+        this.loading = true;
         this.requestData(val);
       }
     },
