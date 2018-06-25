@@ -1,23 +1,28 @@
 <template>
   <div id="app" v-cloak>
     <!--<music></music>-->
-    <keep-alive>
-      <router-view v-if="$route.meta.keepAlive"/>
-    </keep-alive>
-    <router-view v-if="!$route.meta.keepAlive"/>
-
+    <loading v-if="loading"></loading>
+    <div v-else>
+      <keep-alive>
+        <router-view v-if="$route.meta.keepAlive"/>
+      </keep-alive>
+      <router-view v-if="!$route.meta.keepAlive"/>
+    </div>
   </div>
 
 </template>
 
 <script>
   // import music from './components/music';
+  import loading from './components/loading';
   import {addScript} from './common/api/script';
 
   export default {
     name: 'App',
     data() {
-      return {}
+      return {
+        loading: true
+      }
     },
     created() {
       // 电商网站
@@ -31,8 +36,12 @@
       // 超市
       // addScript('//at.alicdn.com/t/font_689469_m3x6295wjfh41jor.js');
     },
+    mounted() {
+      this.loading = false;
+    },
     components: {
-      // music
+      // music,
+      loading
     }
   }
 </script>
