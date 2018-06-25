@@ -18,6 +18,9 @@ export default new Router({
       name: 'blog',
       component: (resolve) => {
         require(['../page/blog.vue'], resolve);
+      },
+      meta: {
+        keepAlive: true
       }
     },
     {

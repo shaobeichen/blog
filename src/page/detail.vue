@@ -112,6 +112,7 @@
       margin: 5px 0;
     }
     .article-label {
+      overflow: auto;
       margin: 10px 0;
       .article-time {
         float: left;
