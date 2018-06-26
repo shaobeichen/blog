@@ -13,7 +13,7 @@
   </a>
 </p>
 
-# :beers: 小桥酒馆
+# :black_nib: 小桥酒馆
 
 > 记录技术的新博客，采用Vue全家桶开发
 
@@ -22,10 +22,10 @@
 - GitHub API 进行数据交互，无需后端服务器
 - 无需本地打包，`git push`直接部署 (使用TravisCI)
 - 在GitHub页面上托管
-## Demo
+## 预览
 - [http://i66.me](http://i66.me)
 
-## Todolist
+## 待办事项
 - 请在GitHub看板上查看 [Todolist](https://github.com/LeachZhou/blog/projects/1)
 
 ## 更新记录
