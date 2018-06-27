@@ -3,12 +3,14 @@
     <vheader></vheader>
     <div class="in-wra">
       <div class="in-wra-left"></div>
-      <div id="draggable2" class="btn-move ui-draggable ui-draggable-handle" draggable="true">
-        <div class="in-moveline"></div>
-        <div class="in-svg">
-          <img src="../assets/logo.png" alt="" width="58" height="58">
+      <draggable :move="getdata" @update="datadragEnd">
+        <div id="draggable2" class="btn-move ui-draggable ui-draggable-handle">
+          <div class="in-moveline"></div>
+          <div class="in-svg">
+            <img src="../assets/logo.png" alt="" width="58" height="58">
+          </div>
         </div>
-      </div>
+      </draggable>
       <div class="in-wra-right"></div>
     </div>
     <vfooter></vfooter>
@@ -18,38 +20,55 @@
 <script>
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
+  import draggable from 'vuedraggable';
 
   export default {
     name: 'shot',
     data() {
-      return {
-
-      }
+      return {}
     },
     created() {
 
     },
     mounted() {
-      document.getElementById("draggable2").addEventListener("dragstart", function (event) {
-        console.log(event)
-      }, false);
-      document.getElementById("draggable2").addEventListener("dragenter", function (event) {
-        // 阻止浏览器默认事件
-        event.preventDefault();
-      }, false);
-      document.getElementById("draggable2").addEventListener("dragover", function (event) {
-        // 阻止浏览器默认事件
-        event.preventDefault();
-      }, false);
-      document.getElementById("draggable2").addEventListener("drop", function (event) {
-        event.preventDefault();
-        console.log(event)
-      }, false);
+
     },
-    methods: {},
+    methods: {
+      getdata(evt) {
+        console.log(evt.draggedContext.element.id)
+      },
+      datadragEnd(evt) {
+        console.log('拖动前的索引 :' + evt.oldIndex)
+        console.log('拖动后的索引 :' + evt.newIndex)
+      },
+      drag(event) {
+        dom = event.currentTarget;
+      },
+      drop(event) {
+        event.preventDefault();
+        console.log('我是target')
+        console.log(event.srcElement.className)
+        if (event.srcElement.className != 'select-item') {
+          event.target.appendChild(dom);
+          console.log(dom);
+        } else {
+          alert('该位置已被占用');
+        }
+      },
+      allowDrop(event) {
+        event.preventDefault(); //preventDefault() 方法阻止元素发生默认的行为（例如，当点击提交按钮时阻止对表单的提交）
+      },
+      checkMove(evt) {
+        console.log(111111111111111111111)
+        console.log(evt.draggedContext.element.name)
+        alert(1)
+        return (evt.draggedContext.element.name !== 'apple');
+      }
+    },
     components: {
       vheader,
-      vfooter
+      vfooter,
+      draggable
     }
   }
 </script>
