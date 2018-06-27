@@ -1,5 +1,5 @@
 <template>
-  <div id="blog" v-cloak>
+  <div id="blog" v-cloak v-title data-title="博客">
     <vheader></vheader>
     <article-list></article-list>
     <vfooter></vfooter>

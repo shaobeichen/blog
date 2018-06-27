@@ -16,7 +16,13 @@
             <router-link to="/blog">
               <li>博客</li>
             </router-link>
-            <router-link to="/">
+            <router-link to="/shot">
+              <li>摄影</li>
+            </router-link>
+            <router-link to="/tools">
+              <li>常用</li>
+            </router-link>
+            <router-link to="/about">
               <li>关于</li>
             </router-link>
           </ul>
@@ -87,7 +93,7 @@
     color: white;
     .isFixed {
       position: fixed;
-      background: rgba(97, 97, 97, 0.8) !important;
+      background: rgba(0, 0, 0, 0.8) !important;
       top: 0;
       z-index: 999;
       transition: all 0.6s ease;

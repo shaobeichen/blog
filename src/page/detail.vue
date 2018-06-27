@@ -1,5 +1,5 @@
 <template>
-  <div id="detail" v-cloak>
+  <div id="detail" v-cloak v-title :data-title="content.title">
     <vheader></vheader>
     <transition name="slide-fade">
       <loading v-if="loading"></loading>
@@ -33,13 +33,14 @@
   import friendlytimejs from 'friendlytimejs';
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
+  import loading from '../components/loading';
   import {mapActions} from 'vuex';
 
   export default {
     name: 'detail',
     data() {
       return {
-        content: [],
+        content: {},
         id: this.$route.params.id,
         loading: true
       }
@@ -74,6 +75,7 @@
     components: {
       vheader,
       vfooter,
+      loading
     }
   }
 </script>

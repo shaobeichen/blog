@@ -31,6 +31,20 @@ export default new Router({
       }
     },
     {
+      path: '/shot',
+      name: 'shot',
+      component: (resolve) => {
+        require(['../page/shot.vue'], resolve);
+      }
+    },
+    {
+      path: '/tools',
+      name: 'tools',
+      component: (resolve) => {
+        require(['../page/tools.vue'], resolve);
+      }
+    },
+    {
       path: '/about',
       name: 'about',
       component: (resolve) => {

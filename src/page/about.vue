@@ -1,5 +1,5 @@
 <template>
-  <div id="about" v-cloak>
+  <div id="about" v-cloak v-title data-title="关于">
     <vheader></vheader>
     <vfooter></vfooter>
   </div>
