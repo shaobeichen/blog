@@ -33,33 +33,49 @@
     methods: {
       drag: function (e, index) {
         let startX = e.clientX;//鼠标的x轴位置
-        let Left = e.target.parentNode.children[0],//第一个元素
+        let Left = e.target.parentNode.children[0],//左边
           leftW = Left.offsetWidth;//左边的宽度
-        let Right = e.target.parentNode.children[1],//第二个元素
+        let Right = e.target.parentNode.children[1],//右边
           rightW = Right.offsetWidth;//右边的宽度
-        let draggableBtn = e.target.parentNode.children[2];//第三个元素
+        let draggableBtn = e.target.parentNode.children[2],//拖动按钮
+          draggableBtnW = draggableBtn.offsetWidth;//拖动按钮的宽度
+        let inner = e.target.parentNode,//父元素
+          innerW = inner.offsetWidth;//父元素的宽度
         let rightBPY = window.getComputedStyle(Right, null).backgroundPositionY;//右边的背景Y轴设置
         let rightBPX = window.getComputedStyle(Right, null).backgroundPositionX;//右边的背景X轴设置
         let draggableBtnLeft = window.getComputedStyle(draggableBtn, null).left;//拖动按钮left设置
         document.onmousemove = function (e) {
           e.preventDefault();
-          var distX = e.clientX - startX;//鼠标x轴移动了多少，正数往右，负数往左
+          let distX = e.clientX - startX;//鼠标x轴移动了多少，正数往右，负数往左
           Left.style.width = leftW + distX + 'px';
           Right.style.width = rightW - distX + 'px';
           Right.style.backgroundPosition = rightBPX.split('px')[0] - distX + 'px 0px';
-          draggableBtn.style.transform = 'translate(0, 0)';
           draggableBtn.style.left = parseInt(draggableBtnLeft.split('px')[0]) + distX + 'px';
-          if (parseInt(Left.style.width) >= 902) {
-            Left.style.width = 902 + 'px';
+          let lrBor = innerW - draggableBtnW / 2;//边界 如960 - 58/2 = 931
+          let draggableBtn2W = draggableBtnW / 2;//边界 如58 / 2 = 29
+          if (parseInt(Left.style.width) >= lrBor) {
+            Left.style.width = lrBor + 'px';
+            // Right.style.width = rightW - lrBor + 'px';
+            // Right.style.backgroundPosition = rightBPX.split('px')[0] - lrBor + 'px 0px';
+            draggableBtn.style.left = draggableBtn2W + 'px';
           }
-          if (parseInt(Left.style.width) <= 58) {
-            Left.style.width = 58 + 'px';
+          if (parseInt(Left.style.width) <= draggableBtn2W) {
+            Left.style.width = draggableBtn2W + 'px';
+            // Right.style.width = rightW - draggableBtnW + 'px';
+            // Right.style.backgroundPosition = rightBPX.split('px')[0] - draggableBtnW + 'px 0px';
+            draggableBtn.style.left = lrBor + 'px';
           }
-          if (parseInt(Right.style.width) >= 902) {
-            Right.style.width = 902 + 'px';
+          if (parseInt(Right.style.width) >= lrBor) {
+            Right.style.width = lrBor + 'px';
+            // Left.style.width = leftW - lrBor + 'px';
+            // Right.style.backgroundPosition = rightBPX.split('px')[0] - lrBor + 'px 0px';
+            draggableBtn.style.left = draggableBtn2W + 'px';
           }
-          if (parseInt(Right.style.width) <= 58) {
-            Right.style.width = 58 + 'px';
+          if (parseInt(Right.style.width) <= draggableBtn2W) {
+            Right.style.width = draggableBtn2W + 'px';
+            // Left.style.width = leftW - draggableBtnW + 'px';
+            // Right.style.backgroundPosition = rightBPX.split('px')[0] - draggableBtnW + 'px 0px';
+            draggableBtn.style.left = lrBor + 'px';
           }
         }
         document.onmouseup = function () {
