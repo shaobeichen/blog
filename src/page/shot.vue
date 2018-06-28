@@ -1,17 +1,15 @@
 <template>
   <div id="shot" v-cloak v-title data-title="摄影">
     <vheader></vheader>
-    <div class="in-wra">
+    <div id="inwra" class="in-wra">
       <div class="in-wra-left"></div>
-      <draggable :move="getdata" @update="datadragEnd">
-        <div id="draggable2" class="btn-move ui-draggable ui-draggable-handle">
-          <div class="in-moveline"></div>
-          <div class="in-svg">
-            <img src="../assets/logo.png" alt="" width="58" height="58">
-          </div>
-        </div>
-      </draggable>
       <div class="in-wra-right"></div>
+      <div id="draggable2" class="btn-move ui-draggable ui-draggable-handle" @mousedown="drag">
+        <div class="in-moveline"></div>
+        <div class="in-svg">
+          <img src="../assets/logo.png" alt="" width="58" height="58">
+        </div>
+      </div>
     </div>
     <vfooter></vfooter>
   </div>
@@ -20,7 +18,6 @@
 <script>
   import vfooter from '../components/vfooter';
   import vheader from '../components/vheader';
-  import draggable from 'vuedraggable';
 
   export default {
     name: 'shot',
@@ -34,41 +31,45 @@
 
     },
     methods: {
-      getdata(evt) {
-        console.log(evt.draggedContext.element.id)
-      },
-      datadragEnd(evt) {
-        console.log('拖动前的索引 :' + evt.oldIndex)
-        console.log('拖动后的索引 :' + evt.newIndex)
-      },
-      drag(event) {
-        dom = event.currentTarget;
-      },
-      drop(event) {
-        event.preventDefault();
-        console.log('我是target')
-        console.log(event.srcElement.className)
-        if (event.srcElement.className != 'select-item') {
-          event.target.appendChild(dom);
-          console.log(dom);
-        } else {
-          alert('该位置已被占用');
+      drag: function (e, index) {
+        let startX = e.clientX;//鼠标的x轴位置
+        let Left = e.target.parentNode.children[0],//第一个元素
+          leftW = Left.offsetWidth;//左边的宽度
+        let Right = e.target.parentNode.children[1],//第二个元素
+          rightW = Right.offsetWidth;//右边的宽度
+        let draggableBtn = e.target.parentNode.children[2];//第三个元素
+        let rightBPY = window.getComputedStyle(Right, null).backgroundPositionY;//右边的背景Y轴设置
+        let rightBPX = window.getComputedStyle(Right, null).backgroundPositionX;//右边的背景X轴设置
+        let draggableBtnLeft = window.getComputedStyle(draggableBtn, null).left;//拖动按钮left设置
+        document.onmousemove = function (e) {
+          e.preventDefault();
+          var distX = e.clientX - startX;//鼠标x轴移动了多少，正数往右，负数往左
+          Left.style.width = leftW + distX + 'px';
+          Right.style.width = rightW - distX + 'px';
+          Right.style.backgroundPosition = rightBPX.split('px')[0] - distX + 'px 0px';
+          draggableBtn.style.transform = 'translate(0, 0)';
+          draggableBtn.style.left = parseInt(draggableBtnLeft.split('px')[0]) + distX + 'px';
+          if (parseInt(Left.style.width) >= 902) {
+            Left.style.width = 902 + 'px';
+          }
+          if (parseInt(Left.style.width) <= 58) {
+            Left.style.width = 58 + 'px';
+          }
+          if (parseInt(Right.style.width) >= 902) {
+            Right.style.width = 902 + 'px';
+          }
+          if (parseInt(Right.style.width) <= 58) {
+            Right.style.width = 58 + 'px';
+          }
         }
-      },
-      allowDrop(event) {
-        event.preventDefault(); //preventDefault() 方法阻止元素发生默认的行为（例如，当点击提交按钮时阻止对表单的提交）
-      },
-      checkMove(evt) {
-        console.log(111111111111111111111)
-        console.log(evt.draggedContext.element.name)
-        alert(1)
-        return (evt.draggedContext.element.name !== 'apple');
+        document.onmouseup = function () {
+          document.onmousemove = null;
+        }
       }
     },
     components: {
       vheader,
       vfooter,
-      draggable
     }
   }
 </script>
@@ -82,8 +83,7 @@
     .in-wra-left {
       position: absolute;
       top: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
+      left: 0;
       z-index: 1;
       width: 960px;
       height: 960px;
@@ -105,7 +105,7 @@
     }
 
     .btn-move {
-      cursor: crosshair;
+      cursor: move;
       position: absolute;
       top: 0;
       left: 50%;
