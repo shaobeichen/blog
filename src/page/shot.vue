@@ -6,9 +6,6 @@
       <div class="in-wra-right"></div>
       <div id="draggable2" class="btn-move ui-draggable ui-draggable-handle" @mousedown="drag">
         <div class="in-moveline"></div>
-        <div class="in-svg">
-          <img src="../assets/logo.png" alt="" width="58" height="58">
-        </div>
       </div>
     </div>
     <vfooter></vfooter>
@@ -49,32 +46,32 @@
           let distX = e.clientX - startX;//鼠标x轴移动了多少，正数往右，负数往左
           Left.style.width = leftW + distX + 'px';
           Right.style.width = rightW - distX + 'px';
-          Right.style.backgroundPosition = rightBPX.split('px')[0] - distX + 'px 0px';
+          Right.style.backgroundPositionX = rightBPX.split('px')[0] - distX + 'px';
           draggableBtn.style.left = parseInt(draggableBtnLeft.split('px')[0]) + distX + 'px';
           let lrBor = innerW - draggableBtnW / 2;//边界 如960 - 58/2 = 931
           let draggableBtn2W = draggableBtnW / 2;//边界 如58 / 2 = 29
           if (parseInt(Left.style.width) >= lrBor) {
             Left.style.width = lrBor + 'px';
             // Right.style.width = rightW - lrBor + 'px';
-            // Right.style.backgroundPosition = rightBPX.split('px')[0] - lrBor + 'px 0px';
+            // Right.style.backgroundPositionX = rightBPX.split('px')[0] - lrBor + 'px';
             draggableBtn.style.left = draggableBtn2W + 'px';
           }
           if (parseInt(Left.style.width) <= draggableBtn2W) {
             Left.style.width = draggableBtn2W + 'px';
-            // Right.style.width = rightW - draggableBtnW + 'px';
-            // Right.style.backgroundPosition = rightBPX.split('px')[0] - draggableBtnW + 'px 0px';
+            Right.style.width = rightW - draggableBtn2W + 'px';
+            Right.style.backgroundPositionX = draggableBtn2W + 'px';
             draggableBtn.style.left = lrBor + 'px';
           }
           if (parseInt(Right.style.width) >= lrBor) {
             Right.style.width = lrBor + 'px';
             // Left.style.width = leftW - lrBor + 'px';
-            // Right.style.backgroundPosition = rightBPX.split('px')[0] - lrBor + 'px 0px';
+            // Right.style.backgroundPositionX = rightBPX.split('px')[0] - lrBor + 'px';
             draggableBtn.style.left = draggableBtn2W + 'px';
           }
           if (parseInt(Right.style.width) <= draggableBtn2W) {
             Right.style.width = draggableBtn2W + 'px';
-            // Left.style.width = leftW - draggableBtnW + 'px';
-            // Right.style.backgroundPosition = rightBPX.split('px')[0] - draggableBtnW + 'px 0px';
+            Left.style.width = leftW - draggableBtnW + 'px';
+            Right.style.backgroundPositionX = draggableBtn2W + 'px';
             draggableBtn.style.left = lrBor + 'px';
           }
         }
