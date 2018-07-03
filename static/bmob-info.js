@@ -53,15 +53,18 @@ function getBrowserInfo() {
 Bmob.initialize("d19fc452ebff91c7997a4ef3f3e7e7d8", "fee019e3f8acfb4ac43f9c22c4b74917");
 var GameScore = Bmob.Object.extend("GameScore");
 var gameScore = new GameScore();
-gameScore.set("sourcePage", document.referrer);
-gameScore.set("cip", returnCitySN["cip"]);
-gameScore.set("cname", returnCitySN["cname"]);
-gameScore.set("system", getBrowserInfo()[0]);
-gameScore.set("browse", getBrowserInfo()[1]);
-gameScore.set("browseNum", getBrowserInfo()[2]);
-gameScore.save(null, {
-  success: function (gameScore) {
-  },
-  error: function (gameScore, error) {
-  }
-});
+if (returnCitySN["cip"] !== '116.226.237.230') {
+  gameScore.set("sourcePage", document.referrer);
+  gameScore.set("cip", returnCitySN["cip"]);
+  gameScore.set("cname", returnCitySN["cname"]);
+  gameScore.set("system", getBrowserInfo()[0]);
+  gameScore.set("browse", getBrowserInfo()[1]);
+  gameScore.set("browseNum", getBrowserInfo()[2]);
+  gameScore.save(null, {
+    success: function (gameScore) {
+    },
+    error: function (gameScore, error) {
+    }
+  });
+}
+
