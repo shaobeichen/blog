@@ -105,6 +105,9 @@
       font-size: 16px;
       font-weight: bold;
     }
+    img[src*="#width-full"] {
+      width: 100%;
+    }
     img {
       height: auto;
       margin: 20px 0;
