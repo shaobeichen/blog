@@ -105,8 +105,10 @@
       font-size: 16px;
       font-weight: bold;
     }
-    img {
+    img:first-child {
       width: 100%;
+    }
+    img {
       height: auto;
       margin: 20px 0;
     }
