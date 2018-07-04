@@ -58,7 +58,7 @@ module.exports = {
      * Source Maps
      */
 
-    productionSourceMap: true,
+    productionSourceMap: false, // 解决打包后生成很大的.map文件的问题
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 
