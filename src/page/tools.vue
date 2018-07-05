@@ -1,26 +1,28 @@
 <template>
   <div id="tools" v-cloak>
     <div class="layer">
-      <div class="panel-title card">热门推荐</div>
-      <ul>
-        <li v-for="item in list">
-          <div class="card">
-            <a class="card-heading link-tooltip" :title="item.url"
-               :href="item.url"
-               target="_blank">
+      <div v-for="con in dataCon">
+        <div class="panel-title card">{{con.title}}</div>
+        <ul>
+          <li v-for="item in con.list">
+            <div class="card">
+              <a class="card-heading link-tooltip" :title="item.url"
+                 :href="item.url"
+                 target="_blank">
               <span class="card-icon">
                   <img :src="item.img">
               </span>
-              <span class="card-title">{{item.title}}</span>
-            </a>
-            <div class="card-body">
-              {{item.des}}
+                <span class="card-title">{{item.title}}</span>
+              </a>
+              <div class="card-body">
+                {{item.des}}
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+        </div>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -29,25 +31,59 @@
     name: 'tools',
     data() {
       return {
-        list: [
+        dataCon: [
           {
-            url: 'http://ypsuperkey.meek.com.cn',
-            img: 'http://ypsuperkey.meek.com.cn/images/favicon.png',
-            title: '云盘万能钥匙',
-            des: '自动识别百度网盘提取密码'
+            title: '电脑工具',
+            list: [
+              {
+                url: 'https://zh.snipaste.com/',
+                img: 'https://zh.snipaste.com/img/logo.svg',
+                title: 'Snipaste屏幕截图',
+                des: '极致截图贴图/编辑/标注工具'
+              },
+              {
+                url: 'https://www.jb51.net/softjc/275066.html',
+                img: 'http://8.pic.pc6.com/up/2017-9/2017971824211329430340.jpg',
+                title: 'FastStoneCapture',
+                des: '长截图/gif截图/自行探索'
+              },
+              {
+                url: 'https://pc.qq.com/detail/0/detail_22760.html',
+                img: 'https://pc3.gtimg.com/softmgr/logo/48/22760_48_1467171340.png',
+                title: 'LICEcap',
+                des: '屏幕录制工具/支持GIF格式'
+              }
+            ]
           },
           {
-            url: 'https://zh.snipaste.com/',
-            img: 'https://zh.snipaste.com/img/logo.svg',
-            title: 'Snipaste屏幕截图',
-            des: '极致截图贴图/编辑/标注工具'
-          },
-          {
-            url: 'https://www.jb51.net/softjc/275066.html',
-            img: 'http://8.pic.pc6.com/up/2017-9/2017971824211329430340.jpg',
-            title: 'FastStoneCapture',
-            des: '长截图/gif截图/自行探索'
-          },
+            title: 'Chrome插件',
+            list: [
+              {
+                url: 'https://translate.google.com',
+                img: 'https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=783d326871f40ad115e4c0e56f1776e2/cdbf6c81800a19d8ce78815539fa828ba61e4662.jpg',
+                title: '谷歌翻译',
+                des: 'Google 的免费翻译服务'
+              },
+              {
+                url: 'https://juejin.im/extension',
+                img: 'https://gold-cdn.xitu.io/images/app/logo.png',
+                title: '掘金',
+                des: '前端/后端等开发者社区'
+              },
+              {
+                url: 'https://adblockplus.org/',
+                img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530795804366&di=be3071744d2b7f00a5742468e0fd012c&imgtype=0&src=http%3A%2F%2Fimage.coolapk.com%2Fdiscovery%2F2016%2F0204%2F381916_1454528942_8537.png',
+                title: 'adblock plus',
+                des: '过滤烦人广告/必备神器'
+              },
+              {
+                url: 'http://ypsuperkey.meek.com.cn',
+                img: 'http://ypsuperkey.meek.com.cn/images/favicon.png',
+                title: '云盘万能钥匙',
+                des: '自动识别百度网盘提取密码'
+              }
+            ]
+          }
         ]
       }
     },
@@ -58,8 +94,7 @@
 
     },
     methods: {},
-    components: {
-    }
+    components: {}
   }
 </script>
 
@@ -90,6 +125,7 @@
     ul {
       margin-right: -10px;
       margin-left: -10px;
+      overflow: auto;
       li {
         float: left;
         width: 25%;
