@@ -1,15 +1,11 @@
 <template>
   <div id="index" v-cloak v-title data-title="首页">
-    <vheader></vheader>
     <h1 class="css127d190621611d">小桥酒馆</h1>
     <p class="css127d190621611d">小桥酒馆，既然来了，就小酌一杯吧~ </p>
-    <vfooter></vfooter>
   </div>
 </template>
 
 <script>
-  import vfooter from '../components/vfooter';
-  import vheader from '../components/vheader';
 
   export default {
     name: 'index',
@@ -21,10 +17,7 @@
     mounted() {
     },
     methods: {},
-    components: {
-      vfooter,
-      vheader,
-    }
+    components: {}
   }
 </script>
 

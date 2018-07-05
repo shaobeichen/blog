@@ -1,6 +1,7 @@
 <template>
   <div id="app" v-cloak>
     <!--<music></music>-->
+    <vheader></vheader>
     <loading v-if="loading"></loading>
     <div v-else>
       <keep-alive>
@@ -8,6 +9,7 @@
       </keep-alive>
       <router-view v-if="!$route.meta.keepAlive"/>
     </div>
+    <vfooter></vfooter>
   </div>
 
 </template>
@@ -16,6 +18,8 @@
   // import music from './components/music';
   import loading from './components/loading';
   import {addScript} from './common/api/script';
+  import vfooter from './components/vfooter';
+  import vheader from './components/vheader';
 
   export default {
     name: 'App',
@@ -41,7 +45,9 @@
     },
     components: {
       // music,
-      loading
+      loading,
+      vfooter,
+      vheader
     }
   }
 </script>

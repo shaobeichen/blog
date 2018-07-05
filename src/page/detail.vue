@@ -1,6 +1,5 @@
 <template>
   <div id="detail" v-cloak v-title :data-title="content.title">
-    <vheader></vheader>
     <transition name="slide-fade">
       <loading v-if="loading"></loading>
       <div v-else class="layer">
@@ -23,7 +22,6 @@
       </div>
     </transition>
 
-    <vfooter></vfooter>
   </div>
 </template>
 
@@ -31,8 +29,6 @@
   import marked from 'marked';
   import dayjs from 'dayjs';
   import friendlytimejs from 'friendlytimejs';
-  import vfooter from '../components/vfooter';
-  import vheader from '../components/vheader';
   import loading from '../components/loading';
   import {mapActions} from 'vuex';
 
@@ -73,8 +69,6 @@
     },
     methods: {},
     components: {
-      vheader,
-      vfooter,
       loading
     }
   }

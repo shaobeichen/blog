@@ -1,6 +1,5 @@
 <template>
   <div id="shot" v-cloak v-title data-title="摄影">
-    <vheader></vheader>
     <div id="inwra" class="in-wra">
       <div class="in-wra-left"></div>
       <div class="in-wra-right"></div>
@@ -8,13 +7,10 @@
         <div class="in-moveline"></div>
       </div>
     </div>
-    <vfooter></vfooter>
   </div>
 </template>
 
 <script>
-  import vfooter from '../components/vfooter';
-  import vheader from '../components/vheader';
 
   export default {
     name: 'shot',
@@ -68,8 +64,6 @@
       }
     },
     components: {
-      vheader,
-      vfooter,
     }
   }
 </script>

@@ -1,6 +1,5 @@
 <template>
   <div id="tools" v-cloak>
-    <vheader></vheader>
     <div class="layer">
       <div class="panel-title card">热门推荐</div>
       <ul>
@@ -21,13 +20,10 @@
         </li>
       </ul>
     </div>
-    <vfooter></vfooter>
   </div>
 </template>
 
 <script>
-  import vfooter from '../components/vfooter';
-  import vheader from '../components/vheader';
 
   export default {
     name: 'tools',
@@ -63,8 +59,6 @@
     },
     methods: {},
     components: {
-      vheader,
-      vfooter
     }
   }
 </script>
