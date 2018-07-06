@@ -6,6 +6,9 @@
         <div class="detailContent">
           <h1>{{content.title}}</h1>
           <div class="article-label">
+            <img class="icon github"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC/0lEQVRYR7VXUW7aQBDdMfwgIyU3iPNHWEuFEyQ9QekJGk7Q5ARJTlB6gtITBE7QcoJSyQv8lZ6gVMJ/mKmeZVvG7C42hZWQkHd39s3smzezJCoOKWWHma8cx+nkt2632ykR/VZKTauYpDKLfd+/Y+Z3QogeEXm2Pcy8FEKMiGgcBMH3Q/atAFqtller1Z6I6P6QId08Mw+jKHpZLBYApR1GAFLKeyL6cszBxT3M3FdKDXW2tACklEMi+nCKw1MbiIZSql+0uQfgHIfbQOwA8H3/WQjxdErPNbZegiDAOfHIAIDpQohv+Q3M/BiG4dB1XbAfRLwtCW6CkIdhOHJdF1z6VNj3Ns2QDICUcklEV6aF+A5iMnOHiJDzO8xmZi+dyxPO4NhSKXWdRcDC+AxpSc/3lukAYFGaGXEEDN5j6pwA4igQxKZer/8yeHg2ADhvs9lck5TyQUMShOirUuooBSw6Y0ptkJx834de77Eb6GwSWoUTlihPtACYGVXNWnSqAMBa3/dXQoiLwr4YAGuMTYIggC6cbBgivdICYOapUqp7stMtmWaKgAiCoFSvUBakIdLCSEJm7lbtbkxg0EUR0Q/dVSMN0b2g2ymOnaJR1lPduna7PXAc52NxjpnHRh0QQqw2m033f1PR4j205tGqhCBjFEXvjwWRtHSvRLTTwKaRiJUwydFMjJj5Z1yliN4kC5G/g/V6/Xm5XOL/weF53mWz2UTIH4QQl4YNcarHAG5ubnq1Wu01WThar9f9RqNxl/sWTyEizDyZzWYwvDdw10R0a/I4vwGRnc/no3xDko9CrAO6OmFrMCs0spnQZQCKep0elIBAC3WB64miqGfiRBL6P4fuKF9ndsQm7wEeGGEYdsvee3qoSXDS+WIEdV1xVp6TO3+ezWZjGICHhwDZACDtlFKDfIRM7wLjo+SQRJsAmLhj1PvkPYgHyk6jWhUASjs6atM70VpwElIh5fCLa3kFAH+hH/k3gI6cpSseCApRKd5h0SiyBjJuegsW1/8D9Ra7uNPQlKoAAAAASUVORK5CYII="/>
+            <a :href="content.html_url" target="_blank" class="article-time">查看原文</a>
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-1"></use>
             </svg>
@@ -18,6 +21,29 @@
           </div>
           <div v-html="getMainDes" v-highlight></div>
 
+          <div class="post-copyright">
+            <div class="post-copyright__author">
+              <span class="post-copyright-meta">作者:  </span>
+              <span class="post-copyright-info">
+                <a href="mailto:undefined">LeachZhou</a>
+              </span>
+            </div>
+            <div class="post-copyright__type">
+              <span class="post-copyright-meta">链接地址:  </span>
+              <span class="post-copyright-info">
+                <a href="https://molunerfinn.com/note-for-picgo/">{{url}}</a>
+              </span>
+            </div>
+            <div class="post-copyright__notice">
+              <span class="post-copyright-meta">版权声明:  </span>
+              <span class="post-copyright-info">除非另有说明，否则本博客中的所有文章均根据
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+                获得许可.</span>
+            </div>
+          </div>
+
+
+          <img class="dnation" src="http://pbfb1rtmb.bkt.clouddn.com/20180706110701.jpg" alt="">
         </div>
       </div>
     </transition>
@@ -38,6 +64,7 @@
       return {
         content: {},
         id: this.$route.params.id,
+        url: location.href,
         loading: true
       }
     },
@@ -87,6 +114,10 @@
     background: #ffffff;
     border-radius: 5px;
     line-height: 1.5;
+    .github {
+      margin: 0 5px 0 0;
+      padding: 2px;
+    }
     blockquote {
       border-left: 5px solid #363159;
       padding: 0 0 0 10px;
@@ -96,18 +127,48 @@
       font-weight: bold;
     }
     h3 {
+      position: relative;
       font-size: 16px;
       font-weight: bold;
+      padding: 20px 30px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        border: 2px solid #2db9ff;
+        border-radius: 50%;
+        background: #fff;
+      }
     }
     img[src*="#width-full"] {
       width: 100%;
     }
     img {
       height: auto;
-      margin: 20px 0;
+      margin: 20px auto;
     }
     p {
       margin: 5px 0;
+    }
+    ul {
+      li {
+        position: relative;
+        padding-left: 30px;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 5px;
+          width: 5px;
+          height: 5px;
+          border: 2px solid #ff3524;
+          border-radius: 50%;
+          background: #fff;
+        }
+      }
     }
     .article-label {
       overflow: auto;
@@ -129,6 +190,15 @@
         font-size: 12px;
       }
 
+    }
+    .post-copyright {
+      padding: 20px;
+      border: 1px #7e8c8d dashed;
+      .post-copyright-meta {
+        font-weight: bold;
+        color: #ff3524;
+        margin-right: 5px;
+      }
     }
   }
 </style>
