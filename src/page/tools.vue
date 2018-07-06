@@ -52,6 +52,24 @@
                 img: 'https://pc3.gtimg.com/softmgr/logo/48/22760_48_1467171340.png',
                 title: 'LICEcap',
                 des: '屏幕录制工具/支持GIF格式'
+              },
+              {
+                url: 'https://github.com/Molunerfinn/PicGo',
+                img: 'https://ws1.sinaimg.cn/large/8700af19ly1fmd6ou9eynj2046046glj',
+                title: 'PicGo',
+                des: '基于Vue开发的图床神器'
+              },
+              {
+                url: 'http://www.fancynode.com.cn/pxcook',
+                img: 'http://www.fancynode.com.cn/siteicon/PxCook.png',
+                title: 'PxCook',
+                des: '最高效易用的自动标注工具'
+              },
+              {
+                url: 'http://www.fancynode.com.cn/pxcook',
+                img: 'https://www.12306bypass.com/404/favicon.ico',
+                title: '12306Bypass',
+                des: '分流抢票神器/其他抢票都是垃圾'
               }
             ]
           },
