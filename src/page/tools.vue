@@ -20,9 +20,9 @@
             </div>
           </li>
         </ul>
-        </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -32,6 +32,76 @@
     data() {
       return {
         dataCon: [
+          {
+            title: '网站导航',
+            list: [
+              {
+                url: 'https://www.qiniu.com/',
+                img: 'https://qiniu.staticfile.org/static/images/qiniu_logo.5249e634.png',
+                title: '七牛云',
+                des: '海量存储/加速传输'
+              },
+              {
+                url: 'http://oatthegoat.co.nz/',
+                img: 'http://oatthegoat.co.nz/20180703_222016Z/favicon.ico',
+                title: 'Oat the Goat',
+                des: '一个Canvas+剧情的网站'
+              },
+            ]
+          },
+          {
+            title: '优秀博客',
+            list: [
+              {
+                url: 'https://molunerfinn.com/',
+                img: 'https://molunerfinn.com/favicon.ico',
+                title: 'MARKSZのBlog',
+                des: 'Electron-vue/Nodejs'
+              },
+              {
+                url: 'http://www.daiwei.org/',
+                img: 'http://www.daiwei.org/index/images/logo/favicon.ico',
+                title: '未曾遗忘的青春',
+                des: '戴伟的个人网站/前端'
+              },
+              {
+                url: 'https://w3ctrain.com/',
+                img: 'https://w3ctrain.com/favicon.ico',
+                title: 'w3cTrain',
+                des: 'Wave 动画/弹幕效果'
+              },
+              {
+                url: 'https://diygod.me/',
+                img: 'https://diygod.me/images/DIYgod.jpg',
+                title: 'DIYgod',
+                des: '人气网红/bilibili'
+              },
+              {
+                url: 'https://www.zhangxinxu.com/',
+                img: 'https://www.zhangxinxu.com/favicon.ico',
+                title: '张鑫旭',
+                des: 'CSS大佬/毋庸置疑'
+              },
+              {
+                url: 'http://elevenbeans.github.io/',
+                img: 'https://raw.githubusercontent.com/elevenBeans/Grocery/master/elevenbeans-black.png',
+                title: 'Elevenbeans blog',
+                des: '下拉刷新/设计模式'
+              },
+              {
+                url: 'http://axetroy.xyz/',
+                img: 'https://avatars1.githubusercontent.com/u/9758711?v=3',
+                title: 'Axetroy NeverLand',
+                des: 'github-api/前端工程化'
+              },
+              {
+                url: 'https://hacknical.com/resume/r1peg776b?locale=zh',
+                img: 'https://hacknical.com/favicon/apple-icon-60x60.png',
+                title: '彭立衡的简历',
+                des: '有可以学习的地方/前端'
+              },
+            ]
+          },
           {
             title: '电脑工具',
             list: [
@@ -161,21 +231,24 @@
           .card-icon {
             width: 32px;
             height: 32px;
-            border-radius: 50%;
             float: left;
             display: block;
             img {
               width: 100%;
               height: 100%;
+              border-radius: 50%;
             }
           }
           .card-title {
             display: block;
-            padding-left: 40px;
+            padding-left: 10px;
             margin-top: 6px;
             font-weight: 700;
             font-size: 15px;
             color: inherit;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
           }
         }
         .card-body {
