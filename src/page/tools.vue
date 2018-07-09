@@ -1,5 +1,10 @@
 <template>
   <div id="tools" v-cloak>
+    <div class="video-banner">
+      <router-link to="/freevideo">
+        <img src="../../static/images/video-banner.png" alt="">
+      </router-link>
+    </div>
     <div class="layer">
       <div v-for="con in dataCon">
         <div class="panel-title card">{{con.title}}</div>
@@ -42,10 +47,22 @@
                 des: '海量存储/加速传输'
               },
               {
+                url: 'https://www.bmob.cn/',
+                img: 'https://assets2016.bmob.cn/img/favicon.ico',
+                title: 'Bmob',
+                des: 'SASS后端云平台'
+              },
+              {
                 url: 'http://oatthegoat.co.nz/',
                 img: 'http://oatthegoat.co.nz/20180703_222016Z/favicon.ico',
                 title: 'Oat the Goat',
                 des: '一个Canvas+剧情的网站'
+              },
+              {
+                url: 'https://placeholder.com/',
+                img: 'http://via.placeholder.com/32x32',
+                title: 'placeholder.com',
+                des: '快速简单的图像占位符'
               },
             ]
           },
@@ -187,6 +204,11 @@
 </script>
 
 <style lang="less" scoped>
+  .video-banner {
+    width: 960px;
+    margin: 0 auto;
+  }
+
   .layer {
     width: 960px;
     margin: 50px auto;

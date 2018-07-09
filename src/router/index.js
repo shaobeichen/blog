@@ -50,7 +50,14 @@ export default new Router({
       component: (resolve) => {
         require(['../page/about.vue'], resolve);
       }
-    }
+    },
+    {
+      path: '/freevideo',
+      name: 'freevideo',
+      component: (resolve) => {
+        require(['../page/freevideo.vue'], resolve);
+      }
+    },
 
   ],
   scrollBehavior(to, from, savedPosition) {
