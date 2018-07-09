@@ -31,7 +31,7 @@
             <div class="post-copyright__type">
               <span class="post-copyright-meta">链接地址:  </span>
               <span class="post-copyright-info">
-                <a href="https://molunerfinn.com/note-for-picgo/">{{url}}</a>
+                <a :href="url">{{url}}</a>
               </span>
             </div>
             <div class="post-copyright__notice">
