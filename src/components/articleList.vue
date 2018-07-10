@@ -266,15 +266,15 @@
           white-space: nowrap;
         }
         .article-des {
-          word-break: break-all;
-          line-height: 1.5;
-          color: #999999;
-          font-size: 14px;
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
+          word-break: break-all;
+          line-height: 1.5;
+          color: #999999;
+          font-size: 14px;
         }
         .article-label {
           position: absolute;
