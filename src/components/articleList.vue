@@ -269,7 +269,6 @@
           word-break: break-all;
           line-height: 1.5;
           color: #999999;
-          height: 66px;
           font-size: 14px;
           overflow: hidden;
           text-overflow: ellipsis;

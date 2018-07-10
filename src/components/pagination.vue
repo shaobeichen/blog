@@ -123,13 +123,14 @@
     text-align: center;
     background-color: #ffffff;
     color: #000000;
-    border: 1px solid #e3e3e3;
+    border: 1px solid #ffffff;
     border-radius: 3px;
     cursor: url(../../static/images/pointer.cur), pointer;
   }
 
   .btn-pager:hover {
     background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
   }
   .btn-pager[disabled] {
     @color: #dedede;
