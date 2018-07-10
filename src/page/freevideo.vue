@@ -46,7 +46,7 @@
   }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .video-banner {
     width: 960px;
     margin: 0 auto;

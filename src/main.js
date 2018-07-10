@@ -8,12 +8,14 @@ import store from "./store/store"
 
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
+//为文章详情添加代码高亮
 Vue.directive('highlight', (el) => {
   let blocks = el.querySelectorAll('pre code');
   blocks.forEach((block) => {
     hljs.highlightBlock(block)
   })
 })
+//为网站添加动态标题
 Vue.directive('title', (el) => {
   if (el.dataset.title === undefined) {
     document.title = `等待中... | 小桥酒馆`;

@@ -68,7 +68,7 @@
   }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .in-wra {
     position: relative;
     width: 960px;
