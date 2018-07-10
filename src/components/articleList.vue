@@ -270,9 +270,8 @@
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-line-clamp: 3;
-          /* autoprefixer: off */
-          -webkit-box-orient: vertical; // 参考 https://github.com/postcss/autoprefixer/issues/776
-          /* autoprefixer: on */
+          /* autoprefixer：ignore next */
+          -webkit-box-orient: vertical;
           word-break: break-all;
           line-height: 1.5;
           color: #999999;
