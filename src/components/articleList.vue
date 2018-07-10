@@ -270,8 +270,9 @@
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-line-clamp: 3;
-          /* autoprefixer：ignore next */
+          /*! autoprefixer: off */
           -webkit-box-orient: vertical;
+          /* autoprefixer: on */
           word-break: break-all;
           line-height: 1.5;
           color: #999999;
