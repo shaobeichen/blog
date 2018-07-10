@@ -53,6 +53,18 @@
                 des: 'SASS后端云平台'
               },
               {
+                url: 'http://idc.hao58.net/',
+                img: 'http://idc.hao58.net/favicon.ico',
+                title: '铭萱网络',
+                des: '虚拟主机/vps/服务器'
+              },
+              {
+                url: 'http://www.doutula.com/',
+                img: 'http://www.doutula.com/favicon.ico',
+                title: '斗图网',
+                des: '真正的斗图网站（我写博客用）'
+              },
+              {
                 url: 'http://oatthegoat.co.nz/',
                 img: 'http://oatthegoat.co.nz/20180703_222016Z/favicon.ico',
                 title: 'Oat the Goat',
@@ -64,6 +76,7 @@
                 title: 'placeholder.com',
                 des: '快速简单的图像占位符'
               },
+
             ]
           },
           {
