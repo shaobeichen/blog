@@ -60,7 +60,7 @@
               },
               {
                 url: 'http://www.doutula.com/',
-                img: 'http://www.doutula.com/favicon.ico',
+                img: 'http://static.doutula.com/img/wechatmini.jpg',
                 title: '斗图网',
                 des: '真正的斗图网站（我写博客用）'
               },
@@ -69,6 +69,12 @@
                 img: 'http://oatthegoat.co.nz/20180703_222016Z/favicon.ico',
                 title: 'Oat the Goat',
                 des: '一个Canvas+剧情的网站'
+              },
+              {
+                url: 'https://www.heroforge.com/',
+                img: 'https://www.heroforge.com/static/img/launcher-icon-152.png',
+                title: 'heroforge',
+                des: '轻松制作自定义3D打印微缩模型网站'
               },
               {
                 url: 'https://placeholder.com/',
