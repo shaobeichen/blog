@@ -192,6 +192,7 @@
 
     }
     .post-copyright {
+      margin-top: 20px;
       padding: 20px;
       border: 1px #7e8c8d dashed;
       .post-copyright-meta {
