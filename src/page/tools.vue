@@ -272,7 +272,6 @@
           overflow: hidden;
           margin-bottom: 7px;
           display: block;
-          cursor: pointer;
           padding: 10px 18px 0;
           color: #333;
           .card-icon {

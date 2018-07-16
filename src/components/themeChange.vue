@@ -11,7 +11,7 @@
         <a href="javascript:;" @click="changeTheme(`Three`)"></a>
       </li>
     </ul>
-    <p style="color: #ffffff;" @click="changeTheme(``)">恢复默认时间主题</p>
+    <a class="def-theme" href="javascript:;" @click="changeTheme(``)">恢复默认时间主题</a>
   </div>
 </template>
 
@@ -50,13 +50,13 @@
 
 <style lang="less" scoped>
   @bg: '../../static/images/kv-cur-bg.png';
-  p {
+  .def-theme {
+    color: #ffffff;
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translate(-50%, 0);
     font-size: 12px;
-    cursor: pointer;
   }
 
   ul {
