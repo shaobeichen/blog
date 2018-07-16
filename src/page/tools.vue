@@ -137,7 +137,7 @@
                 des: '有可以学习的地方/前端'
               },
               {
-                url: 'http://fe.meitu.com/',
+                url: 'https://fe.meitu.com/',
                 img: 'https://www.meitu.com/favicon.ico',
                 title: '美图前端博客',
                 des: 'PokemonGo/LBS游戏开发'
