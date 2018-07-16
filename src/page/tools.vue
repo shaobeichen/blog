@@ -59,6 +59,12 @@
                 des: '虚拟主机/vps/服务器'
               },
               {
+                url: 'https://placeholder.com/',
+                img: 'http://via.placeholder.com/32x32',
+                title: 'placeholder.com',
+                des: '快速简单的图像占位符'
+              },
+              {
                 url: 'http://www.doutula.com/',
                 img: 'http://static.doutula.com/img/wechatmini.jpg',
                 title: '斗图网',
@@ -77,145 +83,154 @@
                 des: '轻松制作自定义3D打印微缩模型网站'
               },
               {
-                url: 'https://placeholder.com/',
-                img: 'http://via.placeholder.com/32x32',
-                title: 'placeholder.com',
-                des: '快速简单的图像占位符'
+                url: 'http://modiface.com/',
+                img: 'http://a0.modiface.com/modiface2018/wp-content/themes/modiface_v1.2/assets/favicons/apple-icon-60x60.png',
+                title: 'ModiFace',
+                des: '美容品牌AR技术网站'
               },
 
-            ]
+
+    ]
+    },
+      {
+        title: '优秀博客',
+          list
+      :
+        [
+          {
+            url: 'https://molunerfinn.com/',
+            img: 'https://molunerfinn.com/favicon.ico',
+            title: 'MARKSZのBlog',
+            des: 'Electron-vue/Nodejs'
           },
           {
-            title: '优秀博客',
-            list: [
-              {
-                url: 'https://molunerfinn.com/',
-                img: 'https://molunerfinn.com/favicon.ico',
-                title: 'MARKSZのBlog',
-                des: 'Electron-vue/Nodejs'
-              },
-              {
-                url: 'http://www.daiwei.org/',
-                img: 'http://www.daiwei.org/index/images/logo/favicon.ico',
-                title: '未曾遗忘的青春',
-                des: '戴伟的个人网站/前端'
-              },
-              {
-                url: 'https://w3ctrain.com/',
-                img: 'https://w3ctrain.com/favicon.ico',
-                title: 'w3cTrain',
-                des: 'Wave 动画/弹幕效果'
-              },
-              {
-                url: 'https://diygod.me/',
-                img: 'https://diygod.me/images/DIYgod.jpg',
-                title: 'DIYgod',
-                des: '人气网红/bilibili'
-              },
-              {
-                url: 'https://www.zhangxinxu.com/',
-                img: 'https://www.zhangxinxu.com/favicon.ico',
-                title: '张鑫旭',
-                des: 'CSS大佬/毋庸置疑'
-              },
-              {
-                url: 'http://elevenbeans.github.io/',
-                img: 'https://raw.githubusercontent.com/elevenBeans/Grocery/master/elevenbeans-black.png',
-                title: 'Elevenbeans blog',
-                des: '下拉刷新/设计模式'
-              },
-              {
-                url: 'http://axetroy.xyz/',
-                img: 'https://avatars1.githubusercontent.com/u/9758711?v=3',
-                title: 'Axetroy NeverLand',
-                des: 'github-api/前端工程化'
-              },
-              {
-                url: 'https://hacknical.com/resume/r1peg776b?locale=zh',
-                img: 'https://hacknical.com/favicon/apple-icon-60x60.png',
-                title: '彭立衡的简历',
-                des: '有可以学习的地方/前端'
-              },
-              {
-                url: 'https://fe.meitu.com/',
-                img: 'https://www.meitu.com/favicon.ico',
-                title: '美图前端博客',
-                des: 'PokemonGo/LBS游戏开发'
-              },
-            ]
+            url: 'http://www.daiwei.org/',
+            img: 'http://www.daiwei.org/index/images/logo/favicon.ico',
+            title: '未曾遗忘的青春',
+            des: '戴伟的个人网站/前端'
           },
           {
-            title: '电脑工具',
-            list: [
-              {
-                url: 'https://zh.snipaste.com/',
-                img: 'https://zh.snipaste.com/img/logo.svg',
-                title: 'Snipaste屏幕截图',
-                des: '极致截图贴图/编辑/标注工具'
-              },
-              {
-                url: 'https://www.jb51.net/softjc/275066.html',
-                img: 'http://8.pic.pc6.com/up/2017-9/2017971824211329430340.jpg',
-                title: 'FastStoneCapture',
-                des: '长截图/gif截图/自行探索'
-              },
-              {
-                url: 'https://pc.qq.com/detail/0/detail_22760.html',
-                img: 'https://pc3.gtimg.com/softmgr/logo/48/22760_48_1467171340.png',
-                title: 'LICEcap',
-                des: '屏幕录制工具/支持GIF格式'
-              },
-              {
-                url: 'https://github.com/Molunerfinn/PicGo',
-                img: 'https://ws1.sinaimg.cn/large/8700af19ly1fmd6ou9eynj2046046glj',
-                title: 'PicGo',
-                des: '基于Vue开发的图床神器'
-              },
-              {
-                url: 'http://www.fancynode.com.cn/pxcook',
-                img: 'http://www.fancynode.com.cn/siteicon/PxCook.png',
-                title: 'PxCook',
-                des: '最高效易用的自动标注工具'
-              },
-              {
-                url: 'http://www.fancynode.com.cn/pxcook',
-                img: 'https://www.12306bypass.com/404/favicon.ico',
-                title: '12306Bypass',
-                des: '分流抢票神器/其他抢票都是垃圾'
-              }
-            ]
+            url: 'https://w3ctrain.com/',
+            img: 'https://w3ctrain.com/favicon.ico',
+            title: 'w3cTrain',
+            des: 'Wave 动画/弹幕效果'
           },
           {
-            title: 'Chrome插件',
-            list: [
-              {
-                url: 'https://translate.google.com',
-                img: 'https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=783d326871f40ad115e4c0e56f1776e2/cdbf6c81800a19d8ce78815539fa828ba61e4662.jpg',
-                title: '谷歌翻译',
-                des: 'Google 的免费翻译服务'
-              },
-              {
-                url: 'https://juejin.im/extension',
-                img: 'https://gold-cdn.xitu.io/images/app/logo.png',
-                title: '掘金',
-                des: '前端/后端等开发者社区'
-              },
-              {
-                url: 'https://adblockplus.org/',
-                img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530795804366&di=be3071744d2b7f00a5742468e0fd012c&imgtype=0&src=http%3A%2F%2Fimage.coolapk.com%2Fdiscovery%2F2016%2F0204%2F381916_1454528942_8537.png',
-                title: 'adblock plus',
-                des: '过滤烦人广告/必备神器'
-              },
-              {
-                url: 'http://ypsuperkey.meek.com.cn',
-                img: 'http://ypsuperkey.meek.com.cn/images/favicon.png',
-                title: '云盘万能钥匙',
-                des: '自动识别百度网盘提取密码'
-              }
-            ]
+            url: 'https://diygod.me/',
+            img: 'https://diygod.me/images/DIYgod.jpg',
+            title: 'DIYgod',
+            des: '人气网红/bilibili'
+          },
+          {
+            url: 'https://www.zhangxinxu.com/',
+            img: 'https://www.zhangxinxu.com/favicon.ico',
+            title: '张鑫旭',
+            des: 'CSS大佬/毋庸置疑'
+          },
+          {
+            url: 'http://elevenbeans.github.io/',
+            img: 'https://raw.githubusercontent.com/elevenBeans/Grocery/master/elevenbeans-black.png',
+            title: 'Elevenbeans blog',
+            des: '下拉刷新/设计模式'
+          },
+          {
+            url: 'http://axetroy.xyz/',
+            img: 'https://avatars1.githubusercontent.com/u/9758711?v=3',
+            title: 'Axetroy NeverLand',
+            des: 'github-api/前端工程化'
+          },
+          {
+            url: 'https://hacknical.com/resume/r1peg776b?locale=zh',
+            img: 'https://hacknical.com/favicon/apple-icon-60x60.png',
+            title: '彭立衡的简历',
+            des: '有可以学习的地方/前端'
+          },
+          {
+            url: 'https://fe.meitu.com/',
+            img: 'https://www.meitu.com/favicon.ico',
+            title: '美图前端博客',
+            des: 'PokemonGo/LBS游戏开发'
+          },
+        ]
+      }
+    ,
+      {
+        title: '电脑工具',
+          list
+      :
+        [
+          {
+            url: 'https://zh.snipaste.com/',
+            img: 'https://zh.snipaste.com/img/logo.svg',
+            title: 'Snipaste屏幕截图',
+            des: '极致截图贴图/编辑/标注工具'
+          },
+          {
+            url: 'https://www.jb51.net/softjc/275066.html',
+            img: 'http://8.pic.pc6.com/up/2017-9/2017971824211329430340.jpg',
+            title: 'FastStoneCapture',
+            des: '长截图/gif截图/自行探索'
+          },
+          {
+            url: 'https://pc.qq.com/detail/0/detail_22760.html',
+            img: 'https://pc3.gtimg.com/softmgr/logo/48/22760_48_1467171340.png',
+            title: 'LICEcap',
+            des: '屏幕录制工具/支持GIF格式'
+          },
+          {
+            url: 'https://github.com/Molunerfinn/PicGo',
+            img: 'https://ws1.sinaimg.cn/large/8700af19ly1fmd6ou9eynj2046046glj',
+            title: 'PicGo',
+            des: '基于Vue开发的图床神器'
+          },
+          {
+            url: 'http://www.fancynode.com.cn/pxcook',
+            img: 'http://www.fancynode.com.cn/siteicon/PxCook.png',
+            title: 'PxCook',
+            des: '最高效易用的自动标注工具'
+          },
+          {
+            url: 'http://www.fancynode.com.cn/pxcook',
+            img: 'https://www.12306bypass.com/404/favicon.ico',
+            title: '12306Bypass',
+            des: '分流抢票神器/其他抢票都是垃圾'
           }
         ]
       }
+    ,
+      {
+        title: 'Chrome插件',
+          list
+      :
+        [
+          {
+            url: 'https://translate.google.com',
+            img: 'https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=783d326871f40ad115e4c0e56f1776e2/cdbf6c81800a19d8ce78815539fa828ba61e4662.jpg',
+            title: '谷歌翻译',
+            des: 'Google 的免费翻译服务'
+          },
+          {
+            url: 'https://juejin.im/extension',
+            img: 'https://gold-cdn.xitu.io/images/app/logo.png',
+            title: '掘金',
+            des: '前端/后端等开发者社区'
+          },
+          {
+            url: 'https://adblockplus.org/',
+            img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530795804366&di=be3071744d2b7f00a5742468e0fd012c&imgtype=0&src=http%3A%2F%2Fimage.coolapk.com%2Fdiscovery%2F2016%2F0204%2F381916_1454528942_8537.png',
+            title: 'adblock plus',
+            des: '过滤烦人广告/必备神器'
+          },
+          {
+            url: 'http://ypsuperkey.meek.com.cn',
+            img: 'http://ypsuperkey.meek.com.cn/images/favicon.png',
+            title: '云盘万能钥匙',
+            des: '自动识别百度网盘提取密码'
+          }
+        ]
+      }
+    ]
+    }
     },
     created() {
 
