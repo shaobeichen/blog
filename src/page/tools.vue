@@ -194,9 +194,15 @@
                 },
                 {
                   url: 'https://www.freedownloadmanager.org/zh/download.htm',
-                  img: '//www.freedownloadmanager.org/favicon.ico',
+                  img: 'https://www.freedownloadmanager.org/favicon.ico',
                   title: 'Free Download Manager',
                   des: '快速下载Git上的文件/功能待探索'
+                },
+                {
+                  url: 'https://www.baavpn.net/shiyong.php',
+                  img: 'https://www.baavpn.net/favicon.ico',
+                  title: 'baavpn',
+                  des: 'baacloud/快速稳定的网络优化服务'
                 },
               ]
           },
