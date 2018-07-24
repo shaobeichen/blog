@@ -38,62 +38,7 @@
       return {
         dataCon: [
           {
-            title: '网站导航',
-            list: [
-              {
-                url: 'https://www.qiniu.com/',
-                img: 'https://qiniu.staticfile.org/static/images/qiniu_logo.5249e634.png',
-                title: '七牛云',
-                des: '海量存储/加速传输'
-              },
-              {
-                url: 'https://www.bmob.cn/',
-                img: 'https://assets2016.bmob.cn/img/favicon.ico',
-                title: 'Bmob',
-                des: 'SASS后端云平台'
-              },
-              {
-                url: 'http://idc.hao58.net/',
-                img: 'http://idc.hao58.net/favicon.ico',
-                title: '铭萱网络',
-                des: '虚拟主机/vps/服务器'
-              },
-              {
-                url: 'https://placeholder.com/',
-                img: 'http://via.placeholder.com/32x32',
-                title: 'placeholder.com',
-                des: '快速简单的图像占位符'
-              },
-              {
-                url: 'http://www.doutula.com/',
-                img: 'http://static.doutula.com/img/wechatmini.jpg',
-                title: '斗图网',
-                des: '真正的斗图网站（我写博客用）'
-              },
-              {
-                url: 'http://oatthegoat.co.nz/',
-                img: 'http://oatthegoat.co.nz/20180703_222016Z/favicon.ico',
-                title: 'Oat the Goat',
-                des: '一个Canvas+剧情的网站'
-              },
-              {
-                url: 'https://www.heroforge.com/',
-                img: 'https://www.heroforge.com/static/img/launcher-icon-152.png',
-                title: 'heroforge',
-                des: '轻松制作自定义3D打印微缩模型网站'
-              },
-              {
-                url: 'http://modiface.com/',
-                img: 'http://a0.modiface.com/modiface2018/wp-content/themes/modiface_v1.2/assets/favicons/apple-icon-60x60.png',
-                title: 'ModiFace',
-                des: '美容品牌AR技术网站'
-              },
-
-
-            ]
-          },
-          {
-            title: '优秀博客',
+            title: '友情链接',
             list:
               [
                 {
@@ -150,7 +95,66 @@
                   title: '美图前端博客',
                   des: 'PokemonGo/LBS游戏开发'
                 },
+                {
+                  url: 'https://blog.qiaker.cn',
+                  img: 'https://blog.qiaker.cn/favicon.ico',
+                  title: '千里草',
+                  des: '人生总在热爱和付出中精彩'
+                },
               ]
+          },
+          {
+            title: '网站导航',
+            list: [
+              {
+                url: 'https://www.qiniu.com/',
+                img: 'https://qiniu.staticfile.org/static/images/qiniu_logo.5249e634.png',
+                title: '七牛云',
+                des: '海量存储/加速传输'
+              },
+              {
+                url: 'https://www.bmob.cn/',
+                img: 'https://assets2016.bmob.cn/img/favicon.ico',
+                title: 'Bmob',
+                des: 'SASS后端云平台'
+              },
+              {
+                url: 'http://idc.hao58.net/',
+                img: 'http://idc.hao58.net/favicon.ico',
+                title: '铭萱网络',
+                des: '虚拟主机/vps/服务器'
+              },
+              {
+                url: 'https://placeholder.com/',
+                img: 'http://via.placeholder.com/32x32',
+                title: 'placeholder.com',
+                des: '快速简单的图像占位符'
+              },
+              {
+                url: 'http://www.doutula.com/',
+                img: 'http://static.doutula.com/img/wechatmini.jpg',
+                title: '斗图网',
+                des: '真正的斗图网站（我写博客用）'
+              },
+              {
+                url: 'http://oatthegoat.co.nz/',
+                img: 'http://oatthegoat.co.nz/20180703_222016Z/favicon.ico',
+                title: 'Oat the Goat',
+                des: '一个Canvas+剧情的网站'
+              },
+              {
+                url: 'https://www.heroforge.com/',
+                img: 'https://www.heroforge.com/static/img/launcher-icon-152.png',
+                title: 'heroforge',
+                des: '轻松制作自定义3D打印微缩模型网站'
+              },
+              {
+                url: 'http://modiface.com/',
+                img: 'http://a0.modiface.com/modiface2018/wp-content/themes/modiface_v1.2/assets/favicons/apple-icon-60x60.png',
+                title: 'ModiFace',
+                des: '美容品牌AR技术网站'
+              },
+            ]
           },
           {
             title: '电脑工具',
