@@ -7,13 +7,6 @@
           <h1>{{content.title}}</h1>
           <div class="article-label">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-5"></use>
-            </svg>
-            <span :id="content.html_url" class="leancloud-visitors article-time" data-flag-title="文章阅读量统计">
-                <span class="post-meta-item-text ">阅读量：</span>
-                <span class="leancloud-visitors-count"></span>
-            </span>
-            <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-1"></use>
             </svg>
             <div class="article-time">更新时间：{{getTime}}</div>
