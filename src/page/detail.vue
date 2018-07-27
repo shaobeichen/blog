@@ -113,9 +113,9 @@
           path: window.location.href,
           notify: true,
           verify: true,
-          avatar: 'mm',
-          placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
-          highlight: false,
+          avatar: 'robohash',
+          placeholder: '麻烦留言的各位看客们，请你们把姓名填上，邮箱网址选填(｡◕ˇ∀ˇ◕)',
+          highlight: true,
           visitor: true
         })
       })

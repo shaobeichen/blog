@@ -119,6 +119,12 @@
                 des: 'SASS后端云平台'
               },
               {
+                url: 'https://www.leancloud.cn/',
+                img: 'https://www.leancloud.cn/favicon.ico',
+                title: 'LeanCloud',
+                des: 'SASS后端云平台'
+              },
+              {
                 url: 'http://idc.hao58.net/',
                 img: 'http://idc.hao58.net/favicon.ico',
                 title: '铭萱网络',
