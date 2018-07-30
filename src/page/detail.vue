@@ -44,7 +44,7 @@
           </div>
 
 
-          <img class="dnation" src="https://ws1.sinaimg.cn/large/e83d3594gy1ftrmtdm0o2j20pk08ctbu.jpg" alt="">
+          <img class="donation" src="https://ws1.sinaimg.cn/large/e83d3594gy1ftrmtdm0o2j20pk08ctbu.jpg" alt="Donation">
 
 
           <div :id="'vcomments'+content.number"></div>
