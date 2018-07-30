@@ -44,7 +44,7 @@
           </div>
 
 
-          <img class="dnation" src="http://pbfb1rtmb.bkt.clouddn.com/20180706110701.jpg" alt="">
+          <img class="dnation" src="https://ws1.sinaimg.cn/large/e83d3594gy1ftrmtdm0o2j20pk08ctbu.jpg" alt="">
 
 
           <div :id="'vcomments'+content.number"></div>
@@ -176,6 +176,7 @@
       margin: 15px 0;
     }
     ul {
+      margin-left: 20px;
       li {
         position: relative;
         padding-left: 30px;
