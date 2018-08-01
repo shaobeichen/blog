@@ -5,7 +5,7 @@
     </div>
     <div class="layer">
       <div class="content">
-        <select name="" id="" v-model="selectVal">
+        <select v-model="selectVal">
           <option :value="item.url" v-for="item in list.list">{{item.name}}</option>
         </select>
         <input type="text" placeholder="输入视频连接地址" v-model="inputVal">

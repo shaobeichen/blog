@@ -167,6 +167,7 @@
     }
     img[src*="#width-full"] {
       width: 100%;
+      border-radius: 5px;
     }
     img {
       height: auto;
