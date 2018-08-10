@@ -6,9 +6,6 @@ import hljs from 'highlight.js'
 import 'highlight.js/styles/monokai-sublime.css'
 import store from "./store/store"
 
-//引入评论全局
-window.AV = require('leancloud-storage');
-
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 //为文章详情添加代码高亮

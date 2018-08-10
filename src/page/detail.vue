@@ -47,7 +47,7 @@
           <img class="donation" src="https://ws1.sinaimg.cn/large/e83d3594gy1ftrmtdm0o2j20pk08ctbu.jpg" alt="Donation">
 
 
-          <div :id="'vcomments'+content.number"></div>
+          <div id="comments"></div>
         </div>
       </div>
     </transition>
@@ -61,8 +61,6 @@
   import friendlytimejs from 'friendlytimejs';
   import loading from '../components/loading';
   import {mapActions} from 'vuex';
-  import Valine from 'valine';
-
 
   export default {
     name: 'detail',
@@ -107,13 +105,14 @@
     updated() {
       this.$nextTick(function () {
         new Valine({
-          el: '#vcomments'+this.content.number,
+          av: AV,
+          el: '#comments',
           appId: 'NWmkgn7YgE53xSj6963D2hE5-gzGzoHsz',
           appKey: 'UbveIK6lxebyHblry0eSJsWP',
           path: window.location.href,
-          notify: true,
-          verify: true,
-          avatar: 'robohash',
+          notify: false,
+          verify: false,
+          avatar: 'mm',
           placeholder: '麻烦留言的各位看客们，请你们把姓名填上，邮箱网址选填(｡◕ˇ∀ˇ◕)',
           highlight: true,
           visitor: true
