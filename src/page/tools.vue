@@ -101,6 +101,12 @@
                   title: '千里草',
                   des: '人生总在热爱和付出中精彩'
                 },
+                {
+                  url: 'https://xuqiang521.github.io/',
+                  img: 'https://xuqiang521.github.io/images/avatar.jpg',
+                  title: 'qiangdada',
+                  des: '博客里满满的前端干货'
+                },
               ]
           },
           {
