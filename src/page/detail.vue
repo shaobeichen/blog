@@ -165,12 +165,14 @@
       }
     }
     img[src*="#width-full"] {
+      max-width: 100%;
       width: 100%;
       border-radius: 5px;
     }
     img {
       height: auto;
       margin: 20px auto;
+      max-width: 100%;
     }
     p {
       margin: 15px 0;
