@@ -21,7 +21,7 @@
   }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
   .copyright {
     position: absolute;
     right: 10px;
@@ -30,5 +30,8 @@
     font-size: 12px;
     text-align: right;
     line-height: 1.5;
+    a {
+      color: #38bafc;
+    }
   }
 </style>

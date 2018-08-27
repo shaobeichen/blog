@@ -135,6 +135,9 @@
     background: #ffffff;
     border-radius: 5px;
     line-height: 1.5;
+    a {
+      color: #38bafc;
+    }
     .github {
       margin: 0 5px 0 0;
       padding: 2px;

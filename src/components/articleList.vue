@@ -264,6 +264,7 @@
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
+          color: #475354;
         }
         .article-des {
           overflow: hidden;
