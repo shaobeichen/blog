@@ -4,7 +4,7 @@
       <loading v-if="loading"></loading>
       <div v-else class="layer">
         <ul>
-          <li v-for="(item,index) in list">
+          <li v-for="(item,index) in list" :key="index">
             <router-link :to="{ name:'detail',params:{ id:item.number } }">
               <div class="article-img-inner">
                 <img :src="getMainImage[index]" alt="">
@@ -21,8 +21,8 @@
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-2"></use>
                   </svg>
-                  <label v-for="items in item.labels"
-                         :style="{background:`#${items.color}`}">{{items.name}}</label>
+                  <label v-for="(items,index) in item.labels"
+                         :style="{background:`#${items.color}`}" :key="index">{{items.name}}</label>
                 </div>
               </div>
             </router-link>
