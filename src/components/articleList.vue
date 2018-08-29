@@ -5,7 +5,7 @@
       <div v-else class="layer">
         <ul>
           <li v-for="(item,index) in list" :key="index">
-            <router-link :to="{ name:'detail',params:{ id:item.number } }">
+            <router-link :to="{ name:'detail',params:{ id:item.number } }" target="_blank" >
               <div class="article-img-inner">
                 <img :src="getMainImage[index]" alt="">
               </div>
