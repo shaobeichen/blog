@@ -214,7 +214,25 @@
         "img": "http://ypsuperkey.meek.com.cn/images/favicon.png",
         "title": "云盘万能钥匙",
         "des": "自动识别百度网盘提取密码"
-      }
+      },
+      {
+        "url": "https://github.com/softvar/enhanced-github",
+        "img": "https://raw.githubusercontent.com/softvar/enhanced-github/master/icons/enhanced-github128.png",
+        "title": "Enhanced Github",
+        "des": "GitHub单独文件下载"
+      },
+      {
+        "url": "https://octolinker.github.io/",
+        "img": "https://octolinker.github.io/img/mascot.png",
+        "title": "octolinker",
+        "des": "GitHub链接跳转"
+      },
+      {
+        "url": "https://github.com/buunguyen/octotree",
+        "img": "https://img.crx4chrome.com/87/d5/ed/bkhaagjahfmjljalopjnoealnfndnagc-icon.png",
+        "title": "octotree",
+        "des": "GitHub文件树"
+      },
     ]
   }
 ]
