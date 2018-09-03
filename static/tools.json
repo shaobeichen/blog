@@ -80,6 +80,12 @@
     "title": "网站导航",
     "list": [
       {
+        "url": "https://www.picdiet.com/zh-cn",
+        "img": "https://www.picdiet.com/css/favicon.ico",
+        "title": "picdiet",
+        "des": "在线批量压缩图片神器/巨牛逼"
+      },
+      {
         "url": "https://www.qiniu.com/",
         "img": "https://qiniu.staticfile.org/static/images/qiniu_logo.5249e634.png",
         "title": "七牛云",
