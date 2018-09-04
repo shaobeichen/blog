@@ -188,9 +188,15 @@
       },
       {
         "url": "https://www.baavpn.net/shiyong.php",
-        "img": "https://www.baavpn.net/favicon.ico",
+        "img": "https://b.zol-img.com.cn/soft/6_64x64/213/ce7xNIQqtTJ8.jpg",
         "title": "baavpn",
         "des": "baacloud/快速稳定的网络优化服务"
+      },
+      {
+        "url": "http://xiazai.zol.com.cn/detail/36/353639.shtml",
+        "img": "https://www.baavpn.net/favicon.ico",
+        "title": "Fiddler汉化版",
+        "des": "抓包软件"
       }
     ]
   },
