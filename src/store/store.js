@@ -8,7 +8,7 @@ export const THEME_TYPE = 'THEME_TYPE';//主题类型
 
 const state = {
   themeType: '',
-  githubToken: ['f1b815b677693c7e431e', '10c9ee46e63ecc5f876d'],
+  githubToken: ['f1b815b677693c7e431e', '10c9ee46e63ecc5f876d'], 
 }
 
 const mutations = {
