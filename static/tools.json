@@ -73,12 +73,24 @@
         "img": "http://oe3vwrk94.bkt.clouddn.com/favicon",
         "title": "三步枫的个人网站",
         "des": "坐拥巨款的詹姆斯"
+      },
+      {
+        "url": "https://www.zerobbs.net/",
+        "img": "https://secure.gravatar.com/avatar/525c10789e06ce71e23b47dcc289c475?s=80",
+        "title": "ZeroDream",
+        "des": "零梦开源交流论坛"
       }
     ]
   },
   {
     "title": "网站导航",
     "list": [
+      {
+        "url": "https://www.picdiet.com/zh-cn",
+        "img": "https://www.picdiet.com/css/favicon.ico",
+        "title": "picdiet",
+        "des": "在线批量压缩图片神器/巨牛逼"
+      },
       {
         "url": "https://www.qiniu.com/",
         "img": "https://qiniu.staticfile.org/static/images/qiniu_logo.5249e634.png",
@@ -182,9 +194,21 @@
       },
       {
         "url": "https://www.baavpn.net/shiyong.php",
-        "img": "https://www.baavpn.net/favicon.ico",
+        "img": "https://b.zol-img.com.cn/soft/6_64x64/213/ce7xNIQqtTJ8.jpg",
         "title": "baavpn",
         "des": "baacloud/快速稳定的网络优化服务"
+      },
+      {
+        "url": "http://xiazai.zol.com.cn/detail/36/353639.shtml",
+        "img": "https://www.baavpn.net/favicon.ico",
+        "title": "Fiddler汉化版",
+        "des": "抓包软件"
+      },
+      {
+        "url": "http://www.ouyaoxiazai.com/pc/images/ico_xz.jpg",
+        "img": "https://www.baavpn.net/favicon.ico",
+        "title": "网页保存器",
+        "des": "保存网页必备，小巧简洁"
       }
     ]
   },
