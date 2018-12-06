@@ -209,6 +209,12 @@
         "img": "https://www.baavpn.net/favicon.ico",
         "title": "网页保存器",
         "des": "保存网页必备，小巧简洁"
+      },
+      {
+        "url": "http://www.yingdev.com/projects/wgestures",
+        "img": "http://www.yingdev.com/favicon.ico",
+        "title": "全局鼠标手势",
+        "des": "更简单更现代免费开源的鼠标手势"
       }
     ]
   },
