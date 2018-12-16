@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "postinstall": "opencollective-postinstall"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -17,9 +18,11 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "marked": "^0.3.19",
+    "opencollective-postinstall": "^2.0.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "opencollective": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -67,5 +70,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/blog"
+  }
 }
