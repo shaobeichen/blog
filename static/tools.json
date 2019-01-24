@@ -221,6 +221,12 @@
         "img": "http://www.yingdev.com/favicon.ico",
         "title": "全局鼠标手势",
         "des": "更简单更现代免费开源的鼠标手势"
+      },
+      {
+        "url": "https://www.xnview.com",
+        "img": "https://www.xnview.com/assets/ico/favicon.ico",
+        "title": "XnViewMP",
+        "des": "图像调整器和批量转换器"
       }
     ]
   },
