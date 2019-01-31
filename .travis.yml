@@ -13,7 +13,6 @@ after_success:
   - git init
   - git config --global user.name "${U_NAME}"
   - git config --global user.email "${U_EMAIL}"
-  - echo "i66.me" > CNAME
   - git add .
   - git commit -m "Automatically update from travis-ci"
   - git push --quiet --force  "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
