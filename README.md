@@ -29,7 +29,7 @@
 - 无需本地打包，`git push`直接部署 (使用TravisCI)
 - 在GitHub页面上托管
 ## 演示
-- [http://i66.me](http://i66.me)
+- [https://leachzhou.github.io/blog](https://leachzhou.github.io/blog)
 
 ## 待办事项
 - 请在GitHub看板上查看 [Todolist](https://github.com/LeachZhou/blog/projects/1)
