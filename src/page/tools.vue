@@ -47,7 +47,7 @@ export default {
   created() {},
   mounted() {
     this.$axios
-      .get(`../../static/tools.json`)
+      .get(`./../../static/tools.json`)
       .then(res => {
         if (res.status == 200) {
           setTimeout(() => {

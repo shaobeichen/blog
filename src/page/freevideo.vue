@@ -34,7 +34,7 @@
       }
     },
     created() {
-      this.$axios.get(`../../static/vlist.json`).then((res) => {
+      this.$axios.get(`./../../static/vlist.json`).then((res) => {
         if (res.status == 200) {
           this.list = res.data;
         }
