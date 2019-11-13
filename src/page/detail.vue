@@ -102,23 +102,7 @@
     components: {
       loading
     },
-    updated() {
-      this.$nextTick(function () {
-        new Valine({
-          av: AV,
-          el: '#comments',
-          appId: 'NWmkgn7YgE53xSj6963D2hE5-gzGzoHsz',
-          appKey: 'UbveIK6lxebyHblry0eSJsWP',
-          path: window.location.href,
-          notify: false,
-          verify: false,
-          avatar: 'mm',
-          placeholder: '麻烦留言的各位看客们，请你们把姓名填上，邮箱网址选填(｡◕ˇ∀ˇ◕)',
-          highlight: true,
-          visitor: true
-        })
-      })
-    }
+    updated() {}
   }
 </script>
 
