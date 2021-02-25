@@ -1,6 +1,7 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/18715564/41582703-e8f62c6c-73d4-11e8-8354-c7a230311f9a.png" alt="" width=200>
-</p>
+# 个人博客
+
+> 记录技术的新博客，采用Vue全家桶开发
+
 <p align="center">
   <a href="https://travis-ci.org/LeachZhou/blog">
     <img src="https://travis-ci.org/LeachZhou/blog.svg?branch=master" alt="">
@@ -18,10 +19,6 @@
   		<img src="https://opencollective.com/blog/sponsors/badge.svg" />
   </a>
 </p>
-
-# :black_nib: 小桥酒馆
-
-> 记录技术的新博客，采用Vue全家桶开发
 
 ## 特点
 - Vue 2 / Vue-cli / axios / Less
