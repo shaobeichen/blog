@@ -2,7 +2,7 @@
 
 > 记录技术的新博客，采用Vue全家桶开发
 
-<p align="center">
+<p align="left">
   <a href="https://travis-ci.org/LeachZhou/blog">
     <img src="https://travis-ci.org/LeachZhou/blog.svg?branch=master" alt="">
   </a>
