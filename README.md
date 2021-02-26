@@ -1,64 +1,26 @@
-# 个人博客
+# Vue 3 + Typescript + Vite
 
-> 记录技术的新博客，采用Vue全家桶开发
+This template should help get you started developing with Vue 3 and Typescript in Vite.
 
-<p align="left">
-  <a href="https://travis-ci.org/LeachZhou/blog">
-    <img src="https://travis-ci.org/LeachZhou/blog.svg?branch=master" alt="">
-  </a>
-  <a href="https://github.com/LeachZhou/blog/releases">
-     <img src="https://img.shields.io/github/release/LeachZhou/blog.svg" alt="">
-  </a>
-  <a href="https://github.com/LeachZhou/blog/blob/master/LICENSE">
-     <img src="https://img.shields.io/github/license/LeachZhou/blog.svg" alt="">
-  </a>
-  <a href="#backers" alt="sponsors on Open Collective">
-  		<img src="https://opencollective.com/blog/backers/badge.svg" />
-  </a> 
-  <a href="#sponsors" alt="Sponsors on Open Collective">
-  		<img src="https://opencollective.com/blog/sponsors/badge.svg" />
-  </a>
-</p>
+## Recommended IDE Setup
 
-## 特点
-- Vue 2 / Vue-cli / axios / Less
-- GitHub API 进行数据交互，无需后端服务器
-- 无需本地打包，`git push`直接部署 (使用TravisCI)
-- 在GitHub页面上托管
-## 演示
-- [https://leachzhou.github.io/blog](https://leachzhou.github.io/blog)
+[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
 
-## 待办事项
-- 请在GitHub看板上查看 [Todolist](https://github.com/LeachZhou/blog/projects/1)
+### If Using `<script setup>`
 
-## 更新记录
-- 更新记录请查看Releases [更新记录](https://github.com/LeachZhou/blog/releases)
+[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
 
-## Contributors
+## Type Support For `.vue` Imports in TS
 
-This project exists thanks to all the people who contribute. <img src="https://opencollective.com/blog/contributors.svg?width=890&button=false" />
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
 
+### If Using Volar
 
-## Backers
+Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/blog#backer)]
+### If Using Vetur
 
-<a href="https://opencollective.com/blog#backers" target="_blank"><img src="https://opencollective.com/blog/backers.svg?width=890"></a>
-
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/blog#sponsor)]
-
-<a href="https://opencollective.com/blog/sponsor/0/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/1/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/2/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/3/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/4/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/5/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/6/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/7/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/8/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/blog/sponsor/9/website" target="_blank"><img src="https://opencollective.com/blog/sponsor/9/avatar.svg"></a>
-
-
+1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
+2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
+3. Open `src/main.ts` in VSCode
+4. Open the VSCode command palette 5. Search and run "Select TypeScript version" -> "Use workspace version"
