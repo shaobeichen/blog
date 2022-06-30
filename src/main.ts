@@ -4,6 +4,6 @@ import router from './router/index'
 
 import App from './App.vue'
 
-createApp(App)
-    .use(router)
-    .mount('#app')
+import './assets/style/minireset.css'
+
+createApp(App).use(router).mount('#app')
