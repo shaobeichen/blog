@@ -2,15 +2,9 @@
   <router-view />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup></script>
 
-export default defineComponent({
-  name: 'App'
-})
-</script>
-
-<style scoped lang="scss">
-@import './assets/style/font.scss';
-@import './assets/style/minireset.scss';
+<style lang="scss">
+@import "./assets/style/minireset";
+@import "./assets/style/font";
 </style>
