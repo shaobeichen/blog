@@ -11,15 +11,16 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+
 export default defineComponent({
-  name: 'index',
+  name: 'PagesIndex',
   setup() {
     const title = ref(`Hi, I'm Kholid. <br />Front-End Developer.`)
     const description = ref(
-      `I'm a self-taught front-end developer based in Indonesia. And focused on building interactive web apps and some browser extensions.`,
+      `I'm a self-taught front-end developer based in Indonesia. And focused on building interactive web apps and some browser extensions.`
     )
     return { title, description }
-  },
+  }
 })
 </script>
 

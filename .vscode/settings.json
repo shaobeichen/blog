@@ -1,3 +1,4 @@
 {
-  "vetur.experimental.templateInterpolationService": true
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4
 }

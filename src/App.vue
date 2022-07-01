@@ -6,13 +6,11 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'App',
+  name: 'App'
 })
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-body {
-  font-family: 'Poppins', sans-serif;
-}
+<style scoped lang="scss">
+@import './assets/style/font.scss';
+@import './assets/style/minireset.scss';
 </style>
