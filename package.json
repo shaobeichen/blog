@@ -6,19 +6,13 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint:js": "eslint --fix --ext \".ts,.js,.vue\" --ignore-path .eslintignore .",
+    "lint:js": "eslint --fix --ext \".ts,.js,.vue\" --ignore-path .eslintignore",
     "lint:style": "stylelint --fix \"**/*.{vue,scss,sass,css}\" --ignore-path .eslintignore",
     "lint": "yarn lint:js && yarn lint:style"
   },
   "lint-staged": {
     "*.{ts,js,vue}": "eslint",
     "*.{scss,sass,css,vue}": "stylelint"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   },
   "dependencies": {
     "pinia": "^2.0.14",
