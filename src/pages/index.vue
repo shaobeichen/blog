@@ -12,9 +12,16 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 
-const title = ref(`Hi, I'm Kholid. <br />Front-End Developer.`)
+const title = ref(`你好，我是少北晨。 <br />一位前端工程师。`)
 const description = ref(
-  `I'm a self-taught front-end developer based in Indonesia. And focused on building interactive web apps and some browser extensions.`
+  `我是一名自学的前端工程师，在前端领域有丰富的实战经验，能够给刚入行的朋友一些职业规划上的指导及技术上的分享。
+  <br /><br />
+  主要写一些 Vue.js、Nuxt.js项目，平时会写一些 Node.js，想尝试下Java、Go、Swift。
+  <br /><br />
+  在业余时间，我喜欢看科幻电影，比如《星际穿越》《蝴蝶效应》《土拨鼠之日》《千与千寻》等。
+  <br /><br />
+  我会发一些视频在 <a href="https://space.bilibili.com/13310258" target="_blank">bilibili</a> 上。
+  `
 )
 </script>
 
@@ -38,16 +45,23 @@ const description = ref(
         margin-bottom: 1rem;
         font-size: 3rem;
         font-weight: 700;
-        line-height: 1;
+        line-height: 1.3;
         color: transparent;
         background-image: linear-gradient(to bottom right, #60a5fa, #4f46e5);
+        -webkit-background-clip: text;
         background-clip: text;
       }
 
       .description {
         max-width: 36rem;
         font-weight: 400;
+        line-height: 1.5;
         color: #fff;
+      }
+
+      .description ::v-deep(a) {
+        font-weight: 600;
+        color: #5671ee;
       }
     }
   }
