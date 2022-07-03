@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import container from '../components/container.vue'
+import container from '@/components/container.vue'
 </script>
 
 <style scoped lang="scss">

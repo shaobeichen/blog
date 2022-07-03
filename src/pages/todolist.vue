@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import todolist from '../components/todolist.vue'
+import todolist from '@/components/todolist.vue'
 </script>
 
 <style scoped lang="scss">

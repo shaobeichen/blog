@@ -23,6 +23,7 @@ module.exports = {
   plugins: ['vue', 'prettier', '@typescript-eslint'],
   rules: {
     'vue/no-v-html': 'off',
-    'vue/multi-word-component-names': 0
+    'vue/multi-word-component-names': 0,
+    'vue/no-multiple-template-root': 'off'
   }
 }

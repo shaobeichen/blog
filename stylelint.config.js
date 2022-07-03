@@ -9,6 +9,8 @@ module.exports = {
     'selector-attribute-quotes': 'always',
     'string-quotes': 'single',
     'rule-empty-line-before': 'never-multi-line',
+    'color-function-notation': 'legacy',
+    'alpha-value-notation': 'number',
     'property-no-vendor-prefix': [true, { ignoreProperties: ['background-clip'] }]
   }
 }

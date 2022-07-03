@@ -1,6 +1,6 @@
 <template>
   <div class="todo">
-    <h1 class="title" v-html="title" />
+    <h1 ref="titleRef" class="title" v-html="title" />
     <button class="add" @click="add">添加</button>
     <div class="table">
       <div class="head">
@@ -25,18 +25,19 @@
       <div v-else class="empty">暂无数据</div>
     </div>
   </div>
+  <teleport to="body">
+    <toast />
+  </teleport>
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watchEffect } from 'vue'
+import { Toast } from '../components/abstract/Toast/Toast'
 
 interface Body {
   id: number
   title: string
   status: number
-}
-interface Props {
-  id: number
 }
 
 const STATUS_MAP = [
@@ -44,25 +45,40 @@ const STATUS_MAP = [
   { id: 20, title: '已完成' }
 ]
 
-const props = defineProps<Props>()
-const title = ref<string>('这是TodoList。<br />一个测试Vue3特性的基础案例。<br /><br />')
+const props = defineProps({
+  id: {
+    type: Number,
+    default: 0
+  }
+})
+
+const title = ref<string>(
+  '这是TodoList。<br />一个测试Vue3特性的基础案例,也是一个TypeScript很好的入门案例。<br /><br />'
+)
 const head = ref<string[]>(['ID', '标题', '状态', '操作'])
 const body = ref<Body[]>([])
-
-onMounted(() => {
-  console.log('props: ', props)
-})
+const titleRef = ref<null>(null)
 
 const statusTitle = computed(() => (val: number) => STATUS_MAP.find(item => val === item.id)?.title)
 const isStutas = computed(() => (val: string) => val === 'status')
 const isFinish = computed(() => (val: number) => val === 20)
 
+watchEffect(
+  () => {
+    console.log(titleRef.value)
+  },
+  {
+    flush: 'post'
+  }
+)
+
+onMounted(() => {
+  console.log('props: ', props)
+  console.log(titleRef.value)
+})
+
 const add = () => {
-  body.value.push({
-    id: body.value.length + 1,
-    title: '新增的数据',
-    status: 10
-  })
+  body.value.push({ id: body.value.length + 1, title: '新增的数据', status: 10 })
 }
 const submit = (id: number) => {
   const item = body.value.find(item => item.id === id)
@@ -70,7 +86,10 @@ const submit = (id: number) => {
 }
 const deleteData = (id: number) => {
   const index = body.value.findIndex(item => item.id === id)
-  if (index >= 0) body.value.splice(index, 1)
+  if (index >= 0) {
+    body.value.splice(index, 1)
+    Toast('删除成功！')
+  }
 }
 </script>
 
