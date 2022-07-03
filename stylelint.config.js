@@ -8,6 +8,7 @@ module.exports = {
     'function-url-quotes': 'always',
     'selector-attribute-quotes': 'always',
     'string-quotes': 'single',
+    'rule-empty-line-before': 'never-multi-line',
     'property-no-vendor-prefix': [true, { ignoreProperties: ['background-clip'] }]
   }
 }

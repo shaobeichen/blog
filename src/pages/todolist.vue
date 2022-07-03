@@ -1,17 +1,17 @@
 <template>
-  <div class="index">
+  <div class="todo">
     <main class="container">
-      <container />
+      <todolist :id="1" />
     </main>
   </div>
 </template>
 
 <script lang="ts" setup>
-import container from '../components/container.vue'
+import todolist from '../components/todolist.vue'
 </script>
 
 <style scoped lang="scss">
-.index {
+.todo {
   min-height: 100vh;
   color: #e5e7eb;
   background-color: #111827;
