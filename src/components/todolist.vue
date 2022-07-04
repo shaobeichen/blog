@@ -25,9 +25,6 @@
       <div v-else class="empty">暂无数据</div>
     </div>
   </div>
-  <teleport to="body">
-    <toast />
-  </teleport>
 </template>
 
 <script lang="ts" setup>
@@ -53,7 +50,7 @@ const props = defineProps({
 })
 
 const title = ref<string>(
-  '这是TodoList。<br />一个测试Vue3特性的基础案例,也是一个TypeScript很好的入门案例。<br /><br />'
+  '这是TodoList。<br />一个测试Vue3特性的基础案例，<br />也是一个TypeScript很好的入门案例。<br /><br />'
 )
 const head = ref<string[]>(['ID', '标题', '状态', '操作'])
 const body = ref<Body[]>([])
@@ -79,6 +76,7 @@ onMounted(() => {
 
 const add = () => {
   body.value.push({ id: body.value.length + 1, title: '新增的数据', status: 10 })
+  Toast('添加成功')
 }
 const submit = (id: number) => {
   const item = body.value.find(item => item.id === id)
@@ -88,7 +86,7 @@ const deleteData = (id: number) => {
   const index = body.value.findIndex(item => item.id === id)
   if (index >= 0) {
     body.value.splice(index, 1)
-    Toast('删除成功！')
+    Toast('删除成功')
   }
 }
 </script>

@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { render, createVNode } from 'vue'
 import UIToast from './Toast.vue'
 
 interface options {
@@ -13,12 +13,16 @@ const Toast = (options: string | options) => {
   }
 
   if (typeof options === 'string') mergeOptions.message = options
-  else Object.assign(mergeOptions, { ...options })
+  else Object.assign(mergeOptions, options)
 
   const mountNode = document.createElement('div')
-  const ToastBox = createApp(UIToast, {
-    ...mergeOptions
+  const ToastBox = createVNode(UIToast, {
+    ...mergeOptions,
+    closeToast: () => {
+      mountNode.parentNode?.removeChild(mountNode)
+    }
   })
-  ToastBox.mount(mountNode)
+  render(ToastBox, mountNode)
+  document.body.appendChild(mountNode)
 }
 export { Toast }

@@ -24,6 +24,8 @@ module.exports = {
   rules: {
     'vue/no-v-html': 'off',
     'vue/multi-word-component-names': 0,
-    'vue/no-multiple-template-root': 'off'
+    'vue/no-multiple-template-root': 'off',
+    'no-debugger': 'off',
+    'no-console': 'off'
   }
 }
