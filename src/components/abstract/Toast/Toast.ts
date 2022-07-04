@@ -25,4 +25,5 @@ const Toast = (options: string | options) => {
   render(ToastBox, mountNode)
   document.body.appendChild(mountNode)
 }
-export { Toast }
+
+export default Toast

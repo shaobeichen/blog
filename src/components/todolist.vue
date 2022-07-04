@@ -29,7 +29,7 @@
 
 <script lang="ts" setup>
 import { computed, onMounted, ref, watchEffect } from 'vue'
-import { Toast } from '../components/abstract/Toast/Toast'
+import Toast from '../components/abstract/Toast/Toast'
 
 interface Body {
   id: number

@@ -6,13 +6,18 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint:js": "eslint --fix --ext \".ts,.js,.vue\" --ignore-path .eslintignore",
-    "lint:style": "stylelint --fix \"**/*.{vue,scss,sass,css}\" --ignore-path .eslintignore",
-    "lint": "yarn lint:js && yarn lint:style"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "lint-staged": {
-    "*.{ts,js,vue}": "eslint",
-    "*.{scss,sass,css,vue}": "stylelint"
+    "*.{ts,js,vue}": [
+      "eslint",
+      "prettier"
+    ],
+    "*.{scss,sass,css,vue}": [
+      "stylelint",
+      "prettier"
+    ]
   },
   "dependencies": {
     "pinia": "^2.0.14",
@@ -25,16 +30,23 @@
     "@babel/eslint-parser": "^7.18.2",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@types/jest": "^28.1.4",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/compiler-sfc": "^3.2.37",
+    "@vue/test-utils": "^2.0.2",
+    "@vue/vue3-jest": "28",
     "@vuedx/typescript-plugin-vue": "^0.7.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^28.1.2",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.1.1",
     "husky": "^8.0.1",
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
     "lint-staged": "^13.0.3",
     "postcss-html": "^1.4.1",
     "postcss-scss": "^4.0.4",
@@ -42,6 +54,7 @@
     "stylelint": "^14.9.1",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard-scss": "^4.0.0",
+    "ts-jest": "^28.0.5",
     "typescript": "^4.1.3",
     "vite": "^2.0.1",
     "vite-plugin-eslint": "^1.6.1",
