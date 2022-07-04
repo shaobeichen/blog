@@ -43,14 +43,14 @@ yarn dev
 
 Vue3
 
-[element-plus](https://github.com/element-plus/element-plus/tree/dev/packages/components)
-[vant](https://github.com/youzan/vant)
-[vue3-music](https://github.com/SmallRuralDog/vue3-music/blob/master/src/views/playlist/PlayList.vue)
-[vue3.2-vite-template](https://github.com/BoyYangzai/vue3.2-vite-template/blob/main/src/components/Message/Message.ts)
+- [element-plus](https://github.com/element-plus/element-plus/tree/dev/packages/components)
+- [vant](https://github.com/youzan/vant)
+- [vue3-music](https://github.com/SmallRuralDog/vue3-music/blob/master/src/views/playlist/PlayList.vue)
+- [vue3.2-vite-template](https://github.com/BoyYangzai/vue3.2-vite-template/blob/main/src/components/Message/Message.ts)
 
 jest
 
-[jest 中文网](https://jestjs.io/zh-Hans/docs/getting-started)
-[Vue Test Utils 2](https://test-utils.vuejs.org/guide/): 用于 Vue3 组件单元测试
-[如何运行 Jest 单元测试](https://developer.aliyun.com/article/975177)
-[vant toast test](https://github.com/youzan/vant/blob/dev/packages/vant/src/toast/test/index.spec.ts)
+- [jest 中文网](https://jestjs.io/zh-Hans/docs/getting-started)
+- [Vue Test Utils 2](https://test-utils.vuejs.org/guide/): 用于 Vue3 组件单元测试
+- [如何运行 Jest 单元测试](https://developer.aliyun.com/article/975177)
+- [vant toast test](https://github.com/youzan/vant/blob/dev/packages/vant/src/toast/test/index.spec.ts)
