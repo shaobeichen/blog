@@ -1,4 +1,4 @@
-import { render, createVNode } from 'vue'
+import { render, createVNode, type App } from 'vue'
 import UIToast from './Toast.vue'
 
 interface options {
@@ -26,4 +26,12 @@ const Toast = (options: string | options) => {
   document.body.appendChild(mountNode)
 }
 
+Toast.install = (app: App) => {
+  app.component('toast', UIToast)
+  app.provide('$toast', Toast)
+  // TODO 可以在Options API中使用，但是会提示"不存在属性$toast"
+  app.config.globalProperties.$toast = Toast
+}
+
 export default Toast
+export { Toast }
