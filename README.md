@@ -11,7 +11,7 @@
 
 ## 介绍
 
-个人主页，Vue3.2+Vite+TypeScript+Pinia+Setup 写法
+个人主页，Vue3.2 + Vite + TypeScript + Pinia + Setup 写法
 
 ## 特性
 
@@ -20,6 +20,8 @@
 - 有 Vue3 + Setup 组件写法
 - 有 Vue3.2 命令式组件写法，组件同时支持 Vue2.x Options API 调用
 - 有 jest + TypeScript 入门写法，写出第一个 Vue 组件测试用例，查看覆盖率
+- 支持 eslint、prettier、stylelint、commitlint、husky 等规范
+- 支持 GitHub Actions 自动部署项目
 
 ## 用法
 
@@ -49,7 +51,7 @@ Vue3
 - [vant](https://github.com/youzan/vant)
 - [vue3-music](https://github.com/SmallRuralDog/vue3-music/blob/master/src/views/playlist/PlayList.vue)
 - [vue3.2-vite-template](https://github.com/BoyYangzai/vue3.2-vite-template/blob/main/src/components/Message/Message.ts)
-- [Vue3组件如何支持Options API](https://github.com/vueComponent/ant-design-vue/issues/2810)
+- [Vue3 组件如何支持 Options API](https://github.com/vueComponent/ant-design-vue/issues/2810)
 
 jest
 

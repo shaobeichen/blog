@@ -1,6 +1,9 @@
 <template>
   <div class="todo">
     <h1 ref="titleRef" class="title" v-html="title" />
+    <ul class="features">
+      <li v-for="(item, index) in features" :key="index" class="features-item" v-html="item" />
+    </ul>
     <button class="add" @click="add">添加</button>
     <div class="table">
       <div class="head">
@@ -48,9 +51,15 @@ const props = defineProps({
   }
 })
 
-const title = ref<string>(
-  '这是TodoList。<br />一个测试Vue3特性的基础案例，<br />也是一个TypeScript很好的入门案例。<br /><br />'
-)
+const title = ref<string>('这是TodoList。<br />')
+const features = ref<string[]>([
+  '一个专门用来练习 Vue3.2 的案例',
+  '一个TypeScript很好的入门案例',
+  '一个Vue3.2命令式组件案例，组件支持Vue2.x命令式调用',
+  '有 Vue3 + Setup 组件写法',
+  '有 jest + TypeScript 入门写法，写出第一个 Vue 组件测试用例，查看覆盖率',
+  '支持 eslint、prettier、stylelint、commitlint、husky 等规范'
+])
 const head = ref<string[]>(['ID', '标题', '状态', '操作'])
 const body = ref<Body[]>([])
 const titleRef = ref<null>(null)
@@ -95,7 +104,26 @@ const deleteData = (id: number) => {
   position: relative;
   padding: 10rem 0;
   .title {
-    font-size: 30px;
+    font-size: 40px;
+    color: #5d91f6;
+    font-weight: 600;
+  }
+  .features {
+    padding: 20px 0;
+    .features-item {
+      position: relative;
+      font-size: 16px;
+      line-height: 1.7;
+      padding-left: 20px;
+      &::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+      }
+    }
   }
   .add {
     width: 160px;

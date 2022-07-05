@@ -29,7 +29,7 @@ const Toast = (options: string | options) => {
 Toast.install = (app: App) => {
   app.component('toast', UIToast)
   app.provide('$toast', Toast)
-  // TODO 可以在Options API中使用，但是会提示"不存在属性$toast"
+  // TODO 可以在Options API中使用this.$toast，但是会提示"不存在属性$toast"
   app.config.globalProperties.$toast = Toast
 }
 
