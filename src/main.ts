@@ -3,11 +3,11 @@ import App from './App.vue'
 
 import router from './router/index'
 
-import Toast from './components/abstract/Toast/Toast'
+import toast from './components/abstract/toast/toast'
 
 const app = createApp(App)
 
 app.use(router)
-app.use(Toast)
+app.use(toast)
 
 app.mount('#app')
