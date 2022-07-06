@@ -39,7 +39,7 @@ onMounted(() => {
   min-width: 100px;
   min-height: 30px;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 99999;
+  z-index: $zindex-toast;
   animation: taost 0.5s ease;
   animation-fill-mode: forwards;
   color: #fff;

@@ -6,22 +6,14 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "lint:js": "eslint --ext \".ts,.js,.vue\" ",
+    "lint:style": "stylelint \"**/*.{vue,scss,sass,css}\" ",
+    "lint": "yarn lint:js && yarn lint:style",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
-  "lint-staged": {
-    "*.{ts,js,vue}": [
-      "eslint",
-      "prettier"
-    ],
-    "*.{scss,sass,css,vue}": [
-      "stylelint",
-      "prettier"
-    ]
-  },
   "dependencies": {
     "pinia": "^2.0.14",
-    "sass": "^1.53.0",
     "vue": "^3.2.37",
     "vue-router": "^4.0.0"
   },
@@ -51,6 +43,7 @@
     "postcss-html": "^1.4.1",
     "postcss-scss": "^4.0.4",
     "prettier": "^2.7.1",
+    "sass": "^1.53.0",
     "stylelint": "^14.9.1",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard-scss": "^4.0.0",

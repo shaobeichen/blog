@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
-import router from './router/index'
 import App from './App.vue'
+
+import router from './router/index'
+
 import Toast from './components/abstract/Toast/Toast'
 
 const app = createApp(App)

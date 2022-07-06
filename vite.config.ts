@@ -16,5 +16,12 @@ export default defineConfig({
     eslintPlugin({
       include: ['src/**/*.ts', 'src/**/*.js', 'src/**/*.vue', 'src/*.ts', 'src/*.js', 'src/*.vue']
     })
-  ]
+  ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "./src/assets/style/index.scss" as *;`
+      }
+    }
+  }
 })
