@@ -52,6 +52,7 @@ Vue3
 - [vue3-music](https://github.com/SmallRuralDog/vue3-music/blob/master/src/views/playlist/PlayList.vue)
 - [vue3.2-vite-template](https://github.com/BoyYangzai/vue3.2-vite-template/blob/main/src/components/Message/Message.ts)
 - [Vue3 组件如何支持 Options API](https://github.com/vueComponent/ant-design-vue/issues/2810)
+- [从零搭建后台系统（Vue3.0+ElementPlus+TS+Vite）(一）](https://juejin.cn/post/7038485798143918116)
 
 jest
 
