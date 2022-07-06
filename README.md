@@ -16,7 +16,7 @@
 ## 特性
 
 - 有专门用来练习 Vue3.2 的 TodoList 案例
-- 可以快速入门 Vue3.2 + TypeScript
+- 可以快速入门 Vue3.2 + Vite2 + TypeScript
 - 有 Vue3 + Setup 组件写法
 - 有 Vue3.2 命令式组件写法，组件同时支持 Vue2.x Options API 调用
 - 有 jest + TypeScript 入门写法，写出第一个 Vue 组件测试用例，查看覆盖率

@@ -25,7 +25,7 @@ module.exports = {
     'vue/no-v-html': 'off',
     'vue/multi-word-component-names': 0,
     'vue/no-multiple-template-root': 'off',
-    'vue/component-definition-name-casing': ["warn", "kebab-case"],
+    'vue/component-definition-name-casing': ['warn', 'kebab-case'],
     'no-debugger': 'off',
     'no-console': 'off'
   }

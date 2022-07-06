@@ -53,7 +53,7 @@ const props = defineProps({
 
 const title = ref<string>('这是TodoList。<br />')
 const features = ref<string[]>([
-  '一个专门用来练习 Vue3.2 的案例',
+  '一个专门用来练习 Vue3.2 + Vite2 的案例',
   '一个TypeScript很好的入门案例',
   '一个Vue3.2命令式组件案例，组件支持Vue2.x命令式调用',
   '有 Vue3 + Setup 组件写法',
