@@ -55,6 +55,7 @@ yarn dev
 
 Vue3
 
+- [vue-vben-admin](https://github.com/vbenjs/vue-vben-admin)
 - [element-plus](https://github.com/element-plus/element-plus/tree/dev/packages/components)
 - [vant](https://github.com/youzan/vant)
 - [vue3-music](https://github.com/SmallRuralDog/vue3-music/blob/master/src/views/playlist/PlayList.vue)

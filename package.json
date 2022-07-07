@@ -3,8 +3,9 @@
   "version": "2.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "cross-env APP_ENV=develop vite",
+    "dev:prod": "cross-env APP_ENV=production vite",
+    "build": "cross-env APP_ENV=production vite build",
     "serve": "vite preview",
     "lint:js": "eslint --ext \".ts,.js,.vue\" --ignore-path .eslintignore .",
     "lint:style": "stylelint \"**/*.{vue,scss,sass,css}\" --ignore-path .eslintignore",
@@ -23,6 +24,7 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "pinia": "^2.0.14",
     "vue": "^3.2.37",
     "vue-router": "^4.0.0"
@@ -42,6 +44,7 @@
     "@vuedx/typescript-plugin-vue": "^0.7.5",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^28.1.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",

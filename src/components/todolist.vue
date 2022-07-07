@@ -132,6 +132,7 @@ const deleteData = (id: number) => {
     text-align: center;
     border: 0;
     font-size: 16px;
+    color: #000;
     cursor: pointer;
   }
   .table {
