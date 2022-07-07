@@ -6,8 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint:js": "eslint --ext \".ts,.js,.vue\" ",
-    "lint:style": "stylelint \"**/*.{vue,scss,sass,css}\" ",
+    "lint:js": "eslint --ext \".ts,.js,.vue\" --ignore-path .eslintignore .",
+    "lint:style": "stylelint \"**/*.{vue,scss,sass,css}\" --ignore-path .eslintignore",
     "lint": "yarn lint:js && yarn lint:style",
     "test": "jest",
     "test:coverage": "jest --coverage"
