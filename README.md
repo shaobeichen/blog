@@ -49,7 +49,8 @@ yarn dev
 
 - [Vue3+Vite+Scss 项目踩坑记录(一)](https://juejin.cn/post/7115375597370474533)
 - [Vue3+Vite+Scss 项目踩坑记录(二)](https://juejin.cn/post/7116310360986304525)
-- [Vue3+Vite+Scss 项目踩坑记录(三)](https://juejin.cn/post/7117296242660474893/)
+- [Vue3+Vite+Scss 项目踩坑记录(三)](https://juejin.cn/post/7117296242660474893)
+- [Vue3+Vite+Scss 项目踩坑记录(四)](https://juejin.cn/post/7118400090296827911)
 
 ## 参考链接
 
