@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -14,7 +15,10 @@
       {
         "name": "@vuedx/typescript-plugin-vue"
       }
-    ]
+    ],
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "vueCompilerOptions": {
     "target": 2
