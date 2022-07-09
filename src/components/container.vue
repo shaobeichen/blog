@@ -7,6 +7,11 @@
       <a @click="linkTodoList">这里</a>
       我写了一个用于测试Vue3特性的基础案例，类型是TodoList，用来了解Vue3的特性最合适不过了。
     </div>
+    <div class="description">
+      <br />
+      <a @click="linkMofish">摸鱼列表</a>
+      是一个展示热榜头条的模块，运用了Vue3+Vite网络请求相关的常用知识。
+    </div>
   </section>
 </template>
 
@@ -28,6 +33,7 @@ const description = ref(
 )
 
 const linkTodoList = () => router.push('/todolist')
+const linkMofish = () => router.push('/mofish')
 </script>
 
 <style scoped lang="scss">

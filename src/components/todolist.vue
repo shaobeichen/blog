@@ -31,12 +31,15 @@
 </template>
 <script lang="ts" setup>
 import { computed, onMounted, ref, watchEffect } from 'vue'
-import Toast from '../components/abstract/toast/toast'
+import Toast from '@/components/abstract/toast/toast'
 
 interface Body {
   id: number
   title: string
   status: number
+}
+interface Props {
+  id: number
 }
 
 const STATUS_MAP = [
@@ -44,15 +47,10 @@ const STATUS_MAP = [
   { id: 20, title: '已完成' }
 ]
 
-const props = defineProps({
-  id: {
-    type: Number,
-    default: 0
-  }
-})
+const props = defineProps<Props>()
 
 const title = ref<string>('这是TodoList。<br />')
-const features = ref<string[]>([
+const features = ref<Array<string>>([
   '一个专门用来练习 Vue3.2 + Vite2 的案例',
   '一个TypeScript很好的入门案例',
   '一个Vue3.2命令式组件案例，组件支持Vue2.x命令式调用',
@@ -60,8 +58,8 @@ const features = ref<string[]>([
   '有 jest + TypeScript 入门写法，写出第一个 Vue 组件测试用例，查看覆盖率',
   '支持 eslint、prettier、stylelint、commitlint、husky 等规范'
 ])
-const head = ref<string[]>(['ID', '标题', '状态', '操作'])
-const body = ref<Body[]>([])
+const head = ref<Array<string>>(['ID', '标题', '状态', '操作'])
+const body = ref<Array<Body>>([])
 const titleRef = ref<null>(null)
 
 const statusTitle = computed(() => (val: number) => STATUS_MAP.find(item => val === item.id)?.title)
