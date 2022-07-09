@@ -1,9 +1,9 @@
 import axios from 'axios'
-import config from '../config/index'
+const { VITE_BASE_URL } = import.meta.env
 
 // create an axios instance
 const service = axios.create({
-  baseURL: config.api,
+  baseURL: VITE_BASE_URL,
   timeout: 5 * 60 * 1000
 })
 

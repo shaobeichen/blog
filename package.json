@@ -3,9 +3,9 @@
   "version": "2.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "cross-env APP_ENV=develop vite",
-    "dev:prod": "cross-env APP_ENV=production vite",
-    "build": "cross-env APP_ENV=production vite build",
+    "dev": "vite --mode development",
+    "dev:prod": "vite --mode production",
+    "build": "vite build --mode production",
     "serve": "vite preview",
     "lint:js": "eslint --ext \".ts,.js,.vue\" --ignore-path .eslintignore .",
     "lint:style": "stylelint \"**/*.{vue,scss,sass,css}\" --ignore-path .eslintignore",
