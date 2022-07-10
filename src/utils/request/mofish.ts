@@ -1,5 +1,5 @@
 import axios from 'axios'
-const { VITE_MOFISH_URL } = import.meta.env
+const { VITE_MOFISH_URL, VITE_BASE_LOCAL_URL } = import.meta.env
 
 // create an axios instance
 const service = axios.create({
@@ -12,6 +12,7 @@ const service = axios.create({
  */
 service.interceptors.request.use(
   request => {
+    request.url = request.url?.replace(VITE_BASE_LOCAL_URL, '')
     return request
   },
   error => {
