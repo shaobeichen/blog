@@ -15,6 +15,7 @@ export default ({ mode }) => {
       }
     },
     server: {
+      open: true,
       proxy: {
         '/mofish': {
           target: VITE_MOFISH_URL,
