@@ -1,10 +1,6 @@
 import { render, createVNode, type App } from 'vue'
 import UIToast from './toast.vue'
-
-interface options {
-  message: string
-  duration: number
-}
+import { options } from '@/types/components/toast'
 
 const Toast = (options: string | options) => {
   const mergeOptions: options = {
