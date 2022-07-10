@@ -5,7 +5,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
-  const { VITE_MOFISH_URL, VITE_MOFISH_LOCAL_URL } = loadEnv(mode, process.cwd())
+  const { VITE_MOFISH_REALITY_URL, VITE_MOFISH_LOCAL_URL } = loadEnv(mode, process.cwd())
 
   return defineConfig({
     base: './',
@@ -19,7 +19,7 @@ export default ({ mode }) => {
       open: true,
       proxy: {
         [VITE_MOFISH_LOCAL_URL]: {
-          target: VITE_MOFISH_URL,
+          target: VITE_MOFISH_REALITY_URL,
           changeOrigin: true,
           rewrite: path => path.replace(VITE_MOFISH_LOCAL_URL, '')
         }

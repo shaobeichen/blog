@@ -1,9 +1,9 @@
 import axios from 'axios'
-const { VITE_MOFISH_URL, VITE_MOFISH_LOCAL_URL } = import.meta.env
+const { VITE_MOFISH_BASE_URL, VITE_MOFISH_LOCAL_URL } = import.meta.env
 
 // create an axios instance
 const service = axios.create({
-  baseURL: VITE_MOFISH_URL,
+  baseURL: VITE_MOFISH_BASE_URL,
   timeout: 5 * 60 * 1000
 })
 
