@@ -5,10 +5,11 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
-  const { VITE_MOFISH_URL } = loadEnv(mode, process.cwd())
+  const { VITE_MOFISH_URL, VITE_MOFISH_LOCAL_URL } = loadEnv(mode, process.cwd())
 
   return defineConfig({
     base: './',
+    logLevel: 'warn',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src')
@@ -17,10 +18,10 @@ export default ({ mode }) => {
     server: {
       open: true,
       proxy: {
-        '/mofish': {
+        [VITE_MOFISH_LOCAL_URL]: {
           target: VITE_MOFISH_URL,
           changeOrigin: true,
-          rewrite: path => path.replace(/^\/mofish/, '')
+          rewrite: path => path.replace(VITE_MOFISH_LOCAL_URL, '')
         }
       }
     },

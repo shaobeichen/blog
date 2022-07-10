@@ -1,4 +1,4 @@
-import request from '@/utils/request'
+import { mofish } from '@/utils/request'
 import { GetMoFishZhiHuList } from './model/mofish'
 
 interface Res {
@@ -11,5 +11,5 @@ interface Res {
 }
 
 export function getMoFishZhiHuList(params: GetMoFishZhiHuList): Promise<Res> {
-  return request.get('/mofish/v2/GetAllInfoGzip', { params })
+  return mofish.get('/mofish/v2/GetAllInfoGzip', { params })
 }

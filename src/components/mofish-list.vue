@@ -53,6 +53,8 @@ const { list } = toRefs(props)
     }
     .logo {
       display: block;
+      width: 240px;
+      height: 240px;
     }
   }
   .list {
