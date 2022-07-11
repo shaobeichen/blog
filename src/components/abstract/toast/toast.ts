@@ -1,9 +1,9 @@
 import { render, createVNode, type App } from 'vue'
+import { ToastOptions } from './types'
 import UIToast from './toast.vue'
-import { options } from '@/types/components/toast'
 
-const Toast = (options: string | options) => {
-  const mergeOptions: options = {
+const Toast = (options: string | ToastOptions) => {
+  const mergeOptions: ToastOptions = {
     message: '',
     duration: 2000
   }
@@ -25,7 +25,6 @@ const Toast = (options: string | options) => {
 Toast.install = (app: App) => {
   app.component('toast', UIToast)
   app.provide('$toast', Toast)
-  // TODO 可以在Options API中使用this.$toast，但是会提示"不存在属性$toast"
   app.config.globalProperties.$toast = Toast
 }
 
