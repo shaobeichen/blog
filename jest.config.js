@@ -9,7 +9,8 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'vue'],
   collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx,vue}'],
   transform: {
-    '^.+\\js$': 'babel-jest',
+    '^.+\\.ts$': 'ts-jest',
+    '^.+\\.js$': 'babel-jest',
     '^.+\\.vue$': '@vue/vue3-jest'
   }
 }
