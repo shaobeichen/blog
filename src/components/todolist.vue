@@ -4,7 +4,7 @@
     <ul class="features">
       <li v-for="(item, index) in features" :key="index" class="features-item" v-html="item" />
     </ul>
-    <button class="add" @click="add">添加</button>
+    <v-button class="add" type="primary" @click="add">添加</v-button>
     <div class="table">
       <div class="head">
         <div v-for="(item, index) in head" :key="index" class="item">{{ item }}</div>
@@ -125,13 +125,6 @@ const deleteData = (id: number) => {
   }
   .add {
     width: 160px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border: 0;
-    font-size: 16px;
-    color: #000;
-    cursor: pointer;
   }
   .table {
     margin-top: 30px;

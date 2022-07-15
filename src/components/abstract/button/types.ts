@@ -1,19 +1,21 @@
-import type { ButtonHTMLAttributes } from 'vue'
+import type { ExtractPropTypes } from 'vue'
 
-export type ButtonType = 'default' | 'primary' | 'success'
+export const buttonTypes = ['default', 'primary', 'success']
 
-export type ButtonSize = 'normal' | 'large' | 'small'
+export const buttonSizes = ['normal', 'large', 'small']
 
-export interface BaseButtonProps {
-  type?: {
-    type: ButtonType
+export const buttonProps = {
+  type: {
+    type: String,
+    values: buttonTypes,
     default: 'default'
-  }
-  size?: {
-    type: string
+  },
+  size: {
+    type: String,
+    values: buttonSizes,
     default: 'normal'
-  }
-  disabled?: boolean
+  },
+  disabled: Boolean
 }
 
-export type ButtonProps = BaseButtonProps & ButtonHTMLAttributes
+export type ButtonProps = ExtractPropTypes<typeof buttonProps>
