@@ -4,21 +4,9 @@
 
 <script lang="ts" setup>
 import { toRefs, onMounted } from 'vue'
+import { toastProps } from './types'
 
-const props = defineProps({
-  message: {
-    type: String,
-    default: ''
-  },
-  duration: {
-    type: Number,
-    default: 2000
-  },
-  closeToast: {
-    type: Function,
-    default: () => ({})
-  }
-})
+const props = defineProps(toastProps)
 const { message, duration, closeToast } = toRefs(props)
 
 onMounted(() => {
@@ -40,7 +28,7 @@ onMounted(() => {
   min-height: 30px;
   background: rgba(0, 0, 0, 0.5);
   z-index: $zindex-toast;
-  animation: taost 0.5s ease;
+  animation: toast 0.5s ease;
   animation-fill-mode: forwards;
   color: #fff;
   padding: 10px 20px;
@@ -49,7 +37,7 @@ onMounted(() => {
   transition: all 0.5s ease;
 }
 
-@keyframes taost {
+@keyframes toast {
   0% {
     top: 40%;
     opacity: 0;

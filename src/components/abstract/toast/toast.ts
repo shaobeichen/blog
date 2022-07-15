@@ -1,19 +1,20 @@
 import { render, createVNode, type App } from 'vue'
-import { ToastOptions } from './types'
 import UIToast from './toast.vue'
+import { ToastProps } from './types'
 
-const Toast = (options: string | ToastOptions) => {
-  const mergeOptions: ToastOptions = {
+const Toast = (props: string | ToastProps) => {
+  const mergeProps: ToastProps = {
     message: '',
-    duration: 2000
+    duration: 2000,
+    closeToast: () => ({})
   }
 
-  if (typeof options === 'string') mergeOptions.message = options
-  else Object.assign(mergeOptions, options)
+  if (typeof props === 'string') mergeProps.message = props
+  else Object.assign(mergeProps, props)
 
   const mountNode = document.createElement('div')
   const ToastBox = createVNode(UIToast, {
-    ...mergeOptions,
+    ...mergeProps,
     closeToast: () => {
       mountNode.parentNode?.removeChild(mountNode)
     }
@@ -23,9 +24,15 @@ const Toast = (options: string | ToastOptions) => {
 }
 
 Toast.install = (app: App) => {
-  app.component('toast', UIToast)
+  app.component('v-toast', UIToast)
   app.provide('$toast', Toast)
   app.config.globalProperties.$toast = Toast
+}
+
+declare module '@vue/runtime-core' {
+  interface ComponentCustomProperties {
+    $toast: (props: string | ToastProps) => void
+  }
 }
 
 export default Toast

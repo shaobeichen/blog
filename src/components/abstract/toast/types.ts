@@ -1,10 +1,18 @@
-export interface ToastOptions {
-  message: string
-  duration?: number
-}
+import { type ExtractPropTypes } from 'vue'
 
-declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties {
-    $toast: (options: string | ToastOptions) => void
+export const toastProps = {
+  message: {
+    type: String,
+    default: ''
+  },
+  duration: {
+    type: Number,
+    default: 2000
+  },
+  closeToast: {
+    type: Function,
+    default: () => ({})
   }
 }
+
+export type ToastProps = ExtractPropTypes<typeof toastProps>
