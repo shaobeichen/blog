@@ -1,7 +1,9 @@
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import eslintPlugin from 'vite-plugin-eslint'
 import path from 'path'
+
+import eslintPlugin from 'vite-plugin-eslint'
+import defineOptions from 'unplugin-vue-define-options/vite'
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
@@ -27,6 +29,7 @@ export default ({ mode }) => {
     },
     plugins: [
       vue(),
+      defineOptions(),
       eslintPlugin({
         include: ['src/**/*.ts', 'src/**/*.js', 'src/**/*.vue', 'src/*.ts', 'src/*.js', 'src/*.vue']
       })

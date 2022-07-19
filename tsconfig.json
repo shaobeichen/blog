@@ -10,7 +10,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types": ["jest", "vite/client"],
+    "types": ["jest", "vite/client", "unplugin-vue-define-options"],
     "plugins": [
       {
         "name": "@vuedx/typescript-plugin-vue"

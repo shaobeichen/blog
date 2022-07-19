@@ -28,5 +28,6 @@ module.exports = {
     'vue/component-definition-name-casing': ['warn', 'kebab-case'],
     'no-debugger': 'off',
     'no-console': 'off'
-  }
+  },
+  globals: { defineOptions: 'writable' }
 }

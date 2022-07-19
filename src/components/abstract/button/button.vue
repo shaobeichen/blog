@@ -1,5 +1,5 @@
 <template>
-  <button class="button" :class="buttonClass" :disabled="disabled" v-bind="attrsbites">
+  <button class="button" :class="buttonClass" :disabled="disabled" v-bind="attrisbutes">
     <slot />
   </button>
 </template>
@@ -7,6 +7,8 @@
 <script lang="ts" setup>
 import { toRefs, computed, useAttrs } from 'vue'
 import { buttonProps } from './types'
+
+defineOptions({ inheritAttrs: false })
 
 const props = defineProps(buttonProps)
 
@@ -24,7 +26,7 @@ const buttonClass = computed(() => {
   ]
 })
 
-const attrsbites = computed(() => {
+const attrisbutes = computed(() => {
   return {
     ...useAttrs(),
     ...attrs
