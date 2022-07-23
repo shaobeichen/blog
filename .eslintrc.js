@@ -27,7 +27,8 @@ module.exports = {
     'vue/no-multiple-template-root': 'off',
     'vue/component-definition-name-casing': ['warn', 'kebab-case'],
     'no-debugger': 'off',
-    'no-console': 'off'
+    'no-console': 'off',
+    '@typescript-eslint/no-explicit-any': ['off']
   },
   globals: { defineOptions: 'writable' }
 }

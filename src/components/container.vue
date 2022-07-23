@@ -12,12 +12,14 @@
       <a @click="linkMofish">摸鱼列表</a>
       是一个展示热榜头条的模块，运用了Vue3+Vite网络请求相关的常用知识。
     </div>
+    <heart />
   </section>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import heart from '@/components/heart.vue'
 
 const router = useRouter()
 const title = ref(`你好，我是少北晨。 <br />一位前端工程师。`)

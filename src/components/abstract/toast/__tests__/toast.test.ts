@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import sleep from '../../../../utils/sleep'
+import { sleep } from '@/utils/index'
 
 import UIToast from '../toast.vue'
 import Toast from '../toast'

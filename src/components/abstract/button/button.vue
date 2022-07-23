@@ -14,8 +14,6 @@ const props = defineProps(buttonProps)
 
 const { type, size, disabled, ...attrs } = toRefs(props)
 
-console.warn(type, size, disabled, attrs)
-
 const buttonClass = computed(() => {
   return [
     `button--${type.value}`,
