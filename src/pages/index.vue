@@ -3,11 +3,13 @@
     <main class="container">
       <container />
     </main>
+    <v-footer />
   </div>
 </template>
 
 <script lang="ts" setup>
 import container from '@/components/container.vue'
+import vFooter from '@/components/v-footer.vue'
 </script>
 
 <style scoped lang="scss">
@@ -16,7 +18,7 @@ import container from '@/components/container.vue'
   color: #e5e7eb;
   background-color: #111827;
   .container {
-    max-width: 1024px;
+    max-width: 600px;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
     margin: 0 auto;

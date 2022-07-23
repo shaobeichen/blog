@@ -1,7 +1,10 @@
 <template>
   <div class="mofish">
     <div class="head">
-      <h1 class="title">摸鱼榜单</h1>
+      <div>
+        <h1 class="title">摸鱼榜单</h1>
+        <p class="tips">提示：因为接口跨域，所以线上无法直接查看，请下载项目后预览。</p>
+      </div>
       <img class="logo" :src="mofish" />
     </div>
     <div class="list">
@@ -50,6 +53,12 @@ const { list } = toRefs(props)
       font-size: 40px;
       font-weight: bold;
       color: #fff;
+      margin-bottom: 10px;
+    }
+    .tips {
+      font-size: 12px;
+      margin-bottom: 20px;
+      color: rgb(156, 156, 156);
     }
     .logo {
       display: block;

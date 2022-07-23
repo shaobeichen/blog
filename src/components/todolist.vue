@@ -54,7 +54,7 @@ const features = ref<Array<string>>([
   '一个专门用来练习 Vue3.2 + Vite2 的案例',
   '一个TypeScript很好的入门案例',
   '一个Vue3.2命令式组件案例，组件支持Vue2.x命令式调用',
-  '有 Vue3 + Setup 组件写法',
+  '有 Vue3 + Setup 组件写法，你可以从0到1学会开发 Button 和 Toast 组件',
   '有 jest + TypeScript 入门写法，写出第一个 Vue 组件测试用例，查看覆盖率',
   '支持 eslint、prettier、stylelint、commitlint、husky 等规范'
 ])

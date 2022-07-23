@@ -26,7 +26,7 @@ const description = ref(
   <br /><br />
   主要写一些 Vue.js、Nuxt.js项目，平时会写一些 Node.js，想尝试下Java、Go、Swift。
   <br /><br />
-  在业余时间，我喜欢看科幻电影，比如《星际穿越》《蝴蝶效应》《土拨鼠之日》《千与千寻》等。
+  在业余时间，我喜欢看科幻电影，比如《星际穿越》《蝴蝶效应》《土拨鼠之日》《千与千寻》等。也喜欢看《一人之下》《斗破苍穹》，喜欢玩「泰拉瑞亚」「饥荒」「星露谷物语」。
   <br /><br />
   我会发一些视频在 <a href="https://space.bilibili.com/13310258" target="_blank">bilibili</a> 上。
   `
@@ -39,7 +39,7 @@ const linkMofish = () => router.push('/mofish')
 <style scoped lang="scss">
 .introduce {
   padding-top: 10rem;
-  padding-bottom: 12rem;
+  padding-bottom: 5rem;
   .title {
     margin-bottom: 1rem;
     font-size: 3rem;
