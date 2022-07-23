@@ -18,7 +18,6 @@ const footer = ref([
     image: github
   }
 ])
-console.warn(footer.value)
 </script>
 
 <style scoped lang="scss">
