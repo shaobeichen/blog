@@ -4,11 +4,15 @@
   </button>
 </template>
 
+<script lang="ts">
+export default {
+  inheritAttrs: false
+}
+</script>
+
 <script lang="ts" setup>
 import { toRefs, computed, useAttrs } from 'vue'
 import { buttonProps } from './types'
-
-defineOptions({ inheritAttrs: false })
 
 const props = defineProps(buttonProps)
 
