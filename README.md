@@ -25,7 +25,7 @@
 
 ## 用法
 
-1.安装 yarn，如果已经安装 yarn，此步骤跳过
+1.安装 yarn
 
 ```
 npm i -g yarn
